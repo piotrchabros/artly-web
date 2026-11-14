@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>ARTLY – strona internetowa</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Hanken+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F7F4EF}
+a{color:#1B2530}a:hover{color:#9E522A}
+.phone{border:9px solid #1B2530;border-radius:44px;overflow:hidden;background:#1B2530;box-shadow:0 30px 60px rgba(27,37,48,0.18)}
+.phone img{display:block;width:100%;height:auto}
+.art-1{background:radial-gradient(55% 70% at 68% 32%,#D9874F 0%,rgba(217,135,79,0) 62%),radial-gradient(45% 55% at 28% 78%,#86A9C2 0%,rgba(134,169,194,0) 66%),linear-gradient(165deg,#F7EFE5 0%,#EAD9C4 100%)}
+.art-2{background:radial-gradient(70% 50% at 50% 20%,#BFD3E0 0%,rgba(191,211,224,0) 70%),radial-gradient(40% 40% at 72% 70%,#E9B48A 0%,rgba(233,180,138,0) 70%),linear-gradient(180deg,#E4ECF1 0%,#9FB9CB 100%)}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+@media (max-width:720px){.hide-sm{display:none}.navlinks{display:none}}
+</style>
+</helmet>
+<div style="width: 100%; box-sizing: border-box; background: #F7F4EF; font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #1B2530">
+
+  <header style="max-width: 1200px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+    <a href="#top" style="font-family: 'Italiana', serif; font-size: 30px; letter-spacing: 0.12em; text-decoration: none; color: #1B2530">ARTLY</a>
+    <nav class="navlinks" aria-label="Menu" style="display: flex; gap: 28px; font-size: 15px">
+      <a href="#jak-to-dziala" style="text-decoration: none">Jak to działa</a>
+      <a href="#funkcje" style="text-decoration: none">Funkcje</a>
+      <a href="#dla-artystow" style="text-decoration: none">Dla artystów</a>
+      <a href="#faq" style="text-decoration: none">FAQ</a>
+    </nav>
+    <a href="#pobierz" style="display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 15px; font-weight: 500">Pobierz aplikację</a>
+  </header>
+
+  <section id="top" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 96px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+    <div style="flex: 1 1 460px; min-width: 0">
+      <div style="font-size: 12px; letter-spacing: 0.32em; color: #4A5560">WHERE ART MEETS SPACE</div>
+      <h1 style="margin: 18px 0 20px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(42px, 5.4vw, 74px); line-height: 1.02">Sztuka, która naprawdę pasuje do Twojego wnętrza.</h1>
+      <p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #4A5560">ARTLY zaczyna od Twojej przestrzeni, nie od katalogu. Zrób zdjęcie ściany, powiedz, co lubisz — pokażemy prace niezależnych artystów dopasowane do wnętrza, stylu i budżetu. I zobaczysz je u siebie, zanim kupisz.</p>
+      <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px">
+        <a href="#pobierz" style="display: inline-flex; align-items: center; gap: 10px; height: 56px; padding: 0 26px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 16px; font-weight: 500">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"></path></svg>
+          Pobierz na iOS i Androida
+        </a>
+        <a href="#jak-to-dziala" style="display: inline-flex; align-items: center; height: 56px; padding: 0 26px; border-radius: 999px; border: 1px solid #CFC4B6; text-decoration: none; font-size: 16px; font-weight: 500">Zobacz, jak to działa</a>
+      </div>
+      <div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; color: #4A5560">
+        <span style="display: inline-flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Oryginały niezależnych artystów</span>
+        <span style="display: inline-flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Wizualizacja na Twojej ścianie</span>
+        <span style="display: inline-flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>Dzieła na zamówienie</span>
+      </div>
+    </div>
+    <div style="flex: 1 1 420px; min-width: 0; position: relative; height: 640px; display: flex; justify-content: center">
+      <div aria-hidden="true" style="position: absolute; right: 0; top: 0; width: 300px; height: 600px; border-radius: 150px 150px 0 0; background: linear-gradient(180deg, #DCE8F0 0%, #F0E9E0 100%); border: 12px solid #EFE7DC; box-sizing: border-box"></div>
+      <div class="phone hide-sm" style="position: absolute; left: 4%; top: 70px; width: 250px; transform: rotate(-4deg)">
+        <img src="./assets/66c13928dde448201100f3f7bd18ea1b.png" alt="Ekran Odkrywaj w aplikacji ARTLY">
+      </div>
+      <div class="phone" style="position: relative; margin-left: 18%; top: 10px; width: 270px; height: fit-content">
+        <img src="./assets/33a48acf66d17e9c2186e7562ad52738.png" alt="Wizualizacja obrazu na ścianie salonu w aplikacji ARTLY">
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #FFFFFF; padding: 96px 24px">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="font-size: 12px; letter-spacing: 0.24em; font-weight: 600; color: #9E522A">DLACZEGO ARTLY</div>
+      <h2 style="margin: 14px 0 0; max-width: 760px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1">Wybór sztuki bez zgadywania.</h2>
+      <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+        <div style="padding: 32px; border-radius: 22px; background: #F0E9E0">
+          <div style="font-family: 'Newsreader', serif; font-size: 22px; color: #9E522A">01</div>
+          <h3 style="margin: 22px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 26px">Zaczynasz od wnętrza</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5560">Najpierw Twoja przestrzeń, styl i potrzeby — dopiero potem katalog. Dobieramy prace do koloru ściany, światła i proporcji.</p>
+        </div>
+        <div style="padding: 32px; border-radius: 22px; background: #EAF1F4">
+          <div style="font-family: 'Newsreader', serif; font-size: 22px; color: #9E522A">02</div>
+          <h3 style="margin: 22px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 26px">Widzisz efekt, zanim kupisz</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #34414D">Obraz pojawia się na zdjęciu Twojej ściany w realnej skali. Zmieniasz rozmiar i ramę, porównujesz „przed” i „po”.</p>
+        </div>
+        <div style="padding: 32px; border-radius: 22px; background: #F0E9E0">
+          <div style="font-family: 'Newsreader', serif; font-size: 22px; color: #9E522A">03</div>
+          <h3 style="margin: 22px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 26px">Wspierasz niezależnych twórców</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4A5560">Kupujesz oryginały bezpośrednio od artystów z Twojego kraju, poznajesz ich historie i możesz zamówić dzieło na wymiar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jak-to-dziala" style="padding: 104px 24px">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="text-align: center">
+        <div style="font-size: 12px; letter-spacing: 0.24em; font-weight: 600; color: #9E522A">JAK TO DZIAŁA</div>
+        <h2 style="margin: 14px 0 0; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1">Cztery kroki do własnego dzieła</h2>
+      </div>
+      <div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px">
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
+          <div class="phone" style="width: 220px"><img src="./assets/0e5f65337539070fced78dc8710ffa2c.png" alt="Krok 1: dodawanie zdjęcia wnętrza"></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 34px; color: #D2885A">1</div>
+          <h3 style="margin: -8px 0 0; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Pokaż wnętrze</h3>
+          <p style="margin: 0; max-width: 250px; font-size: 15px; line-height: 1.5; color: #4A5560">Zrób zdjęcie ściany salonu, sypialni lub biura.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
+          <div class="phone" style="width: 220px"><img src="./assets/64cf61f5b83774e745f1208f2f2163fa.png" alt="Krok 2: wybór stylu, kolorystyki, formatu i budżetu"></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 34px; color: #D2885A">2</div>
+          <h3 style="margin: -8px 0 0; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Określ gust</h3>
+          <p style="margin: 0; max-width: 250px; font-size: 15px; line-height: 1.5; color: #4A5560">Wybierz styl, kolorystykę, format i budżet.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
+          <div class="phone" style="width: 220px"><img src="./assets/33a48acf66d17e9c2186e7562ad52738.png" alt="Krok 3: obraz na zdjęciu ściany"></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 34px; color: #D2885A">3</div>
+          <h3 style="margin: -8px 0 0; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Zobacz efekt</h3>
+          <p style="margin: 0; max-width: 250px; font-size: 15px; line-height: 1.5; color: #4A5560">Porównaj dopasowane dzieła na swojej ścianie.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px">
+          <div class="phone" style="width: 220px"><img src="./assets/97104a3fd43b0b569d9a2793d00cca91.png" alt="Krok 4: potwierdzenie zakupu"></div>
+          <div style="font-family: 'Newsreader', serif; font-size: 34px; color: #D2885A">4</div>
+          <h3 style="margin: -8px 0 0; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Kup lub zamów</h3>
+          <p style="margin: 0; max-width: 250px; font-size: 15px; line-height: 1.5; color: #4A5560">Kup gotową pracę albo zleć realizację artyście.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="funkcje" style="background: #FFFFFF; padding: 104px 24px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 112px">
+      <div style="text-align: center">
+        <div style="font-size: 12px; letter-spacing: 0.24em; font-weight: 600; color: #9E522A">FUNKCJE</div>
+        <h2 style="margin: 14px 0 0; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1">Wszystko, czego potrzebujesz, by znaleźć „to” dzieło</h2>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+        <div style="flex: 1 1 340px; display: flex; justify-content: center"><div style="padding: 48px 56px; border-radius: 28px; background: #EAF1F4"><div class="phone" style="width: 270px"><img src="./assets/66c13928dde448201100f3f7bd18ea1b.png" alt="Ekran Odkrywaj: style, banery, rekomendacje Dla Ciebie"></div></div></div>
+        <div style="flex: 1 1 420px; min-width: 0">
+          <h3 style="margin: 0 0 16px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 38px; line-height: 1.1">Odkrywaj sztukę, która do Ciebie pasuje</h3>
+          <p style="margin: 0 0 24px; font-size: 17px; line-height: 1.6; color: #4A5560">Ekran Odkrywaj to codzienna dawka sztuki ułożona wokół Twojego gustu i Twojego wnętrza.</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.5">
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span><b style="font-weight: 600">Dla Ciebie</b> — rekomendacje na podstawie preferencji i zdjęcia wnętrza</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span><b style="font-weight: 600">Według stylu i barwy</b> — od abstrakcji po pejzaż, od ciepłych ziem po błękity</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span><b style="font-weight: 600">Kolekcje kuratorów</b> — „Nad sofę”, „Spokojna sypialnia”, „Do 1 000 zł”, „Ściana galerii”</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span><b style="font-weight: 600">Nowości i popularne</b> — co właśnie dodali artyści i co zapisują inni</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 64px">
+        <div style="flex: 1 1 420px; min-width: 0">
+          <h3 style="margin: 0 0 16px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 38px; line-height: 1.1">Zobacz obraz na swojej ścianie</h3>
+          <p style="margin: 0 0 24px; font-size: 17px; line-height: 1.6; color: #4A5560">Koniec z zastanawianiem się, czy obraz nie będzie za mały. ARTLY rozpoznaje ścianę na zdjęciu i pokazuje dzieło w jego prawdziwej skali.</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.5">
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Zmieniaj rozmiar i ramę — cena przelicza się od razu</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Porównuj kilka prac na tej samej ścianie i widok „przed / po”</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>„Dlaczego pasuje” — jasne powody dopasowania przy każdym dziele</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Udostępnij wizualizację domownikom, zanim podejmiesz decyzję</span></li>
+          </ul>
+        </div>
+        <div style="flex: 1 1 340px; display: flex; justify-content: center; gap: 20px">
+          <div style="padding: 48px 40px; border-radius: 28px; background: #F0E9E0; display: flex; gap: 20px; align-items: flex-start">
+            <div class="phone" style="width: 230px"><img src="./assets/33a48acf66d17e9c2186e7562ad52738.png" alt="Wizualizacja z wyborem rozmiaru i ramy"></div>
+            <div class="phone hide-sm" style="width: 200px; margin-top: 60px"><img src="./assets/59e8b5e864c6d72e97a41ab182612192.png" alt="Karta dzieła z sekcją Dlaczego pasuje"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+        <div style="flex: 1 1 340px; display: flex; justify-content: center"><div style="padding: 48px 56px; border-radius: 28px; background: #EAF1F4"><div class="phone" style="width: 270px"><img src="./assets/755527ca3fdd3c5eddf9dce1887a6d52.png" alt="Formularz zamówienia dzieła na wymiar"></div></div></div>
+        <div style="flex: 1 1 420px; min-width: 0">
+          <h3 style="margin: 0 0 16px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 38px; line-height: 1.1">Zamów dzieło na wymiar</h3>
+          <p style="margin: 0 0 24px; font-size: 17px; line-height: 1.6; color: #4A5560">Nie znalazłeś idealnego? Opisz, czego szukasz, wybierz wymiary, budżet i termin. Artysta dostaje Twój opis razem ze zdjęciem wnętrza.</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.5">
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Wycena i szkic od artysty, zanim cokolwiek zapłacisz</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Kolory i format dobrane dokładnie do Twojej ściany</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Rozmowa z artystą i statusy realizacji w jednym miejscu</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 64px">
+        <div style="flex: 1 1 420px; min-width: 0">
+          <h3 style="margin: 0 0 16px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 38px; line-height: 1.1">Aplikacja, która uczy się Twojego gustu</h3>
+          <p style="margin: 0 0 24px; font-size: 17px; line-height: 1.6; color: #4A5560">W profilu ustawiasz ulubione style, barwy i motywy — od jeziora po martwą naturę. Zapisujesz swoje wnętrza i obserwujesz artystów.</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.5">
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Powiadomienia o nowych pracach w Twoim guście</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Kilka wnętrz w jednym koncie — salon, sypialnia, biuro</span></li>
+            <li style="display: flex; gap: 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 3px"><path d="M5 12l5 5 9-10"></path></svg><span>Ulubione i obserwowani artyści zawsze pod ręką</span></li>
+          </ul>
+        </div>
+        <div style="flex: 1 1 340px; display: flex; justify-content: center"><div style="padding: 48px 56px; border-radius: 28px; background: #F0E9E0"><div class="phone" style="width: 270px"><img src="./assets/f62bd8bd51d7c1b42d8b9cb03bdc93ca.png" alt="Profil z preferencjami: style, barwy, motywy"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 104px 24px">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
+      <div style="padding: 40px; border-radius: 24px; background: #FFFFFF; border: 1px solid #ECE5DB">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        <h3 style="margin: 20px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 30px; line-height: 1.15">Artyści z Twojej okolicy</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5560">Pokazujemy przede wszystkim twórców z kraju, w którym mieszkasz. Krótsza dostawa, prostsze zakupy, a czasem odbiór osobisty w pracowni. Jeśli chcesz, otworzysz ARTLY na całą Europę.</p>
+      </div>
+      <div style="padding: 40px; border-radius: 24px; background: #FFFFFF; border: 1px solid #ECE5DB">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>
+        <h3 style="margin: 20px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 30px; line-height: 1.15">W Twoim języku</h3>
+        <p style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #4A5560">Aplikacja automatycznie mówi w języku Twojego telefonu. Opisy dzieł tłumaczymy, zawsze z dostępem do oryginału artysty.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">English</span>
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">Polski</span>
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">Deutsch</span>
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">Français</span>
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">Español</span>
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">Italiano</span>
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">Nederlands</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dla-artystow" style="background: #1B2530; color: #F7F4EF; padding: 112px 24px">
+    <div style="max-width: 1200px; margin: 0 auto">
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
+        <div style="flex: 1 1 520px; min-width: 0">
+          <div style="font-size: 12px; letter-spacing: 0.24em; font-weight: 600; color: #F2C3A1">DLA ARTYSTÓW</div>
+          <h2 style="margin: 14px 0 18px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(34px, 4vw, 54px); line-height: 1.06">Twoja sztuka znajdzie swoje miejsce.</h2>
+          <p style="margin: 0; max-width: 560px; font-size: 18px; line-height: 1.6; color: #C9D2DA">Pokazujemy Twoje prace osobom, do których wnętrz naprawdę pasują. Ty tworzysz — resztę ułatwiamy.</p>
+        </div>
+        <a href="#pobierz" style="display: inline-flex; align-items: center; height: 56px; padding: 0 28px; border-radius: 999px; background: #D2885A; color: #1B2530; text-decoration: none; font-size: 16px; font-weight: 600">Dołącz jako artysta</a>
+      </div>
+
+      <div style="margin-top: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px">
+        <div>
+          <div style="font-family: 'Newsreader', serif; font-size: 24px; color: #F2C3A1">✦</div>
+          <h3 style="margin: 12px 0 8px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Zdjęcie wystarczy</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D2DA">Dodaj zdjęcie obrazu, a aplikacja sama rozpozna styl, kolorystykę i motywy — Ty tylko sprawdzasz i poprawiasz.</p>
+        </div>
+        <div>
+          <div style="font-family: 'Newsreader', serif; font-size: 24px; color: #F2C3A1">✦</div>
+          <h3 style="margin: 12px 0 8px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Twoja historia</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D2DA">Profil z opowieścią o Tobie i Twojej pracowni. Opisy piszesz sam — możesz poprosić o pomoc w redakcji.</p>
+        </div>
+        <div>
+          <div style="font-family: 'Newsreader', serif; font-size: 24px; color: #F2C3A1">✦</div>
+          <h3 style="margin: 12px 0 8px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Sprzedaż i zamówienia</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D2DA">Sprzedawaj gotowe prace i przyjmuj zlecenia na wymiar. Wszystkie zadania widzisz w jednym panelu.</p>
+        </div>
+        <div>
+          <div style="font-family: 'Newsreader', serif; font-size: 24px; color: #F2C3A1">✦</div>
+          <h3 style="margin: 12px 0 8px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px">Przejrzyste wypłaty</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #C9D2DA">Widzisz, ile zarobiłeś i ile jest w drodze. Wypłacasz środki, kiedy chcesz, albo automatycznie co tydzień.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 72px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 32px">
+        <figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 16px">
+          <div class="phone" style="width: 240px; border-color: #0F161D"><img src="./assets/de88edb7d4ae6d99e058e7e03542aaa5.png" alt="Dodawanie prac z automatyczną analizą zdjęcia"></div>
+          <figcaption style="font-size: 14px; color: #C9D2DA">Dodaj prace</figcaption>
+        </figure>
+        <figure style="margin: 48px 0 0; display: flex; flex-direction: column; align-items: center; gap: 16px">
+          <div class="phone" style="width: 240px; border-color: #0F161D"><img src="./assets/0a529a016eb32d9f966a881c124c256e.png" alt="Opis dzieła ze stylem, kolorami i tagami rozpoznanymi automatycznie"></div>
+          <figcaption style="font-size: 14px; color: #C9D2DA">Sprawdź styl, kolory i tagi</figcaption>
+        </figure>
+        <figure style="margin: 0; display: flex; flex-direction: column; align-items: center; gap: 16px">
+          <div class="phone" style="width: 240px; border-color: #0F161D"><img src="./assets/17156d667336a6ad5df55093439da4e8.png" alt="Panel artysty z saldem i zadaniami"></div>
+          <figcaption style="font-size: 14px; color: #C9D2DA">Prowadź sprzedaż</figcaption>
+        </figure>
+        <figure style="margin: 48px 0 0; display: flex; flex-direction: column; align-items: center; gap: 16px">
+          <div class="phone" style="width: 240px; border-color: #0F161D"><img src="./assets/cc83aaa39364cde076c7ad6cd78dcb1e.png" alt="Wypłaty środków"></div>
+          <figcaption style="font-size: 14px; color: #C9D2DA">Wypłacaj środki</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 72px 24px; border-bottom: 1px solid #ECE5DB">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+      <div style="display: flex; gap: 16px; align-items: flex-start">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        <div><div style="font-size: 17px; font-weight: 600">Certyfikat autentyczności</div><div style="margin-top: 4px; font-size: 14px; line-height: 1.5; color: #4A5560">Do każdego oryginału.</div></div>
+      </div>
+      <div style="display: flex; gap: 16px; align-items: flex-start">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"></path><path d="M3 7l9 4 9-4M12 11v10"></path></svg>
+        <div><div style="font-size: 17px; font-weight: 600">Dostawa z ubezpieczeniem</div><div style="margin-top: 4px; font-size: 14px; line-height: 1.5; color: #4A5560">Artystyczne pakowanie i śledzenie przesyłki.</div></div>
+      </div>
+      <div style="display: flex; gap: 16px; align-items: flex-start">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5"></path></svg>
+        <div><div style="font-size: 17px; font-weight: 600">14 dni na zwrot</div><div style="margin-top: 4px; font-size: 14px; line-height: 1.5; color: #4A5560">Dla gotowych prac kupionych w aplikacji.</div></div>
+      </div>
+      <div style="display: flex; gap: 16px; align-items: flex-start">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><rect x="2" y="6" width="20" height="13" rx="2"></rect><path d="M2 10h20"></path></svg>
+        <div><div style="font-size: 17px; font-weight: 600">Bezpieczne płatności</div><div style="margin-top: 4px; font-size: 14px; line-height: 1.5; color: #4A5560">BLIK, karta lub przelew.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding: 104px 24px">
+    <div style="max-width: 820px; margin: 0 auto">
+      <h2 style="margin: 0 0 32px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; text-align: center">Najczęstsze pytania</h2>
+      <details style="border-top: 1px solid #E3DBD0; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Newsreader', serif; font-size: 22px">Czy muszę robić zdjęcie wnętrza?<span class="plus" aria-hidden="true" style="font-family: 'Hanken Grotesk', sans-serif; font-size: 26px; color: #9E522A; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #4A5560">Nie. Możesz od razu przeglądać dzieła. Zdjęcie ściany sprawia jednak, że rekomendacje są trafniejsze, a wizualizacja pokazuje obraz w prawdziwej skali.</p>
+      </details>
+      <details style="border-top: 1px solid #E3DBD0; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Newsreader', serif; font-size: 22px">Jak działa zamówienie na wymiar?<span class="plus" aria-hidden="true" style="font-family: 'Hanken Grotesk', sans-serif; font-size: 26px; color: #9E522A; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #4A5560">Wysyłasz artyście opis, wymiary, budżet i termin. Artysta odpowiada wyceną i szkicem — płacisz dopiero, gdy je zaakceptujesz.</p>
+      </details>
+      <details style="border-top: 1px solid #E3DBD0; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Newsreader', serif; font-size: 22px">Skąd pochodzą dzieła?<span class="plus" aria-hidden="true" style="font-family: 'Hanken Grotesk', sans-serif; font-size: 26px; color: #9E522A; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #4A5560">Od niezależnych artystów, którzy sami dodają swoje prace do ARTLY. Domyślnie pokazujemy twórców z Twojego kraju.</p>
+      </details>
+      <details style="border-top: 1px solid #E3DBD0; border-bottom: 1px solid #E3DBD0; padding: 22px 0">
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Newsreader', serif; font-size: 22px">Jak zostać artystą w ARTLY?<span class="plus" aria-hidden="true" style="font-family: 'Hanken Grotesk', sans-serif; font-size: 26px; color: #9E522A; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #4A5560">Pobierz aplikację i wybierz „Dołącz do Artly”. Załóż konto, opowiedz swoją historię i dodaj zdjęcia prac — po akceptacji profilu Twoje dzieła zobaczą kupujący.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="pobierz" style="padding: 0 24px 104px">
+    <div class="art-1" style="max-width: 1200px; margin: 0 auto; border-radius: 32px; padding: 72px 48px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
+      <div style="flex: 1 1 420px; min-width: 0">
+        <div style="font-family: 'Italiana', serif; font-size: 40px; letter-spacing: 0.12em">ARTLY</div>
+        <h2 style="margin: 16px 0 12px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 50px); line-height: 1.08">Sztuka znajduje swoje miejsce.</h2>
+        <p style="margin: 0; max-width: 480px; font-size: 18px; line-height: 1.55; color: #34414D">Artyści znajdują swoich odbiorców. Pobierz aplikację i zobacz, co zawiśnie u Ciebie.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; min-width: 240px">
+        <a href="#pobierz" style="display: flex; align-items: center; justify-content: center; height: 58px; padding: 0 28px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 16px; font-weight: 500">Pobierz z App Store</a>
+        <a href="#pobierz" style="display: flex; align-items: center; justify-content: center; height: 58px; padding: 0 28px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 16px; font-weight: 500">Pobierz z Google Play</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top: 1px solid #ECE5DB; padding: 40px 24px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 14px; color: #4A5560">
+      <div style="display: flex; align-items: baseline; gap: 16px"><span style="font-family: 'Italiana', serif; font-size: 22px; letter-spacing: 0.12em; color: #1B2530">ARTLY</span><span>Where art meets space</span></div>
+      <nav aria-label="Stopka" style="display: flex; flex-wrap: wrap; gap: 22px">
+        <a href="#dla-artystow" style="color: #4A5560">Dla artystów</a>
+        <a href="#faq" style="color: #4A5560">FAQ</a>
+        <a href="#top" style="color: #4A5560">Regulamin</a>
+        <a href="#top" style="color: #4A5560">Polityka prywatności</a>
+        <a href="#top" style="color: #4A5560">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":8000}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
