@@ -1,0 +1,42 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'ARTLY – strona internetowa',
+  description = 'ARTLY zaczyna od Twojej przestrzeni, nie od katalogu. Pokażemy prace niezależnych artystów dopasowane do wnętrza, stylu i budżetu.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content={description}>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style is:global>
+body{margin:0;background:#F7F4EF}
+a{color:#1B2530}a:hover{color:#9E522A}
+.phone{border:9px solid #1B2530;border-radius:44px;overflow:hidden;background:#1B2530;box-shadow:0 30px 60px rgba(27,37,48,0.18)}
+.phone img{display:block;width:100%;height:auto}
+.art-1{background:radial-gradient(55% 70% at 68% 32%,#D9874F 0%,rgba(217,135,79,0) 62%),radial-gradient(45% 55% at 28% 78%,#86A9C2 0%,rgba(134,169,194,0) 66%),linear-gradient(165deg,#F7EFE5 0%,#EAD9C4 100%)}
+.art-2{background:radial-gradient(70% 50% at 50% 20%,#BFD3E0 0%,rgba(191,211,224,0) 70%),radial-gradient(40% 40% at 72% 70%,#E9B48A 0%,rgba(233,180,138,0) 70%),linear-gradient(180deg,#E4ECF1 0%,#9FB9CB 100%)}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+@media (max-width:720px){.hide-sm{display:none}.navlinks{display:none}}
+</style>
+</head>
+<body>
+<div style="width: 100%; box-sizing: border-box; background: #F7F4EF; font-family: 'Hanken Grotesk', system-ui, sans-serif; color: #1B2530">
+  <slot />
+</div>
+</body>
+</html>

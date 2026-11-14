@@ -1,0 +1,41 @@
+---
+const reasons = [
+  {
+    number: '01',
+    title: 'Zaczynasz od wnętrza',
+    text: 'Najpierw Twoja przestrzeń, styl i potrzeby — dopiero potem katalog. Dobieramy prace do koloru ściany, światła i proporcji.',
+    background: '#F0E9E0',
+    color: '#4A5560',
+  },
+  {
+    number: '02',
+    title: 'Widzisz efekt, zanim kupisz',
+    text: 'Obraz pojawia się na zdjęciu Twojej ściany w realnej skali. Zmieniasz rozmiar i ramę, porównujesz „przed” i „po”.',
+    background: '#EAF1F4',
+    color: '#34414D',
+  },
+  {
+    number: '03',
+    title: 'Wspierasz niezależnych twórców',
+    text: 'Kupujesz oryginały bezpośrednio od artystów z Twojego kraju, poznajesz ich historie i możesz zamówić dzieło na wymiar.',
+    background: '#F0E9E0',
+    color: '#4A5560',
+  },
+];
+---
+
+<section style="background: #FFFFFF; padding: 96px 24px">
+  <div style="max-width: 1200px; margin: 0 auto">
+    <div style="font-size: 12px; letter-spacing: 0.24em; font-weight: 600; color: #9E522A">DLACZEGO ARTLY</div>
+    <h2 style="margin: 14px 0 0; max-width: 760px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1">Wybór sztuki bez zgadywania.</h2>
+    <div style="margin-top: 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+      {reasons.map((reason) => (
+        <div style={`padding: 32px; border-radius: 22px; background: ${reason.background}`}>
+          <div style="font-family: 'Newsreader', serif; font-size: 22px; color: #9E522A">{reason.number}</div>
+          <h3 style="margin: 22px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 26px">{reason.title}</h3>
+          <p style={`margin: 0; font-size: 16px; line-height: 1.55; color: ${reason.color}`}>{reason.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

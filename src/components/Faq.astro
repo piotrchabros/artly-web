@@ -1,0 +1,32 @@
+---
+const faqs = [
+  {
+    question: 'Czy muszę robić zdjęcie wnętrza?',
+    answer: 'Nie. Możesz od razu przeglądać dzieła. Zdjęcie ściany sprawia jednak, że rekomendacje są trafniejsze, a wizualizacja pokazuje obraz w prawdziwej skali.',
+  },
+  {
+    question: 'Jak działa zamówienie na wymiar?',
+    answer: 'Wysyłasz artyście opis, wymiary, budżet i termin. Artysta odpowiada wyceną i szkicem — płacisz dopiero, gdy je zaakceptujesz.',
+  },
+  {
+    question: 'Skąd pochodzą dzieła?',
+    answer: 'Od niezależnych artystów, którzy sami dodają swoje prace do ARTLY. Domyślnie pokazujemy twórców z Twojego kraju.',
+  },
+  {
+    question: 'Jak zostać artystą w ARTLY?',
+    answer: 'Pobierz aplikację i wybierz „Dołącz do Artly”. Załóż konto, opowiedz swoją historię i dodaj zdjęcia prac — po akceptacji profilu Twoje dzieła zobaczą kupujący.',
+  },
+];
+---
+
+<section id="faq" style="padding: 104px 24px">
+  <div style="max-width: 820px; margin: 0 auto">
+    <h2 style="margin: 0 0 32px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.1; text-align: center">Najczęstsze pytania</h2>
+    {faqs.map((faq, i) => (
+      <details style={i === faqs.length - 1 ? 'border-top: 1px solid #E3DBD0; border-bottom: 1px solid #E3DBD0; padding: 22px 0' : 'border-top: 1px solid #E3DBD0; padding: 22px 0'}>
+        <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Newsreader', serif; font-size: 22px">{faq.question}<span class="plus" aria-hidden="true" style="font-family: 'Hanken Grotesk', sans-serif; font-size: 26px; color: #9E522A; transition: transform 0.2s">+</span></summary>
+        <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #4A5560">{faq.answer}</p>
+      </details>
+    ))}
+  </div>
+</section>

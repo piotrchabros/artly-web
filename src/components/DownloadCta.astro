@@ -1,0 +1,18 @@
+---
+const stores = ['Pobierz z App Store', 'Pobierz z Google Play'];
+---
+
+<section id="pobierz" style="padding: 0 24px 104px">
+  <div class="art-1" style="max-width: 1200px; margin: 0 auto; border-radius: 32px; padding: 72px 48px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px">
+    <div style="flex: 1 1 420px; min-width: 0">
+      <div style="font-family: 'Italiana', serif; font-size: 40px; letter-spacing: 0.12em">ARTLY</div>
+      <h2 style="margin: 16px 0 12px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(32px, 3.6vw, 50px); line-height: 1.08">Sztuka znajduje swoje miejsce.</h2>
+      <p style="margin: 0; max-width: 480px; font-size: 18px; line-height: 1.55; color: #34414D">Artyści znajdują swoich odbiorców. Pobierz aplikację i zobacz, co zawiśnie u Ciebie.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; min-width: 240px">
+      {stores.map((label) => (
+        <a href="#pobierz" style="display: flex; align-items: center; justify-content: center; height: 58px; padding: 0 28px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 16px; font-weight: 500">{label}</a>
+      ))}
+    </div>
+  </div>
+</section>

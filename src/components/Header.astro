@@ -1,0 +1,15 @@
+---
+const navLinks = [
+  { href: '#jak-to-dziala', label: 'Jak to działa' },
+  { href: '#funkcje', label: 'Funkcje' },
+  { href: '#dla-artystow', label: 'Dla artystów' },
+  { href: '#faq', label: 'FAQ' },
+];
+---
+<header style="max-width: 1200px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+  <a href="#top" style="font-family: 'Italiana', serif; font-size: 30px; letter-spacing: 0.12em; text-decoration: none; color: #1B2530">ARTLY</a>
+  <nav class="navlinks" aria-label="Menu" style="display: flex; gap: 28px; font-size: 15px">
+    {navLinks.map((link) => <a href={link.href} style="text-decoration: none">{link.label}</a>)}
+  </nav>
+  <a href="#pobierz" style="display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 15px; font-weight: 500">Pobierz aplikację</a>
+</header>

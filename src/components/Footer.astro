@@ -1,0 +1,17 @@
+---
+const footerLinks = [
+  { href: '#dla-artystow', label: 'Dla artystów' },
+  { href: '#faq', label: 'FAQ' },
+  { href: '#top', label: 'Regulamin' },
+  { href: '#top', label: 'Polityka prywatności' },
+  { href: '#top', label: 'Kontakt' },
+];
+---
+<footer style="border-top: 1px solid #ECE5DB; padding: 40px 24px">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 14px; color: #4A5560">
+    <div style="display: flex; align-items: baseline; gap: 16px"><span style="font-family: 'Italiana', serif; font-size: 22px; letter-spacing: 0.12em; color: #1B2530">ARTLY</span><span>Where art meets space</span></div>
+    <nav aria-label="Stopka" style="display: flex; flex-wrap: wrap; gap: 22px">
+      {footerLinks.map((link) => <a href={link.href} style="color: #4A5560">{link.label}</a>)}
+    </nav>
+  </div>
+</footer>

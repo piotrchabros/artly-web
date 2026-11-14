@@ -1,0 +1,23 @@
+---
+const languages = ['English', 'Polski', 'Deutsch', 'Français', 'Español', 'Italiano', 'Nederlands'];
+---
+
+<section style="padding: 104px 24px">
+  <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
+    <div style="padding: 40px; border-radius: 24px; background: #FFFFFF; border: 1px solid #ECE5DB">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+      <h3 style="margin: 20px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 30px; line-height: 1.15">Artyści z Twojej okolicy</h3>
+      <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A5560">Pokazujemy przede wszystkim twórców z kraju, w którym mieszkasz. Krótsza dostawa, prostsze zakupy, a czasem odbiór osobisty w pracowni. Jeśli chcesz, otworzysz ARTLY na całą Europę.</p>
+    </div>
+    <div style="padding: 40px; border-radius: 24px; background: #FFFFFF; border: 1px solid #ECE5DB">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9E522A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>
+      <h3 style="margin: 20px 0 10px; font-family: 'Newsreader', serif; font-weight: 400; font-size: 30px; line-height: 1.15">W Twoim języku</h3>
+      <p style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #4A5560">Aplikacja automatycznie mówi w języku Twojego telefonu. Opisy dzieł tłumaczymy, zawsze z dostępem do oryginału artysty.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px">
+        {languages.map((language) => (
+          <span style="height: 36px; padding: 0 14px; display: inline-flex; align-items: center; border-radius: 999px; background: #F0E9E0; font-size: 14px">{language}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
