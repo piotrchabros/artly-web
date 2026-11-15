@@ -1,0 +1,117 @@
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+h1, h2, h3, h4, p, ul, figure { margin: 0; }
+img { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+[id] { scroll-margin-top: 80px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.55 var(--font-sans);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+::selection { background: var(--accent-soft); }
+
+/* Layout */
+.container { max-width: calc(var(--container) + 2 * var(--gutter)); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: 112px; }
+.section--white { background: var(--surface); }
+.section--ink { background: var(--ink); color: var(--bg); }
+
+/* Typography */
+.overline { font: 600 12px/1.2 var(--font-sans); letter-spacing: .24em; text-transform: uppercase; color: var(--accent-text); }
+.overline--light { color: var(--accent-soft); }
+.tagline { font: 400 12px var(--font-sans); letter-spacing: .32em; text-transform: uppercase; color: var(--subtle); }
+.h1 { font: 400 clamp(44px, 5.6vw, 78px)/1.02 var(--font-serif); letter-spacing: -.01em; }
+.h1 .accent { font-style: italic; color: var(--accent-text); }
+.h2 { font: 400 clamp(34px, 3.8vw, 52px)/1.08 var(--font-serif); letter-spacing: -.01em; }
+.h3 { font: 400 clamp(23px, 2.6vw, 42px)/1.12 var(--font-serif); }
+.lead { font-size: 19px; line-height: 1.55; color: var(--subtle); }
+.text { font-size: 16px; line-height: 1.6; color: var(--subtle); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  height: 56px; padding: 0 28px;
+  border-radius: var(--r-pill); border: 1px solid transparent;
+  font: 500 16px var(--font-sans); text-decoration: none; cursor: pointer;
+  transition: transform var(--d-fast) var(--ease-out), box-shadow var(--d-fast) ease, background var(--d-fast);
+}
+@media (hover: hover) { .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-chip); } }
+.btn:active { transform: scale(.98); }
+.btn--dark { background: var(--ink); color: var(--bg); }
+.btn--ghost { background: transparent; border-color: var(--border); color: var(--ink); }
+.btn--accent { background: var(--accent); color: var(--ink); }
+.btn--sm { height: 44px; padding: 0 22px; font-size: 15px; }
+.btn--block { width: 100%; }
+
+/* Chips */
+.chip { display: inline-flex; align-items: center; height: 36px; padding: 0 14px; border-radius: var(--r-pill); font-size: 14px; border: 1px solid transparent; }
+.chip--outline { border-color: var(--border); }
+.chip--active { background: var(--ink); color: var(--bg); }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.checklist li { display: flex; gap: 12px; }
+.checklist li > svg, .checklist li > .icon { color: var(--accent-text); flex: none; margin-top: 3px; }
+
+/* Dots */
+.dots { display: flex; justify-content: center; gap: 6px; margin-top: 16px; }
+.dots button {
+  position: relative; width: 6px; height: 6px; padding: 0; border: 0; border-radius: 6px;
+  background: var(--toggle-off); cursor: pointer;
+  transition: width .3s ease, background .3s ease;
+}
+.dots button::after { content: ''; position: absolute; inset: -9px; }
+.dots--dark button { background: rgba(247,244,239,.3); }
+.dots button[aria-selected="true"], .dots button[aria-current="true"] { width: 20px; background: var(--accent); }
+
+/* Visibility */
+@media (min-width: 768px) { .only-mobile { display: none !important; } }
+@media (max-width: 767px) { .only-desktop { display: none !important; } }
+
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+.skip-link {
+  position: fixed; top: 12px; left: 12px; z-index: 1000;
+  display: inline-flex; align-items: center; height: 44px; padding: 0 22px;
+  border-radius: var(--r-pill); background: var(--ink); color: var(--bg);
+  font: 500 15px var(--font-sans); text-decoration: none;
+  transform: translateY(-200%);
+}
+.skip-link:focus, .skip-link:focus-visible { transform: none; }
+
+.card { border-radius: var(--r-card); }
+
+/* Artwork swatches (decorative gradients, no images) */
+.art { position: relative; overflow: hidden; }
+.art-1 { background: radial-gradient(55% 70% at 68% 32%, #D9874F 0%, rgba(217,135,79,0) 62%), radial-gradient(45% 55% at 28% 78%, #86A9C2 0%, rgba(134,169,194,0) 66%), linear-gradient(165deg, #F7EFE5 0%, #EAD9C4 100%); }
+.art-2 { background: radial-gradient(70% 50% at 50% 20%, #BFD3E0 0%, rgba(191,211,224,0) 70%), radial-gradient(40% 40% at 72% 70%, #E9B48A 0%, rgba(233,180,138,0) 70%), linear-gradient(180deg, #E4ECF1 0%, #9FB9CB 100%); }
+.art-3 { background: radial-gradient(22.5% 22.5% at 50% 42%, #B9532A 0 98%, rgba(185,83,42,0) 100%), linear-gradient(#F3E6D6, #E7D3BD); }
+.art-4 { background: radial-gradient(38% 14% at 50% 78%, rgba(150,118,84,.75) 0%, rgba(150,118,84,0) 100%), linear-gradient(180deg, rgba(0,0,0,0) calc(60% - 2px), #CDB79C calc(60% - 2px) calc(60% + 2px), rgba(0,0,0,0) calc(60% + 2px)), linear-gradient(180deg, #F3EBE0 0%, #EDE3D6 60%, #E9DDCF 100%); }
+.art-5 { background: radial-gradient(32% 40% at 28% 30%, #9DB08A 0%, rgba(157,176,138,0) 100%), radial-gradient(32% 40% at 74% 70%, #E5CF9A 0%, rgba(229,207,154,0) 100%), #EEF0E6; }
+.art-6 { background: radial-gradient(22% 38% at 52% 46%, #E08A4A 0%, rgba(224,138,74,.55) 45%, rgba(224,138,74,0) 100%), #1B2530; }
+.art-7 { background: radial-gradient(34% 34% at 38% 38%, #EFB7A8 0%, rgba(239,183,168,0) 100%), radial-gradient(22% 30% at 66% 64%, #C9634F 0%, rgba(201,99,79,.4) 50%, rgba(201,99,79,0) 100%), #F4E3DE; }
+.art-8 { background: repeating-linear-gradient(115deg, #2B3A4A 0 3px, transparent 3px 18px), #EEF1F4; }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .section { padding-block: 72px; }
+  .overline, .tagline { font-size: 11px; }
+  .h1 { font-size: 42px; line-height: 1.04; }
+  .h2 { font-size: 32px; line-height: 1.1; }
+  .lead { font-size: 16px; }
+  .text { font-size: 15px; }
+  .btn { height: 54px; }
+  .btn--sm { height: 44px; }
+}

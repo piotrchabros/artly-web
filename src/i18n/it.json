@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "ARTLY — arte su misura per i tuoi spazi",
+    "description": "Scatta una foto della parete e dicci cosa ti piace: ti mostriamo opere di artisti indipendenti adatte ai tuoi spazi, al tuo stile e al tuo budget. Guardale a casa tua prima di acquistarle."
+  },
+  "a11y": {
+    "skip": "Vai al contenuto",
+    "home": "ARTLY — home page",
+    "mainNav": "Navigazione principale",
+    "menuOpen": "Apri il menu",
+    "menuClose": "Chiudi il menu",
+    "language": "Cambia lingua",
+    "screens": "Schermate dell’app",
+    "slide": "Slide {n} di {total}",
+    "artworks": "Opere aggiunte di recente"
+  },
+  "nav": {
+    "how": "Come funziona",
+    "features": "Funzioni",
+    "artists": "Per gli artisti",
+    "faq": "FAQ",
+    "download": "Scarica l’app"
+  },
+  "menu": {
+    "language": "Lingua",
+    "more": "+{n}",
+    "artistQuestion": "Sei un artista?",
+    "artistJoin": "Unisciti"
+  },
+  "langbar": {
+    "available": "Questa pagina è disponibile anche in italiano.",
+    "switch": "Cambia",
+    "close": "Chiudi"
+  },
+  "hero": {
+    "tagline": "Where art meets space",
+    "title": "Arte che si adatta davvero ai tuoi spazi.",
+    "titleAccentWords": 2,
+    "lead": "Scatta una foto della parete e dicci cosa ti piace: ti mostriamo opere di artisti indipendenti adatte ai tuoi spazi, al tuo stile e al tuo budget. E le vedrai a casa tua prima di acquistarle.",
+    "ctaPrimary": "Scaricala per iOS e Android",
+    "ctaSecondary": "Scopri come funziona",
+    "features": ["Originali di artisti indipendenti", "Visualizzazione sulla tua parete", "Opere su commissione"],
+    "cardWall": { "title": "Parete riconosciuta", "detail": "circa 3,2 m di larghezza", "titleShort": "Parete", "detailShort": "circa 3,2 m" },
+    "cardMatch": { "title": "Si abbina al divano", "detail": "terre calde · 80 × 100 cm" },
+    "slides": ["Guardala a casa tua", "Scopri", "Perché si abbina", "Il tuo gusto"],
+    "swipeHint": "Scorri per vedere altre schermate"
+  },
+  "marquee": {
+    "title": "Appena aggiunte dagli artisti",
+    "hint": "Passa sopra per mettere in pausa"
+  },
+  "why": {
+    "overline": "Perché ARTLY",
+    "title": "Scegliere l’arte senza tirare a indovinare.",
+    "items": [
+      { "title": "Si parte dai tuoi spazi", "text": "Prima i tuoi spazi, il tuo stile e le tue esigenze, poi il catalogo. Scegliamo le opere in base al colore della parete, alla luce e alle proporzioni." },
+      { "title": "Vedi il risultato prima di acquistare", "text": "L’opera compare sulla foto della tua parete in scala reale. Cambi dimensioni e cornice e confronti il «prima» e il «dopo»." },
+      { "title": "Sostieni i creativi indipendenti", "text": "Acquisti originali direttamente dagli artisti del tuo Paese, scopri le loro storie e puoi commissionare un’opera su misura." }
+    ]
+  },
+  "steps": {
+    "overline": "Come funziona",
+    "title": "Quattro passi verso la tua opera",
+    "label": "Passi",
+    "items": [
+      { "title": "Mostra i tuoi spazi", "short": "Spazi", "text": "Scatta una foto della parete del soggiorno, della camera o dell’ufficio." },
+      { "title": "Definisci il tuo gusto", "short": "Gusto", "text": "Scegli stile, colori, formato e budget." },
+      { "title": "Guarda il risultato", "short": "Risultato", "text": "Confronta le opere più adatte sulla tua parete." },
+      { "title": "Acquista o commissiona", "short": "Acquisto", "text": "Acquista un’opera pronta o affidane la realizzazione all’artista." }
+    ]
+  },
+  "features": {
+    "overline": "Funzioni",
+    "title": "Tutto ciò che ti serve per trovare «quell’»opera",
+    "tabsLabel": "Funzioni dell’app",
+    "tabs": [
+      { "tab": "Scopri", "title": "Scopri l’arte che fa per te", "text": "Una dose quotidiana di arte costruita intorno al tuo gusto e ai tuoi spazi.",
+        "bullets": ["Per te: consigli basati sulle tue preferenze e sulla foto dei tuoi spazi", "Per stile e colore: dall’astrattismo al paesaggio", "Collezioni dei curatori: «Sopra il divano», «Fino a 1000 zł», «Parete da galleria»", "Novità e opere più salvate"] },
+      { "tab": "Guardala a casa tua", "title": "Guarda l’opera sulla tua parete", "text": "ARTLY riconosce la parete nella foto e mostra l’opera nella sua scala reale.",
+        "bullets": ["Cambia dimensioni e cornice: il prezzo si aggiorna subito", "Confronta le opere sulla stessa parete e la vista «prima» e «dopo»", "«Perché si abbina»: motivi chiari accanto a ogni opera", "Condividi la visualizzazione con chi vive con te prima di decidere"] },
+      { "tab": "Su misura", "title": "Commissiona un’opera su misura", "text": "Non hai trovato quella perfetta? Descrivi ciò che cerchi e scegli dimensioni, budget e tempi. L’artista riceve la tua descrizione insieme alla foto dei tuoi spazi.",
+        "bullets": ["Preventivo e bozzetto dell’artista prima di pagare qualsiasi cosa", "Colori e formato pensati per la tua parete", "Chat con l’artista e stato della commissione in un unico posto"] },
+      { "tab": "Il tuo gusto", "title": "L’app che impara il tuo gusto", "text": "Nel profilo imposti i tuoi stili, colori e soggetti preferiti. Salvi i tuoi spazi e segui gli artisti.",
+        "bullets": ["Notifiche sulle nuove opere in linea con il tuo gusto", "Più ambienti in un solo account: soggiorno, camera, ufficio", "Preferiti e artisti seguiti sempre a portata di mano"] }
+    ]
+  },
+  "local": {
+    "nearby": { "title": "Artisti vicino a te", "text": "Ti mostriamo soprattutto creativi del Paese in cui vivi. Consegne più rapide, acquisti più semplici e, a volte, ritiro di persona in atelier. Se vuoi, puoi aprire ARTLY a tutta l’Europa." },
+    "language": { "title": "Nella tua lingua", "text": "L’app parla la lingua del tuo telefono. Traduciamo le descrizioni delle opere, sempre con accesso al testo originale dell’artista.", "listLabel": "Lingue disponibili" }
+  },
+  "artists": {
+    "overline": "Per gli artisti",
+    "title": "La tua arte troverà il suo posto.",
+    "text": "Mostriamo le tue opere alle persone nei cui spazi stanno davvero bene. Tu crei, al resto pensiamo noi.",
+    "cta": "Unisciti come artista",
+    "label": "App per gli artisti",
+    "items": [
+      { "label": "Basta una foto", "title": "Basta una foto", "text": "L’app riconosce stile, colori e soggetti: tu devi solo controllare e correggere.", "short": "L’app riconosce stile, colori e soggetti." },
+      { "label": "L’AI completa stile, colori e tag", "title": "La tua storia", "text": "Un profilo che racconta te e il tuo atelier. Le descrizioni le scrivi tu, con un aiuto facoltativo nella stesura.", "short": "Controlli la descrizione e aggiungi la tua storia." },
+      { "label": "Vendite e commissioni", "title": "Vendite e commissioni", "text": "Opere pronte e commissioni su misura. Tutte le attività in un unico pannello.", "short": "Tutte le attività in un unico pannello." },
+      { "label": "Pagamenti trasparenti", "title": "Pagamenti trasparenti", "text": "Vedi quanto hai guadagnato e quanto è in arrivo. Prelievo su richiesta o ogni settimana.", "short": "Prelievo su richiesta o ogni settimana." }
+    ]
+  },
+  "trust": {
+    "label": "Garanzie",
+    "items": [
+      { "title": "Certificato di autenticità", "text": "Con ogni originale." },
+      { "title": "Spedizione assicurata", "text": "Imballaggio per opere d’arte e tracciamento." },
+      { "title": "14 giorni per il reso", "text": "Per le opere pronte." },
+      { "title": "Pagamenti sicuri", "text": "BLIK, carta o bonifico." }
+    ]
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Devo fotografare i miei spazi?", "a": "No. Puoi iniziare subito a sfogliare le opere. Con una foto della parete, però, i consigli sono più precisi e la visualizzazione mostra l’opera in scala reale." },
+      { "q": "Come funziona una commissione su misura?", "a": "Invii all’artista una descrizione, le dimensioni, il budget e i tempi. L’artista risponde con un preventivo e un bozzetto, e paghi solo quando li approvi." },
+      { "q": "Da dove arrivano le opere?", "a": "Da artisti indipendenti che caricano personalmente i propri lavori su ARTLY. Per impostazione predefinita ti mostriamo creativi del tuo Paese." },
+      { "q": "Come divento artista su ARTLY?", "a": "Scarica l’app e scegli «Unisciti ad Artly». Crea un account, racconta la tua storia e aggiungi le foto delle tue opere: una volta approvato il profilo, i tuoi lavori saranno visibili agli acquirenti." }
+    ]
+  },
+  "cta": {
+    "title": "L’arte trova il suo posto.",
+    "text": "Gli artisti trovano il loro pubblico. Scarica l’app e scopri cosa appenderai a casa tua.",
+    "appStore": "Scarica su App Store",
+    "googlePlay": "Disponibile su Google Play"
+  },
+  "sticky": { "text": "Arte su misura per i tuoi spazi", "button": "Scarica" },
+  "footer": {
+    "tagline": "Where art meets space",
+    "label": "Piè di pagina",
+    "artists": "Per gli artisti",
+    "faq": "FAQ",
+    "terms": "Termini e condizioni",
+    "privacy": "Informativa sulla privacy",
+    "contact": "Contatti"
+  },
+  "screens": {
+    "start": "Schermata iniziale dell’app ARTLY",
+    "odkrywaj": "Schermata Scopri: stili, collezioni e consigli Per te",
+    "wizualizacja": "Visualizzazione dell’opera sulla parete con scelta di dimensioni e cornice",
+    "dzielo": "Scheda dell’opera con la sezione «Perché si abbina al tuo soggiorno»",
+    "profil": "Profilo con stili, colori e soggetti preferiti",
+    "wnetrze": "Passo 1: foto della parete e scelta dell’ambiente",
+    "gust": "Passo 2: scelta di stile, colori, formato e budget",
+    "zakup": "Conferma d’acquisto: «L’opera è tua»",
+    "zamowienie": "Modulo di commissione personalizzata all’artista",
+    "dodajPrace": "App per gli artisti: caricamento delle foto delle opere",
+    "opisDziela": "Dettagli dell’opera compilati automaticamente: stile, colori e tag",
+    "panel": "Pannello dell’artista: saldo prelevabile, attività e ultima vendita",
+    "wyplaty": "Schermata dei pagamenti con saldo disponibile e importo in arrivo"
+  },
+  "pages": {
+    "regulamin": { "title": "Termini e condizioni" },
+    "polityka-prywatnosci": { "title": "Informativa sulla privacy" },
+    "kontakt": { "title": "Contatti" },
+    "soon": { "overline": "Prossimamente", "text": "Stiamo lavorando a questa pagina. Torna a trovarci presto.", "back": "Torna alla home page" }
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "text": "La pagina che cerchi non esiste o è stata spostata.",
+    "back": "Torna alla home page"
+  }
+}

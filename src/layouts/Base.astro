@@ -1,0 +1,75 @@
+---
+import '@fontsource/italiana/400.css';
+import '@fontsource/newsreader/400.css';
+import '@fontsource/newsreader/500.css';
+import '@fontsource/newsreader/400-italic.css';
+import '@fontsource/hanken-grotesk/400.css';
+import '@fontsource/hanken-grotesk/500.css';
+import '@fontsource/hanken-grotesk/600.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/motion.css';
+import { ClientRouter } from 'astro:transitions';
+import LangBar from '../components/LangBar.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { LOCALES, LOCALE_META, DEFAULT_LOCALE, alternates, localePath, pagePath, useT, type Locale, type PageKey } from '../i18n';
+
+interface Props {
+  locale: Locale;
+  page: PageKey;
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+}
+
+const { locale, page, noindex = false } = Astro.props;
+const t = useT(locale);
+const title = Astro.props.title ?? t('meta.title');
+const description = Astro.props.description ?? t('meta.description');
+
+const site = Astro.site ?? Astro.url;
+const path = pagePath(page);
+const indexable = page !== '404';
+const canonical = new URL(localePath(locale, path), site).href;
+const alts = alternates(path).map((a) => ({ ...a, href: new URL(a.href, site).href }));
+const xDefault = new URL(localePath(DEFAULT_LOCALE, path), site).href;
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {indexable && <link rel="canonical" href={canonical} />}
+    {indexable && alts.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    {indexable && <link rel="alternate" hreflang="x-default" href={xDefault} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={LOCALE_META[locale].ogLocale} />
+    {LOCALES.filter((l) => l !== locale).map((l) => <meta property="og:locale:alternate" content={LOCALE_META[l].ogLocale} />)}
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#F7F4EF" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <ClientRouter />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t('a11y.skip')}</a>
+    <LangBar locale={locale} page={page} />
+    <Header locale={locale} page={page} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer locale={locale} />
+    <slot name="after" />
+    <script>
+      import '../scripts/init';
+    </script>
+  </body>
+</html>

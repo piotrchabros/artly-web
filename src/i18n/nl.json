@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "ARTLY — kunst die past bij jouw interieur",
+    "description": "Maak een foto van je muur en vertel wat je mooi vindt: wij laten werk van onafhankelijke kunstenaars zien dat past bij je interieur, je stijl en je budget. Bekijk het bij je thuis voordat je koopt."
+  },
+  "a11y": {
+    "skip": "Naar de inhoud",
+    "home": "ARTLY — startpagina",
+    "mainNav": "Hoofdnavigatie",
+    "menuOpen": "Menu openen",
+    "menuClose": "Menu sluiten",
+    "language": "Taal wijzigen",
+    "screens": "Schermen van de app",
+    "slide": "Dia {n} van {total}",
+    "artworks": "Nieuw toegevoegde werken"
+  },
+  "nav": {
+    "how": "Hoe het werkt",
+    "features": "Functies",
+    "artists": "Voor kunstenaars",
+    "faq": "FAQ",
+    "download": "Download de app"
+  },
+  "menu": {
+    "language": "Taal",
+    "more": "+{n}",
+    "artistQuestion": "Ben je kunstenaar?",
+    "artistJoin": "Doe mee"
+  },
+  "langbar": {
+    "available": "Deze pagina is ook beschikbaar in het Nederlands.",
+    "switch": "Wisselen",
+    "close": "Sluiten"
+  },
+  "hero": {
+    "tagline": "Where art meets space",
+    "title": "Kunst die echt past bij jouw interieur.",
+    "titleAccentWords": 2,
+    "lead": "Maak een foto van je muur en vertel wat je mooi vindt: wij laten werk van onafhankelijke kunstenaars zien dat past bij je interieur, je stijl en je budget. En je ziet het bij je thuis voordat je koopt.",
+    "ctaPrimary": "Download voor iOS en Android",
+    "ctaSecondary": "Bekijk hoe het werkt",
+    "features": ["Originelen van onafhankelijke kunstenaars", "Visualisatie op je eigen muur", "Kunstwerken in opdracht"],
+    "cardWall": { "title": "Muur herkend", "detail": "ca. 3,2 m breed", "titleShort": "Muur", "detailShort": "ca. 3,2 m" },
+    "cardMatch": { "title": "Past bij de bank", "detail": "warme aardetinten · 80 × 100 cm" },
+    "slides": ["Bekijk het thuis", "Ontdek", "Waarom het past", "Jouw smaak"],
+    "swipeHint": "Swipe voor meer schermen"
+  },
+  "marquee": {
+    "title": "Net toegevoegd door kunstenaars",
+    "hint": "Beweeg erover om te pauzeren"
+  },
+  "why": {
+    "overline": "Waarom ARTLY",
+    "title": "Kunst kiezen zonder te gokken.",
+    "items": [
+      { "title": "Je begint bij je interieur", "text": "Eerst jouw ruimte, stijl en wensen — pas daarna de catalogus. We kiezen werken op basis van de kleur van je muur, het licht en de verhoudingen." },
+      { "title": "Je ziet het resultaat voordat je koopt", "text": "Het werk verschijnt op ware grootte op de foto van je muur. Je past formaat en lijst aan en vergelijkt “voor” en “na”." },
+      { "title": "Je steunt onafhankelijke makers", "text": "Je koopt originelen rechtstreeks van kunstenaars uit je eigen land, leert hun verhalen kennen en kunt een werk op maat laten maken." }
+    ]
+  },
+  "steps": {
+    "overline": "Hoe het werkt",
+    "title": "In vier stappen naar je eigen kunstwerk",
+    "label": "Stappen",
+    "items": [
+      { "title": "Laat je interieur zien", "short": "Interieur", "text": "Maak een foto van een muur in je woonkamer, slaapkamer of kantoor." },
+      { "title": "Bepaal je smaak", "short": "Smaak", "text": "Kies stijl, kleuren, formaat en budget." },
+      { "title": "Bekijk het resultaat", "short": "Resultaat", "text": "Vergelijk passende werken op je eigen muur." },
+      { "title": "Koop of bestel", "short": "Kopen", "text": "Koop een bestaand werk of geef de kunstenaar een opdracht." }
+    ]
+  },
+  "features": {
+    "overline": "Functies",
+    "title": "Alles wat je nodig hebt om “dat ene” werk te vinden",
+    "tabsLabel": "Functies van de app",
+    "tabs": [
+      { "tab": "Ontdek", "title": "Ontdek kunst die bij je past", "text": "Elke dag een dosis kunst, afgestemd op jouw smaak en jouw interieur.",
+        "bullets": ["Voor jou — aanbevelingen op basis van je voorkeuren en de foto van je interieur", "Op stijl en kleur — van abstract tot landschap", "Collecties van curatoren: “Boven de bank”, “Tot 1.000 zł”, “Galeriemuur”", "Nieuw binnen en meest bewaarde werken"] },
+      { "tab": "Bekijk het thuis", "title": "Bekijk het werk op je eigen muur", "text": "ARTLY herkent de muur op je foto en toont het kunstwerk op ware grootte.",
+        "bullets": ["Pas formaat en lijst aan — de prijs wordt meteen bijgewerkt", "Vergelijk werken op dezelfde muur en bekijk “voor” en “na”", "“Waarom het past” — duidelijke redenen bij elk werk", "Deel de visualisatie met je huisgenoten voordat je beslist"] },
+      { "tab": "Op maat", "title": "Bestel een kunstwerk op maat", "text": "Niet het perfecte werk gevonden? Beschrijf wat je zoekt en kies afmetingen, budget en termijn. De kunstenaar krijgt je beschrijving samen met de foto van je interieur.",
+        "bullets": ["Offerte en schets van de kunstenaar voordat je iets betaalt", "Kleuren en formaat afgestemd op je muur", "Chat met de kunstenaar en de voortgang van je opdracht op één plek"] },
+      { "tab": "Jouw smaak", "title": "Een app die jouw smaak leert kennen", "text": "In je profiel stel je je favoriete stijlen, kleuren en onderwerpen in. Je bewaart je interieurs en volgt kunstenaars.",
+        "bullets": ["Meldingen over nieuwe werken die bij je smaak passen", "Meerdere ruimtes in één account — woonkamer, slaapkamer, kantoor", "Favorieten en gevolgde kunstenaars altijd binnen handbereik"] }
+    ]
+  },
+  "local": {
+    "nearby": { "title": "Kunstenaars bij jou in de buurt", "text": "We laten vooral makers zien uit het land waar je woont. Snellere levering, eenvoudiger kopen en soms zelfs ophalen in het atelier. Als je wilt, open je ARTLY voor heel Europa." },
+    "language": { "title": "In jouw taal", "text": "De app spreekt de taal van je telefoon. We vertalen de beschrijvingen van werken — altijd met toegang tot de originele tekst van de kunstenaar.", "listLabel": "Beschikbare talen" }
+  },
+  "artists": {
+    "overline": "Voor kunstenaars",
+    "title": "Jouw kunst vindt haar plek.",
+    "text": "We tonen je werk aan mensen in wier interieur het echt past. Jij maakt — wij regelen de rest.",
+    "cta": "Word ARTLY-kunstenaar",
+    "label": "App voor kunstenaars",
+    "items": [
+      { "label": "Een foto is genoeg", "title": "Een foto is genoeg", "text": "De app herkent stijl, kleuren en onderwerpen — jij controleert en verbetert alleen nog.", "short": "De app herkent stijl, kleuren en onderwerpen." },
+      { "label": "AI vult stijl, kleuren en tags in", "title": "Jouw verhaal", "text": "Een profiel met het verhaal over jou en je atelier. Je schrijft de beschrijvingen zelf — met optionele hulp bij de redactie.", "short": "Je controleert de beschrijving en voegt je verhaal toe." },
+      { "label": "Verkoop en opdrachten", "title": "Verkoop en opdrachten", "text": "Bestaande werken en opdrachten op maat. Al je taken in één dashboard.", "short": "Al je taken in één dashboard." },
+      { "label": "Transparante uitbetalingen", "title": "Transparante uitbetalingen", "text": "Je ziet wat je hebt verdiend en wat onderweg is. Uitbetaling op verzoek of elke week.", "short": "Uitbetaling op verzoek of elke week." }
+    ]
+  },
+  "trust": {
+    "label": "Garanties",
+    "items": [
+      { "title": "Certificaat van echtheid", "text": "Bij elk origineel." },
+      { "title": "Verzekerde verzending", "text": "Professioneel verpakt en met track & trace." },
+      { "title": "14 dagen retour", "text": "Voor bestaande werken." },
+      { "title": "Veilig betalen", "text": "BLIK, kaart of bankoverschrijving." }
+    ]
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "items": [
+      { "q": "Moet ik een foto van mijn interieur maken?", "a": "Nee. Je kunt meteen werken bekijken. Met een foto van je muur worden de aanbevelingen wel preciezer en zie je het werk in de visualisatie op ware grootte." },
+      { "q": "Hoe werkt een opdracht op maat?", "a": "Je stuurt de kunstenaar een beschrijving, afmetingen, budget en termijn. De kunstenaar reageert met een offerte en een schets — je betaalt pas als je die goedkeurt." },
+      { "q": "Waar komen de werken vandaan?", "a": "Van onafhankelijke kunstenaars die hun werk zelf op ARTLY zetten. Standaard laten we makers uit jouw land zien." },
+      { "q": "Hoe word ik kunstenaar op ARTLY?", "a": "Download de app en kies “Word lid van Artly”. Maak een account aan, vertel je verhaal en voeg foto’s van je werk toe — zodra je profiel is goedgekeurd, zien kopers je werken." }
+    ]
+  },
+  "cta": {
+    "title": "Kunst vindt haar plek.",
+    "text": "Kunstenaars vinden hun publiek. Download de app en ontdek wat er bij jou aan de muur komt.",
+    "appStore": "Download in de App Store",
+    "googlePlay": "Ontdek het op Google Play"
+  },
+  "sticky": { "text": "Kunst die past bij je interieur", "button": "Download" },
+  "footer": {
+    "tagline": "Where art meets space",
+    "label": "Voettekst",
+    "artists": "Voor kunstenaars",
+    "faq": "FAQ",
+    "terms": "Algemene voorwaarden",
+    "privacy": "Privacybeleid",
+    "contact": "Contact"
+  },
+  "screens": {
+    "start": "Startscherm van de ARTLY-app",
+    "odkrywaj": "Scherm Ontdek: stijlen, collecties en aanbevelingen Voor jou",
+    "wizualizacja": "Visualisatie van een werk aan de muur met keuze van formaat en lijst",
+    "dzielo": "Detailpagina van een werk met de sectie “Waarom het past bij je woonkamer”",
+    "profil": "Profiel met favoriete stijlen, kleuren en onderwerpen",
+    "wnetrze": "Stap 1: foto van de muur en keuze van de ruimte",
+    "gust": "Stap 2: keuze van stijl, kleuren, formaat en budget",
+    "zakup": "Aankoopbevestiging: “Het werk is van jou”",
+    "zamowienie": "Formulier voor een persoonlijke opdracht aan een kunstenaar",
+    "dodajPrace": "App voor kunstenaars: foto’s van werken toevoegen",
+    "opisDziela": "Automatisch ingevulde werkdetails: stijl, kleuren en tags",
+    "panel": "Kunstenaarsdashboard: beschikbaar saldo, taken en laatste verkoop",
+    "wyplaty": "Uitbetalingsscherm met beschikbaar saldo en bedrag onderweg"
+  },
+  "pages": {
+    "regulamin": { "title": "Algemene voorwaarden" },
+    "polityka-prywatnosci": { "title": "Privacybeleid" },
+    "kontakt": { "title": "Contact" },
+    "soon": { "overline": "Binnenkort", "text": "We werken aan deze pagina. Kom snel nog eens terug.", "back": "Terug naar de startpagina" }
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "text": "De pagina die je zoekt bestaat niet of is verplaatst.",
+    "back": "Terug naar de startpagina"
+  }
+}

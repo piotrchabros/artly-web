@@ -1,14 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Base from '../layouts/Base.astro';
+import { getDict, localePath } from '../i18n';
+
+const d = getDict('pl');
 ---
-<Layout title="Nie znaleziono strony – ARTLY">
-  <Header />
-  <section style="max-width: 720px; margin: 0 auto; padding: 96px 24px 120px; text-align: center">
-    <h1 style="margin: 0 0 20px; font-family: 'Newsreader', serif; font-weight: 400; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.05">Nie znaleziono strony</h1>
-    <p style="margin: 0 0 32px; font-size: 18px; line-height: 1.6; color: #4A5560">Strona, której szukasz, nie istnieje lub została przeniesiona.</p>
-    <a href="/" style="display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 15px; font-weight: 500">Wróć na stronę główną</a>
+
+<Base locale="pl" page="404" noindex title={`${d.notFound.title} — ARTLY`} description={d.notFound.text}>
+  <section class="nf">
+    <h1 class="h2">{d.notFound.title}</h1>
+    <p class="lead nf__text">{d.notFound.text}</p>
+    <a class="btn btn--dark" href={localePath('pl')}>{d.notFound.back}</a>
   </section>
-  <Footer />
-</Layout>
+</Base>
+
+<style>
+  .nf { max-width: 720px; margin-inline: auto; padding: 120px 24px 140px; text-align: center; }
+  .nf__text { margin: 20px 0 36px; }
+</style>

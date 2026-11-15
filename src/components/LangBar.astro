@@ -1,0 +1,39 @@
+---
+import Icon from './ui/Icon.astro';
+import { LOCALES, dicts, localePath, pagePath, useT, type Locale, type PageKey } from '../i18n';
+
+interface Props { locale: Locale; page: PageKey }
+const { locale, page } = Astro.props;
+const t = useT(locale);
+
+const options = Object.fromEntries(
+  LOCALES.filter((l) => l !== locale).map((l) => [
+    l,
+    { text: dicts[l].langbar.available, switch: dicts[l].langbar.switch, href: localePath(l, page === '404' ? '' : pagePath(page)) },
+  ]),
+);
+---
+
+<div id="langbar" class="langbar" hidden data-current={locale} data-options={JSON.stringify(options)}>
+  <div class="container langbar__inner">
+    <p class="langbar__text"></p>
+    <a class="langbar__switch" data-lang-choice=""></a>
+    <button type="button" class="langbar__close" aria-label={t('langbar.close')}><Icon name="close" size={18} /></button>
+  </div>
+</div>
+
+<style>
+  .langbar { background: var(--ink); color: var(--bg); font-size: 14px; }
+  .langbar__inner { display: flex; align-items: center; gap: 16px; min-height: 44px; }
+  .langbar__text { flex: 1; min-width: 0; line-height: 1.3; padding-block: 6px; }
+  .langbar__switch {
+    flex: none; color: var(--bg); font-weight: 600; text-decoration: underline;
+    text-decoration-color: var(--accent-soft); text-underline-offset: 3px;
+    display: inline-flex; align-items: center; min-height: 44px;
+  }
+  .langbar__close {
+    flex: none; display: grid; place-items: center; width: 36px; height: 36px; margin-right: -8px;
+    padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--bg); cursor: pointer;
+  }
+  @media (hover: hover) { .langbar__close:hover { background: var(--ink-soft); } }
+</style>

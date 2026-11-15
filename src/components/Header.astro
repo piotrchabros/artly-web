@@ -1,15 +1,219 @@
 ---
-const navLinks = [
-  { href: '#jak-to-dziala', label: 'Jak to działa' },
-  { href: '#funkcje', label: 'Funkcje' },
-  { href: '#dla-artystow', label: 'Dla artystów' },
-  { href: '#faq', label: 'FAQ' },
-];
+import Logo from './ui/Logo.astro';
+import { LOCALES, LOCALE_META, localePath, pagePath, useT, type Locale, type PageKey } from '../i18n';
+
+interface Props { locale: Locale; page: PageKey }
+const { locale, page } = Astro.props;
+const t = useT(locale);
+
+const links = [
+  { label: t('nav.how'), hash: 'jak-to-dziala' },
+  { label: t('nav.features'), hash: 'funkcje' },
+  { label: t('nav.artists'), hash: 'dla-artystow' },
+  { label: t('nav.faq'), hash: 'faq' },
+].map((l) => ({ ...l, href: localePath(locale, '', l.hash) }));
+
+const langs = LOCALES.map((l) => ({ code: l, label: LOCALE_META[l].label, href: localePath(l, page === '404' ? '' : pagePath(page)) }));
+const VISIBLE_CHIPS = 4;
+const showAllChips = LOCALES.indexOf(locale) >= VISIBLE_CHIPS;
+const extraCount = LOCALES.length - VISIBLE_CHIPS;
+const downloadHref = localePath(locale, '', 'pobierz');
 ---
-<header style="max-width: 1200px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
-  <a href="#top" style="font-family: 'Italiana', serif; font-size: 30px; letter-spacing: 0.12em; text-decoration: none; color: #1B2530">ARTLY</a>
-  <nav class="navlinks" aria-label="Menu" style="display: flex; gap: 28px; font-size: 15px">
-    {navLinks.map((link) => <a href={link.href} style="text-decoration: none">{link.label}</a>)}
-  </nav>
-  <a href="#pobierz" style="display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 999px; background: #1B2530; color: #F7F4EF; text-decoration: none; font-size: 15px; font-weight: 500">Pobierz aplikację</a>
+
+<header class="header">
+  <div class="container header__inner">
+    <Logo size={28} class="header__logo" href={localePath(locale)} label={t('a11y.home')} transition />
+
+    <nav class="header__nav" aria-label={t('a11y.mainNav')}>
+      {links.map((l) => <a class="header__link" href={l.href}>{l.label}</a>)}
+    </nav>
+
+    <div class="header__actions">
+      <details class="lang" data-lang-popover>
+        <summary class="lang__pill" aria-label={t('a11y.language')}>{LOCALE_META[locale].short}</summary>
+        <ul class="lang__list">
+          {langs.map((l) => (
+            <li>
+              <a
+                class="lang__item"
+                href={l.href}
+                hreflang={LOCALE_META[l.code].hreflang}
+                lang={l.code}
+                data-lang-choice={l.code}
+                aria-current={l.code === locale ? 'true' : undefined}
+              >{l.label}</a>
+            </li>
+          ))}
+        </ul>
+      </details>
+      <a class="btn btn--dark btn--sm header__cta" href={downloadHref}>{t('nav.download')}</a>
+      <button
+        type="button"
+        class="burger"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label={t('a11y.menuOpen')}
+        data-label-open={t('a11y.menuOpen')}
+        data-label-close={t('a11y.menuClose')}
+      >
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
 </header>
+
+<nav id="mobile-menu" class="mmenu" hidden aria-label={t('a11y.mainNav')}>
+  <ul class="mmenu__links">
+    {links.map((l, i) => (
+      <li><a class="mmenu__link" href={l.href} style={`--i:${i}`}>{l.label}</a></li>
+    ))}
+  </ul>
+
+  <p class="overline mmenu__overline">{t('menu.language')}</p>
+  <ul class="mmenu__lang">
+    {langs.map((l, i) => {
+      const extra = !showAllChips && i >= VISIBLE_CHIPS;
+      return (
+        <li data-extra={extra ? '' : undefined} hidden={extra}>
+          <a
+            class:list={['chip', l.code === locale ? 'chip--active' : 'chip--outline']}
+            href={l.href}
+            hreflang={LOCALE_META[l.code].hreflang}
+            lang={l.code}
+            data-lang-choice={l.code}
+            aria-current={l.code === locale ? 'true' : undefined}
+          >{l.label}</a>
+        </li>
+      );
+    })}
+    {!showAllChips && (
+      <li><button type="button" class="chip chip--outline" data-lang-more>{t('menu.more', { n: extraCount })}</button></li>
+    )}
+  </ul>
+
+  <div class="mmenu__bottom">
+    <a class="btn btn--dark btn--block" href={downloadHref}>{t('nav.download')}</a>
+    <p class="mmenu__artist">
+      {t('menu.artistQuestion')} <a class="mmenu__join" href={localePath(locale, '', 'dla-artystow')}>{t('menu.artistJoin')}</a>
+    </p>
+  </div>
+</nav>
+
+<style>
+  .header {
+    position: sticky; top: 0; z-index: 50;
+    height: var(--header-h);
+    background: rgba(247,244,239,.82);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(207,196,182,.5);
+  }
+  .header__inner {
+    height: 100%;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px;
+  }
+  .header__nav { display: flex; gap: 30px; }
+  .header__link {
+    position: relative; font: 400 15px var(--font-sans); color: var(--ink); text-decoration: none;
+    padding-block: 6px;
+  }
+  .header__link::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 2px; height: 1px;
+    background: var(--accent-text); transform: scaleX(0); transform-origin: left;
+    transition: transform 300ms var(--ease-out);
+  }
+  .header__link:hover::after, .header__link:focus-visible::after { transform: scaleX(1); }
+  .header__actions { justify-self: end; display: flex; align-items: center; gap: 14px; }
+
+  /* Language popover */
+  .lang { position: relative; }
+  .lang__pill {
+    display: grid; place-items: center; width: 40px; height: 40px;
+    border: 1px solid var(--border); border-radius: 50%; background: transparent;
+    font: 600 13px var(--font-sans); color: var(--ink); cursor: pointer; list-style: none;
+    transition: background var(--d-fast);
+  }
+  .lang__pill { position: relative; }
+  .lang__pill::after { content: ''; position: absolute; inset: -4px; border-radius: 50%; }
+  .lang__pill::-webkit-details-marker { display: none; }
+  .lang__pill::marker { content: ''; }
+  @media (hover: hover) { .lang__pill:hover { background: var(--sand); } }
+  .lang[open] .lang__pill { background: var(--sand); }
+  .lang__list {
+    position: absolute; top: calc(100% + 10px); right: 0; z-index: 60; min-width: 180px;
+    list-style: none; margin: 0; padding: 8px;
+    background: var(--surface); border-radius: 16px; box-shadow: var(--shadow-chip);
+  }
+  .lang__item {
+    display: flex; align-items: center; height: 40px; padding: 0 14px; border-radius: 10px;
+    font-size: 15px; color: var(--ink); text-decoration: none; white-space: nowrap;
+  }
+  @media (hover: hover) { .lang__item:hover { background: var(--bg); } }
+  .lang__item[aria-current="true"] { background: var(--sand); font-weight: 500; }
+
+  /* Burger */
+  .burger {
+    display: none; position: relative; width: 44px; height: 44px; margin-right: -10px;
+    padding: 0; border: 0; background: transparent; cursor: pointer;
+  }
+  .burger__line {
+    position: absolute; left: 11px; width: 22px; height: 2px; border-radius: 2px; background: var(--ink);
+    transition: transform var(--d-base) var(--ease-out);
+  }
+  .burger__line:first-child { top: 18.5px; }
+  .burger__line:last-child { top: 25.5px; }
+  .burger[aria-expanded="true"] .burger__line:first-child { transform: translateY(3.5px) rotate(45deg); }
+  .burger[aria-expanded="true"] .burger__line:last-child { transform: translateY(-3.5px) rotate(-45deg); }
+
+  /* Mobile menu (sibling of <header>; the header's backdrop-filter would trap a fixed child) */
+  .mmenu {
+    position: fixed; inset: var(--header-h) 0 0 0; z-index: 49;
+    background: var(--bg);
+    padding: 24px var(--gutter) calc(24px + env(safe-area-inset-bottom));
+    display: flex; flex-direction: column; overflow: auto; overscroll-behavior: contain;
+    opacity: 0; transform: translateY(-12px);
+    transition: opacity var(--d-base) var(--ease-out), transform var(--d-base) var(--ease-out);
+  }
+  .mmenu[hidden] { display: none; }
+  .mmenu.is-open { opacity: 1; transform: none; }
+  .mmenu__links { list-style: none; padding: 0; }
+  .mmenu__link {
+    display: block; height: 66px; padding-top: 14px; border-bottom: 1px solid var(--divider);
+    font: 400 34px/1.1 var(--font-serif); color: var(--ink); text-decoration: none;
+    opacity: 0; transform: translateX(-16px);
+    transition: opacity 450ms var(--ease-out), transform 450ms var(--ease-out);
+    transition-delay: calc(var(--i, 0) * 50ms);
+  }
+  .mmenu.is-open .mmenu__link { opacity: 1; transform: none; }
+  .mmenu__overline { margin-top: 36px; }
+  .mmenu__lang { list-style: none; padding: 0; margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .mmenu__lang li[hidden] { display: none; }
+  .mmenu__lang .chip {
+    height: 38px; padding: 0 16px; font-size: 15px; color: inherit; text-decoration: none;
+    background-clip: padding-box; cursor: pointer;
+  }
+  .mmenu__lang .chip--outline { background: transparent; color: var(--ink); }
+  .mmenu__lang .chip--active { color: var(--bg); }
+  .mmenu__bottom { margin-top: auto; padding-top: 32px; }
+  .mmenu__artist { margin-top: 20px; text-align: center; font-size: 16px; color: var(--subtle); }
+  .mmenu__join { color: var(--accent-text); font-weight: 600; text-decoration: none; }
+
+  @media (max-width: 1023px) {
+    .header__nav { gap: 22px; }
+    .header__cta { display: none; }
+  }
+  @media (max-width: 767px) {
+    .header__inner { display: flex; justify-content: space-between; gap: 12px; }
+    .header__nav, .header__cta { display: none; }
+    .header__actions { gap: 10px; }
+    .lang__pill { width: 36px; height: 36px; }
+    .header :global(.header__logo) { --logo-size: 26px !important; }
+    .burger { display: block; }
+  }
+  @media (min-width: 768px) {
+    .mmenu { display: none !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .mmenu, .mmenu__link { transition: none; }
+  }
+</style>

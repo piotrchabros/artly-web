@@ -1,0 +1,73 @@
+---
+import Carousel from './Carousel.astro';
+import { getDict, type Locale } from '../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const d = getDict(locale);
+const tones = ['sand', 'blue', 'sand'] as const;
+---
+
+<section id="dlaczego" class="section why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="why__head reveal">
+      <p class="overline">{d.why.overline}</p>
+      <h2 id="why-title" class="h2 why__title">{d.why.title}</h2>
+    </div>
+
+    <Carousel
+      id="why-carousel"
+      locale={locale}
+      count={d.why.items.length}
+      item="280px"
+      gap="12px"
+      pad="20px"
+      align="start"
+      stagger
+      class="why__grid"
+      label={d.why.overline}
+    >
+      {d.why.items.map((item, i) => (
+        <li class="why__item reveal">
+          <article class:list={['why__card', 'lift', `why__card--${tones[i % tones.length]}`]}>
+            <span class="why__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <h3 class="why__name">{item.title}</h3>
+            <p class="why__text">{item.text}</p>
+          </article>
+        </li>
+      ))}
+    </Carousel>
+  </div>
+</section>
+
+<style>
+  .why { background: var(--bg); padding-bottom: 104px; }
+  .why__title { margin: 14px 0 56px; }
+
+  .why__item { display: flex; }
+  .why__card { flex: 1; min-height: 252px; padding: 34px 34px 40px; border-radius: var(--r-card); }
+  .why__card--sand { background: var(--sand); }
+  .why__card--blue { background: var(--blue); }
+
+  .why__num { display: block; font: 400 22px/1 var(--font-serif); color: var(--accent-text); }
+  .why__name { margin: 26px 0 12px; font: 400 26px/1.15 var(--font-serif); color: var(--ink); }
+  .why__text { font-size: 15.5px; line-height: 1.6; color: var(--subtle); }
+
+  @media (min-width: 768px) {
+    .why :global(.why__grid) { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  }
+  @media (min-width: 1200px) {
+    .why :global(.why__grid) { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 767px) {
+    .why { padding-bottom: 72px; }
+    .why__title { margin-bottom: 36px; }
+    .why :global(.why__grid) { margin-inline: calc(-1 * var(--gutter)); }
+    .why__card { padding: 24px 24px 32px; }
+    .why__card:hover { transform: none; box-shadow: none; }
+    .why__num { font-size: 20px; }
+    .why__name { margin-top: 24px; }
+    .why__text { font-size: 15px; }
+  }
+</style>

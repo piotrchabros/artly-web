@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "ARTLY — sztuka dopasowana do Twojego wnętrza",
+    "description": "Zrób zdjęcie ściany, powiedz, co lubisz — pokażemy prace niezależnych artystów dopasowane do wnętrza, stylu i budżetu. Zobacz je u siebie, zanim kupisz."
+  },
+  "a11y": {
+    "skip": "Przejdź do treści",
+    "home": "ARTLY — strona główna",
+    "mainNav": "Nawigacja główna",
+    "menuOpen": "Otwórz menu",
+    "menuClose": "Zamknij menu",
+    "language": "Zmień język",
+    "screens": "Ekrany aplikacji",
+    "slide": "Slajd {n} z {total}",
+    "artworks": "Nowo dodane prace"
+  },
+  "nav": {
+    "how": "Jak to działa",
+    "features": "Funkcje",
+    "artists": "Dla artystów",
+    "faq": "FAQ",
+    "download": "Pobierz aplikację"
+  },
+  "menu": {
+    "language": "Język",
+    "more": "+{n}",
+    "artistQuestion": "Jesteś artystą?",
+    "artistJoin": "Dołącz"
+  },
+  "langbar": {
+    "available": "Ta strona jest dostępna po polsku.",
+    "switch": "Przełącz",
+    "close": "Zamknij"
+  },
+  "hero": {
+    "tagline": "Where art meets space",
+    "title": "Sztuka, która naprawdę pasuje do Twojego wnętrza.",
+    "titleAccentWords": 2,
+    "lead": "Zrób zdjęcie ściany, powiedz, co lubisz — pokażemy prace niezależnych artystów dopasowane do wnętrza, stylu i budżetu. I zobaczysz je u siebie, zanim kupisz.",
+    "ctaPrimary": "Pobierz na iOS i Androida",
+    "ctaSecondary": "Zobacz, jak to działa",
+    "features": ["Oryginały niezależnych artystów", "Wizualizacja na Twojej ścianie", "Dzieła na zamówienie"],
+    "cardWall": { "title": "Ściana rozpoznana", "detail": "ok. 3,2 m szerokości", "titleShort": "Ściana", "detailShort": "ok. 3,2 m" },
+    "cardMatch": { "title": "Pasuje do sofy", "detail": "ciepłe ziemie · 80 × 100 cm" },
+    "slides": ["Zobacz u siebie", "Odkrywaj", "Dlaczego pasuje", "Twój gust"],
+    "swipeHint": "Przesuń, by zobaczyć więcej ekranów"
+  },
+  "marquee": {
+    "title": "Nowo dodane przez artystów",
+    "hint": "Najedź, by zatrzymać"
+  },
+  "why": {
+    "overline": "Dlaczego ARTLY",
+    "title": "Wybór sztuki bez zgadywania.",
+    "items": [
+      { "title": "Zaczynasz od wnętrza", "text": "Najpierw Twoja przestrzeń, styl i potrzeby — dopiero potem katalog. Dobieramy prace do koloru ściany, światła i proporcji." },
+      { "title": "Widzisz efekt, zanim kupisz", "text": "Obraz pojawia się na zdjęciu Twojej ściany w realnej skali. Zmieniasz rozmiar i ramę, porównujesz „przed” i „po”." },
+      { "title": "Wspierasz niezależnych twórców", "text": "Kupujesz oryginały bezpośrednio od artystów z Twojego kraju, poznajesz ich historie i możesz zamówić dzieło na wymiar." }
+    ]
+  },
+  "steps": {
+    "overline": "Jak to działa",
+    "title": "Cztery kroki do własnego dzieła",
+    "label": "Kroki",
+    "items": [
+      { "title": "Pokaż wnętrze", "short": "Wnętrze", "text": "Zrób zdjęcie ściany salonu, sypialni lub biura." },
+      { "title": "Określ gust", "short": "Gust", "text": "Wybierz styl, kolorystykę, format i budżet." },
+      { "title": "Zobacz efekt", "short": "Efekt", "text": "Porównaj dopasowane dzieła na swojej ścianie." },
+      { "title": "Kup lub zamów", "short": "Zakup", "text": "Kup gotową pracę albo zleć realizację artyście." }
+    ]
+  },
+  "features": {
+    "overline": "Funkcje",
+    "title": "Wszystko, czego potrzebujesz, by znaleźć „to” dzieło",
+    "tabsLabel": "Funkcje aplikacji",
+    "tabs": [
+      { "tab": "Odkrywaj", "title": "Odkrywaj sztukę, która do Ciebie pasuje", "text": "Codzienna dawka sztuki ułożona wokół Twojego gustu i Twojego wnętrza.",
+        "bullets": ["Dla Ciebie — rekomendacje z preferencji i zdjęcia wnętrza", "Według stylu i barwy — od abstrakcji po pejzaż", "Kolekcje kuratorów: „Nad sofę”, „Do 1 000 zł”, „Ściana galerii”", "Nowości i najczęściej zapisywane prace"] },
+      { "tab": "Zobacz u siebie", "title": "Zobacz obraz na swojej ścianie", "text": "ARTLY rozpoznaje ścianę na zdjęciu i pokazuje dzieło w jego prawdziwej skali.",
+        "bullets": ["Zmieniaj rozmiar i ramę — cena przelicza się od razu", "Porównuj prace na tej samej ścianie i widok „przed” i „po”", "„Dlaczego pasuje” — jasne powody dopasowania przy każdym dziele", "Udostępnij wizualizację domownikom, zanim zdecydujesz"] },
+      { "tab": "Na wymiar", "title": "Zamów dzieło na wymiar", "text": "Nie znalazłeś idealnego? Opisz, czego szukasz, wybierz wymiary, budżet i termin. Artysta dostaje opis razem ze zdjęciem wnętrza.",
+        "bullets": ["Wycena i szkic od artysty, zanim cokolwiek zapłacisz", "Kolory i format dobrane do Twojej ściany", "Rozmowa z artystą i statusy realizacji w jednym miejscu"] },
+      { "tab": "Twój gust", "title": "Aplikacja, która uczy się Twojego gustu", "text": "W profilu ustawiasz ulubione style, barwy i motywy. Zapisujesz swoje wnętrza i obserwujesz artystów.",
+        "bullets": ["Powiadomienia o nowych pracach w Twoim guście", "Kilka wnętrz w jednym koncie — salon, sypialnia, biuro", "Ulubione i obserwowani artyści zawsze pod ręką"] }
+    ]
+  },
+  "local": {
+    "nearby": { "title": "Artyści z Twojej okolicy", "text": "Pokazujemy przede wszystkim twórców z kraju, w którym mieszkasz. Krótsza dostawa, prostsze zakupy, a czasem odbiór osobisty w pracowni. Jeśli chcesz, otworzysz ARTLY na całą Europę." },
+    "language": { "title": "W Twoim języku", "text": "Aplikacja mówi w języku Twojego telefonu. Opisy dzieł tłumaczymy — zawsze z dostępem do oryginału artysty.", "listLabel": "Dostępne języki" }
+  },
+  "artists": {
+    "overline": "Dla artystów",
+    "title": "Twoja sztuka znajdzie swoje miejsce.",
+    "text": "Pokazujemy Twoje prace osobom, do których wnętrz naprawdę pasują. Ty tworzysz — resztę ułatwiamy.",
+    "cta": "Dołącz jako artysta",
+    "label": "Aplikacja dla artystów",
+    "items": [
+      { "label": "Zdjęcie wystarczy", "title": "Zdjęcie wystarczy", "text": "Aplikacja rozpozna styl, kolorystykę i motywy — Ty tylko sprawdzasz i poprawiasz.", "short": "Aplikacja rozpozna styl, kolory i motywy." },
+      { "label": "AI uzupełnia styl, kolory, tagi", "title": "Twoja historia", "text": "Profil z opowieścią o Tobie i pracowni. Opisy piszesz sam — z opcjonalną pomocą w redakcji.", "short": "Sprawdzasz opis i dodajesz swoją historię." },
+      { "label": "Sprzedaż i zamówienia", "title": "Sprzedaż i zamówienia", "text": "Gotowe prace i zlecenia na wymiar. Wszystkie zadania w jednym panelu.", "short": "Wszystkie zadania w jednym panelu." },
+      { "label": "Przejrzyste wypłaty", "title": "Przejrzyste wypłaty", "text": "Widzisz, ile zarobiłeś i ile jest w drodze. Wypłata na żądanie albo co tydzień.", "short": "Wypłata na żądanie albo co tydzień." }
+    ]
+  },
+  "trust": {
+    "label": "Gwarancje",
+    "items": [
+      { "title": "Certyfikat autentyczności", "text": "Do każdego oryginału." },
+      { "title": "Dostawa z ubezpieczeniem", "text": "Artystyczne pakowanie i śledzenie." },
+      { "title": "14 dni na zwrot", "text": "Dla gotowych prac." },
+      { "title": "Bezpieczne płatności", "text": "BLIK, karta lub przelew." }
+    ]
+  },
+  "faq": {
+    "title": "Najczęstsze pytania",
+    "items": [
+      { "q": "Czy muszę robić zdjęcie wnętrza?", "a": "Nie. Możesz od razu przeglądać dzieła. Zdjęcie ściany sprawia jednak, że rekomendacje są trafniejsze, a wizualizacja pokazuje obraz w prawdziwej skali." },
+      { "q": "Jak działa zamówienie na wymiar?", "a": "Wysyłasz artyście opis, wymiary, budżet i termin. Artysta odpowiada wyceną i szkicem — płacisz dopiero, gdy je zaakceptujesz." },
+      { "q": "Skąd pochodzą dzieła?", "a": "Od niezależnych artystów, którzy sami dodają swoje prace do ARTLY. Domyślnie pokazujemy twórców z Twojego kraju." },
+      { "q": "Jak zostać artystą w ARTLY?", "a": "Pobierz aplikację i wybierz „Dołącz do Artly”. Załóż konto, opowiedz swoją historię i dodaj zdjęcia prac — po akceptacji profilu Twoje dzieła zobaczą kupujący." }
+    ]
+  },
+  "cta": {
+    "title": "Sztuka znajduje swoje miejsce.",
+    "text": "Artyści znajdują swoich odbiorców. Pobierz aplikację i zobacz, co zawiśnie u Ciebie.",
+    "appStore": "Pobierz z App Store",
+    "googlePlay": "Pobierz z Google Play"
+  },
+  "sticky": { "text": "Sztuka dopasowana do wnętrza", "button": "Pobierz" },
+  "footer": {
+    "tagline": "Where art meets space",
+    "label": "Stopka",
+    "artists": "Dla artystów",
+    "faq": "FAQ",
+    "terms": "Regulamin",
+    "privacy": "Polityka prywatności",
+    "contact": "Kontakt"
+  },
+  "screens": {
+    "start": "Ekran startowy aplikacji ARTLY",
+    "odkrywaj": "Ekran Odkrywaj: style, kolekcje i rekomendacje Dla Ciebie",
+    "wizualizacja": "Wizualizacja obrazu na ścianie z wyborem rozmiaru i ramy",
+    "dzielo": "Karta dzieła z sekcją „Dlaczego pasuje do Twojego salonu”",
+    "profil": "Profil z ulubionymi stylami, barwami i motywami",
+    "wnetrze": "Krok 1: zdjęcie ściany i wybór pomieszczenia",
+    "gust": "Krok 2: wybór stylu, kolorystyki, formatu i budżetu",
+    "zakup": "Potwierdzenie zakupu: „Dzieło jest Twoje”",
+    "zamowienie": "Formularz zamówienia indywidualnego u artysty",
+    "dodajPrace": "Aplikacja dla artystów: dodawanie zdjęć prac",
+    "opisDziela": "Szczegóły pracy uzupełnione automatycznie: styl, kolory i tagi",
+    "panel": "Panel artysty: środki do wypłaty, zadania i ostatnia sprzedaż",
+    "wyplaty": "Ekran wypłat z dostępnymi środkami i kwotą w drodze"
+  },
+  "pages": {
+    "regulamin": { "title": "Regulamin" },
+    "polityka-prywatnosci": { "title": "Polityka prywatności" },
+    "kontakt": { "title": "Kontakt" },
+    "soon": { "overline": "Wkrótce", "text": "Pracujemy nad tą stroną. Zajrzyj tu ponownie niedługo.", "back": "Wróć na stronę główną" }
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "text": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "back": "Wróć na stronę główną"
+  }
+}

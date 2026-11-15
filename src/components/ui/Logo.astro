@@ -1,0 +1,42 @@
+---
+interface Props {
+  /** font-size in px */
+  size?: number;
+  tone?: 'ink' | 'light';
+  href?: string;
+  label?: string;
+  /** adds transition:name="logo" (shared element across pages) */
+  transition?: boolean;
+  class?: string;
+}
+
+const { size = 28, tone = 'ink', href, label, transition = false, class: className } = Astro.props;
+const classes = ['logo', `logo--${tone}`, className];
+const style = `--logo-size: ${size}px`;
+---
+
+{href ? (
+  transition ? (
+    <a href={href} aria-label={label} class:list={classes} style={style} transition:name="logo">ARTLY</a>
+  ) : (
+    <a href={href} aria-label={label} class:list={classes} style={style}>ARTLY</a>
+  )
+) : (
+  transition ? (
+    <span class:list={classes} style={style} transition:name="logo">ARTLY</span>
+  ) : (
+    <span class:list={classes} style={style}>ARTLY</span>
+  )
+)}
+
+<style>
+  .logo {
+    display: inline-block;
+    font: 400 var(--logo-size)/1 var(--font-logo);
+    letter-spacing: .12em;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .logo--light { color: var(--bg); }
+</style>

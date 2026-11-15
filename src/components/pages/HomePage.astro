@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../Hero.astro';
+import Marquee from '../Marquee.astro';
+import WhyCards from '../WhyCards.astro';
+import Steps from '../Steps.astro';
+import FeatureTabs from '../FeatureTabs.astro';
+import LocalLanguages from '../LocalLanguages.astro';
+import Artists from '../Artists.astro';
+import Trust from '../Trust.astro';
+import Faq from '../Faq.astro';
+import DownloadCta from '../DownloadCta.astro';
+import StickyCta from '../StickyCta.astro';
+import type { Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+---
+
+<Base locale={locale} page="home">
+  <Hero locale={locale} />
+  <Marquee locale={locale} />
+  <WhyCards locale={locale} />
+  <Steps locale={locale} />
+  <FeatureTabs locale={locale} />
+  <LocalLanguages locale={locale} />
+  <Artists locale={locale} />
+  <Trust locale={locale} />
+  <Faq locale={locale} />
+  <DownloadCta locale={locale} />
+  <StickyCta locale={locale} slot="after" />
+</Base>
