@@ -134,7 +134,7 @@
     "terms": "Terms of service",
     "privacy": "Privacy policy",
     "deletion": "Account deletion",
-    "contact": "Contact"
+    "support": "Support"
   },
   "screens": {
     "start": "ARTLY app start screen",
@@ -155,8 +155,7 @@
     "privacy": { "title": "Privacy policy" },
     "terms": { "title": "Terms of service" },
     "deletion": { "title": "Account deletion" },
-    "kontakt": { "title": "Contact" },
-    "soon": { "overline": "Coming soon", "text": "We’re working on this page. Please check back soon.", "back": "Back to the home page" },
+    "support": { "title": "Support", "overline": "Contact" },
     "legal": { "overline": "Legal", "toc": "Contents", "updated": "Last updated: {date}", "langNote": "This document is available in English and Polish.", "back": "Back to the home page" }
   },
   "notFound": {

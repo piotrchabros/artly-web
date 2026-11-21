@@ -8,10 +8,17 @@ export const OPERATOR = {
   countryEn: 'Poland',
   nip: '7010510120',
   email: 'privacy@artly.com.pl',
+  supportEmail: 'support@artly.com.pl',
   site: 'https://artly.com.pl',
   lastUpdated: '2026-11-21',
 } as const;
 
 /** Mail link as inline HTML, optionally with a prefilled subject. */
-export const mailto = (subject?: string) =>
-  `<a href="mailto:${OPERATOR.email}${subject ? `?subject=${encodeURIComponent(subject)}` : ''}">${OPERATOR.email}</a>`;
+const mailLink = (email: string, subject?: string) =>
+  `<a href="mailto:${email}${subject ? `?subject=${encodeURIComponent(subject)}` : ''}">${email}</a>`;
+
+/** Privacy contact mail link. */
+export const mailto = (subject?: string) => mailLink(OPERATOR.email, subject);
+
+/** Support contact mail link. */
+export const supportMailto = (subject?: string) => mailLink(OPERATOR.supportEmail, subject);

@@ -4,11 +4,11 @@ import sitemap from '@astrojs/sitemap';
 
 const locales = ['pl', 'en', 'de', 'fr', 'es', 'it', 'nl'];
 
-// Old Polish slugs for the legal pages, kept as redirects to the new paths.
-const legacyLegal = { regulamin: 'terms', 'polityka-prywatnosci': 'privacy' };
+// Old Polish slugs, kept as redirects to the new paths.
+const legacySlugs = { regulamin: 'terms', 'polityka-prywatnosci': 'privacy', kontakt: 'support' };
 const redirects = Object.fromEntries(
   ['', ...locales.filter((l) => l !== 'pl').map((l) => `/${l}`)].flatMap((prefix) =>
-    Object.entries(legacyLegal).map(([from, to]) => [`${prefix}/${from}`, `${prefix}/${to}/`]),
+    Object.entries(legacySlugs).map(([from, to]) => [`${prefix}/${from}`, `${prefix}/${to}/`]),
   ),
 );
 
@@ -18,7 +18,7 @@ export default defineConfig({
   trailingSlash: 'ignore',
   redirects,
   integrations: [sitemap({
-    filter: (page) => !page.includes('/404') && !/\/(regulamin|polityka-prywatnosci)\/?$/.test(page),
+    filter: (page) => !page.includes('/404') && !new RegExp(`/(${Object.keys(legacySlugs).join('|')})/?$`).test(page),
     i18n: { defaultLocale: 'pl', locales: { pl: 'pl-PL', en: 'en', de: 'de', fr: 'fr', es: 'es', it: 'it', nl: 'nl' } },
   })],
   i18n: { locales, defaultLocale: 'pl', routing: { prefixDefaultLocale: false } },

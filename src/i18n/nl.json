@@ -134,7 +134,7 @@
     "terms": "Algemene voorwaarden",
     "privacy": "Privacybeleid",
     "deletion": "Account verwijderen",
-    "contact": "Contact"
+    "support": "Hulp"
   },
   "screens": {
     "start": "Startscherm van de ARTLY-app",
@@ -155,8 +155,7 @@
     "privacy": { "title": "Privacybeleid" },
     "terms": { "title": "Algemene voorwaarden" },
     "deletion": { "title": "Account verwijderen" },
-    "kontakt": { "title": "Contact" },
-    "soon": { "overline": "Binnenkort", "text": "We werken aan deze pagina. Kom snel nog eens terug.", "back": "Terug naar de startpagina" },
+    "support": { "title": "Hulp", "overline": "Contact" },
     "legal": { "overline": "Juridisch", "toc": "Inhoud", "updated": "Laatst bijgewerkt: {date}", "langNote": "Dit document is beschikbaar in het Engels en het Pools.", "back": "Terug naar de startpagina" }
   },
   "notFound": {

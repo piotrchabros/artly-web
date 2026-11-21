@@ -64,13 +64,13 @@ export function useT(locale: Locale): (key: string, vars?: Record<string, string
   return (key, vars) => t(locale, key, vars);
 }
 
-export type PageKey = 'home' | 'privacy' | 'terms' | 'deletion' | 'kontakt' | '404';
+export type PageKey = 'home' | 'privacy' | 'terms' | 'deletion' | 'support' | '404';
 
 export function pagePath(page: PageKey): string {
   return page === 'home' ? '' : page;
 }
 
-/** ('pl','') -> '/'; ('en','') -> '/en/'; ('de','kontakt','x') -> '/de/kontakt/#x' */
+/** ('pl','') -> '/'; ('en','') -> '/en/'; ('de','support','x') -> '/de/support/#x' */
 export function localePath(locale: Locale, path = '', hash = ''): string {
   const clean = path.replace(/^\/+|\/+$/g, '');
   const prefix = locale === DEFAULT_LOCALE ? '' : `/${locale}`;

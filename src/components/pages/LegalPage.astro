@@ -9,23 +9,29 @@ interface Props { locale: Locale; doc: LegalDocKey }
 const { locale, doc } = Astro.props;
 const d = getDict(locale);
 const { doc: legal, lang, fallback } = getLegalDoc(locale, doc);
-const title = d.pages[doc].title;
+const pageDict = d.pages[doc] as { title: string; overline?: string };
+const title = pageDict.title;
+const overline = pageDict.overline ?? d.pages.legal.overline;
 
 // lastUpdated is an ISO date; pin to UTC so the day never shifts at build time.
-const date = new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' })
-  .format(new Date(`${legal.lastUpdated}T00:00:00Z`));
+const date = legal.lastUpdated
+  ? new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' })
+      .format(new Date(`${legal.lastUpdated}T00:00:00Z`))
+  : undefined;
 const [updatedBefore, updatedAfter = ''] = d.pages.legal.updated.split('{date}');
 ---
 
 <Base locale={locale} page={doc} title={`${title} — ARTLY`} description={legal.description}>
   <section class="legal container">
     <header class="legal__head">
-      <p class="overline">{d.pages.legal.overline}</p>
+      <p class="overline">{overline}</p>
       <h1 class="h2 legal__title">{title}</h1>
       <p class="lead legal__lead" lang={lang}>{legal.description}</p>
-      <p class="legal__updated">
-        {updatedBefore}<time datetime={legal.lastUpdated}>{date}</time>{updatedAfter}
-      </p>
+      {legal.lastUpdated && (
+        <p class="legal__updated">
+          {updatedBefore}<time datetime={legal.lastUpdated}>{date}</time>{updatedAfter}
+        </p>
+      )}
       {fallback && (
         <aside class="legal__langnote">
           <p>{d.pages.legal.langNote}</p>

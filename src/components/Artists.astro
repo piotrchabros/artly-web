@@ -10,7 +10,7 @@ const d = getDict(locale);
 
 const keys: ScreenKey[] = ['dodajPrace', 'opisDziela', 'panel', 'wyplaty'];
 const items = d.artists.items.map((item, i) => ({ ...item, shot: shot(keys[i], d.screens[keys[i]]) }));
-const joinHref = localePath(locale, 'kontakt');
+const joinHref = localePath(locale, 'support', 'artists');
 ---
 
 <section id="dla-artystow" class="section section--ink artists" aria-labelledby="artists-title">
