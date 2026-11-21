@@ -133,6 +133,7 @@
     "faq": "FAQ",
     "terms": "AGB",
     "privacy": "Datenschutz",
+    "deletion": "Kontolöschung",
     "contact": "Kontakt"
   },
   "screens": {
@@ -151,10 +152,12 @@
     "wyplaty": "Auszahlungs-Screen mit verfügbarem Guthaben und Betrag in Bearbeitung"
   },
   "pages": {
-    "regulamin": { "title": "AGB" },
-    "polityka-prywatnosci": { "title": "Datenschutzerklärung" },
+    "privacy": { "title": "Datenschutzerklärung" },
+    "terms": { "title": "AGB" },
+    "deletion": { "title": "Kontolöschung" },
     "kontakt": { "title": "Kontakt" },
-    "soon": { "overline": "Demnächst", "text": "Wir arbeiten an dieser Seite. Schau bald wieder vorbei.", "back": "Zurück zur Startseite" }
+    "soon": { "overline": "Demnächst", "text": "Wir arbeiten an dieser Seite. Schau bald wieder vorbei.", "back": "Zurück zur Startseite" },
+    "legal": { "overline": "Rechtliches", "toc": "Inhalt", "updated": "Zuletzt aktualisiert: {date}", "langNote": "Dieses Dokument ist auf Englisch und Polnisch verfügbar.", "back": "Zurück zur Startseite" }
   },
   "notFound": {
     "title": "Seite nicht gefunden",

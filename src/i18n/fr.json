@@ -133,6 +133,7 @@
     "faq": "FAQ",
     "terms": "Conditions générales",
     "privacy": "Politique de confidentialité",
+    "deletion": "Suppression du compte",
     "contact": "Contact"
   },
   "screens": {
@@ -151,10 +152,12 @@
     "wyplaty": "Écran des paiements avec le solde disponible et le montant en cours de versement"
   },
   "pages": {
-    "regulamin": { "title": "Conditions générales" },
-    "polityka-prywatnosci": { "title": "Politique de confidentialité" },
+    "privacy": { "title": "Politique de confidentialité" },
+    "terms": { "title": "Conditions générales" },
+    "deletion": { "title": "Suppression du compte" },
     "kontakt": { "title": "Contact" },
-    "soon": { "overline": "Bientôt", "text": "Nous travaillons sur cette page. Revenez bientôt.", "back": "Retour à l’accueil" }
+    "soon": { "overline": "Bientôt", "text": "Nous travaillons sur cette page. Revenez bientôt.", "back": "Retour à l’accueil" },
+    "legal": { "overline": "Informations légales", "toc": "Sommaire", "updated": "Dernière mise à jour : {date}", "langNote": "Ce document est disponible en anglais et en polonais.", "back": "Retour à l’accueil" }
   },
   "notFound": {
     "title": "Page introuvable",

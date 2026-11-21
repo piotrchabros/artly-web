@@ -64,7 +64,7 @@ export function useT(locale: Locale): (key: string, vars?: Record<string, string
   return (key, vars) => t(locale, key, vars);
 }
 
-export type PageKey = 'home' | 'regulamin' | 'polityka-prywatnosci' | 'kontakt' | '404';
+export type PageKey = 'home' | 'privacy' | 'terms' | 'deletion' | 'kontakt' | '404';
 
 export function pagePath(page: PageKey): string {
   return page === 'home' ? '' : page;

@@ -133,6 +133,7 @@
     "faq": "Preguntas",
     "terms": "Términos y condiciones",
     "privacy": "Política de privacidad",
+    "deletion": "Eliminación de la cuenta",
     "contact": "Contacto"
   },
   "screens": {
@@ -151,10 +152,12 @@
     "wyplaty": "Pantalla de pagos con el saldo disponible y el importe en camino"
   },
   "pages": {
-    "regulamin": { "title": "Términos y condiciones" },
-    "polityka-prywatnosci": { "title": "Política de privacidad" },
+    "privacy": { "title": "Política de privacidad" },
+    "terms": { "title": "Términos y condiciones" },
+    "deletion": { "title": "Eliminación de la cuenta" },
     "kontakt": { "title": "Contacto" },
-    "soon": { "overline": "Próximamente", "text": "Estamos trabajando en esta página. Vuelve a visitarla pronto.", "back": "Volver a la página de inicio" }
+    "soon": { "overline": "Próximamente", "text": "Estamos trabajando en esta página. Vuelve a visitarla pronto.", "back": "Volver a la página de inicio" },
+    "legal": { "overline": "Información legal", "toc": "Índice", "updated": "Última actualización: {date}", "langNote": "Este documento está disponible en inglés y en polaco.", "back": "Volver a la página de inicio" }
   },
   "notFound": {
     "title": "Página no encontrada",

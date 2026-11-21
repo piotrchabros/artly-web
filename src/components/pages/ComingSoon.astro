@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getDict, localePath, type Locale } from '../../i18n';
 
-interface Props { locale: Locale; page: 'regulamin' | 'polityka-prywatnosci' | 'kontakt' }
+interface Props { locale: Locale; page: 'kontakt' }
 const { locale, page } = Astro.props;
 const d = getDict(locale);
 const title = d.pages[page].title;
