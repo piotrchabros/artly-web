@@ -11,6 +11,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "deploy": "astro build && wrangler deploy",
+    "deploy:email": "wrangler deploy -c email-worker/wrangler.jsonc",
+    "dev:email": "wrangler dev -c email-worker/wrangler.jsonc",
     "astro": "astro"
   },
   "dependencies": {

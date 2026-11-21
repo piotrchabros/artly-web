@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "artly-email",
+  "main": "./index.js",
+  "compatibility_date": "2026-11-01",
+  // Email-only worker: no fetch handler, so don't expose workers.dev / preview URLs.
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": true }
+  // Recipients live in the secret FORWARD_TO (comma-separated, each a verified Email Routing destination):
+  //   npx wrangler secret put FORWARD_TO -c email-worker/wrangler.jsonc
+  // For local dev, put FORWARD_TO=... in email-worker/.dev.vars (gitignored).
+}
