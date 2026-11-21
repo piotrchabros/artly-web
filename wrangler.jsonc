@@ -12,5 +12,14 @@
   "routes": [
     { "pattern": "artly.com.pl", "custom_domain": true },
     { "pattern": "www.artly.com.pl", "custom_domain": true }
-  ]
+  ],
+  "env": {
+    // Staging: same build, own Worker, never indexed (see worker/index.js).
+    "staging": {
+      "name": "artly-web-staging",
+      "routes": [
+        { "pattern": "staging.artly.com.pl", "custom_domain": true }
+      ]
+    }
+  }
 }

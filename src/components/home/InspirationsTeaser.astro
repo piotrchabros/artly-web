@@ -1,0 +1,85 @@
+---
+// Inspiracje teaser (spec §6.6): featured + two side articles on desktop, carousel on mobile.
+// Articles are Polish-only; other locales link to them with lang="pl".
+import { Image } from 'astro:assets';
+import Icon from '../ui/Icon.astro';
+import { useT, type Locale } from '../../i18n';
+import { getTeaser, readingMinutes, articlePath, categoryLabel } from '../../data/inspiracje';
+import { INSPIRACJE_PATH, tid } from '../../data/site';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = useT(locale);
+const items = await getTeaser();
+const lang = locale === 'pl' ? undefined : 'pl';
+---
+
+<section class="wrap insp rv">
+  <div class="sec-head">
+    <div>
+      <div class="eyebrow">{t('inspirations.eyebrow')}</div>
+      <h2 class="h2 insp__h" data-tid="h2.poradniki-wnetrza-i-historie-art|h2.poradniki-i-historie-artystow">
+        <span class="only-d">{t('inspirations.title')}</span><span class="only-m">{t('inspirations.titleShort')}</span>
+      </h2>
+    </div>
+    <a class="sec-head__all only-d" href={INSPIRACJE_PATH} data-tid="a.wszystkie-inspiracje">{t('inspirations.all')}<Icon name="arrow" size={18} class="arrow" /></a>
+  </div>
+  <div class="insp__grid">
+    {items.map((a, i) => {
+      const label = categoryLabel(a.data.category);
+      const cat = label.toUpperCase();
+      const min = t('inspirations.minutes', { n: readingMinutes(a) });
+      const dId = i === 0 ? tid('a', `${cat} ${min} ${a.data.title}`) : tid('a', `${cat} ${a.data.title}`);
+      const mId = tid('a', `${cat} ${a.data.title}`);
+      return (
+        <a href={articlePath(a)} class:list={['ac', i === 0 ? 'ac--feat' : 'ac--side']} lang={lang} data-tid={`${dId}|${mId}`}>
+          <div class="ph ac__img" data-tid="img">
+            <Image src={a.data.cover} alt={a.data.coverAlt} widths={[300, 600, 800]} sizes={i === 0 ? '(min-width: 1024px) 770px, 290px' : '(min-width: 1024px) 180px, 290px'} />
+          </div>
+          <div class="ac__txt">
+            <span class="ac__cat">{label}{i === 0 && <span class="only-d"> · {min}</span>}</span>
+            <span class="ac__t">{a.data.title}</span>
+            <span class="ac__lead only-d">{a.data.lead}</span>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+</section>
+
+<style>
+  .insp { padding-top: 112px; }
+  .insp__h { margin-top: 14px; }
+  .insp__grid { margin-top: 36px; display: grid; grid-template-columns: 7fr 5fr; grid-template-rows: auto auto 1fr; gap: 24px; }
+  .ac { display: block; color: var(--c-ink); text-decoration: none; min-width: 0; }
+  .ac:hover :global(img) { transform: scale(1.04); }
+  .ac__txt > span { display: block; }
+  .ac__cat { font: 400 12px var(--f-ui); letter-spacing: .2em; text-transform: uppercase; color: var(--c-muted); }
+  .ac__t { font: 400 24px/1.2 var(--f-display); }
+  .ac__lead { font: 400 14px/1.55 var(--f-ui); color: var(--c-text-2); }
+
+  .ac--feat { grid-row: 1 / span 3; }
+  .ac--feat .ac__img { height: 460px; }
+  .ac--feat .ac__cat { margin-top: 18px; }
+  .ac--feat .ac__t { margin-top: 18px; font-size: 32px; line-height: 1.15; }
+  .ac--feat .ac__lead { margin-top: 18px; font-size: 16px; }
+
+  .ac--side { display: grid; grid-template-columns: 180px 1fr; gap: 20px; }
+  .ac--side .ac__img { height: 200px; }
+  .ac--side .ac__txt { padding-top: 4px; }
+  .ac--side .ac__t { margin-top: 10px; }
+  .ac--side .ac__lead { margin-top: 9px; }
+
+  @media (max-width: 1023px) {
+    .insp { padding-top: 56px; }
+    .insp__h { margin-top: 12px; }
+    .insp__grid { margin: 20px calc(-1 * var(--gutter)) 0; padding: 0 var(--gutter); scroll-padding: 0 var(--gutter);
+      display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+    .insp__grid::-webkit-scrollbar { display: none; }
+    .ac, .ac--side { display: block; flex: 0 0 290px; scroll-snap-align: start; }
+    .ac .ac__img { height: 220px; }
+    .ac .ac__txt { padding-top: 0; }
+    .ac .ac__cat { margin-top: 10px; font-size: 11px; }
+    .ac .ac__t { margin-top: 10px; font-size: 22px; line-height: 1.2; }
+  }
+</style>

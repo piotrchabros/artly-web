@@ -1,32 +1,44 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Hero from '../Hero.astro';
-import Marquee from '../Marquee.astro';
-import WhyCards from '../WhyCards.astro';
-import Steps from '../Steps.astro';
-import FeatureTabs from '../FeatureTabs.astro';
-import LocalLanguages from '../LocalLanguages.astro';
-import Artists from '../Artists.astro';
-import Trust from '../Trust.astro';
-import Faq from '../Faq.astro';
-import DownloadCta from '../DownloadCta.astro';
-import StickyCta from '../StickyCta.astro';
-import type { Locale } from '../../i18n';
+import Hero from '../home/Hero.astro';
+import EntryTiles from '../home/EntryTiles.astro';
+import Benefits from '../home/Benefits.astro';
+import RecentArtworks from '../home/RecentArtworks.astro';
+import InspirationsTeaser from '../home/InspirationsTeaser.astro';
+import ArtistBand from '../home/ArtistBand.astro';
+import { localePath, useT, type Locale } from '../../i18n';
+import { APP_STORE_URL, PLAY_URL } from '../../data/site';
 
 interface Props { locale: Locale }
 const { locale } = Astro.props;
+const t = useT(locale);
+const site = Astro.site!;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ARTLY',
+    url: new URL('/', site).href,
+    logo: new URL('/icon-512.png', site).href,
+    sameAs: [PLAY_URL, ...(APP_STORE_URL ? [APP_STORE_URL] : [])],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'ARTLY',
+    url: new URL(localePath(locale), site).href,
+    inLanguage: locale,
+    description: t('meta.description'),
+  },
+];
 ---
 
-<Base locale={locale} page="home">
+<Base locale={locale} page="home" jsonLd={jsonLd}>
   <Hero locale={locale} />
-  <Marquee locale={locale} />
-  <WhyCards locale={locale} />
-  <Steps locale={locale} />
-  <FeatureTabs locale={locale} />
-  <LocalLanguages locale={locale} />
-  <Artists locale={locale} />
-  <Trust locale={locale} />
-  <Faq locale={locale} />
-  <DownloadCta locale={locale} />
-  <StickyCta locale={locale} slot="after" />
+  <EntryTiles locale={locale} />
+  <Benefits locale={locale} />
+  <RecentArtworks locale={locale} />
+  <InspirationsTeaser locale={locale} />
+  <ArtistBand locale={locale} />
 </Base>

@@ -1,0 +1,23 @@
+---
+import InspiracjeList from '../../../components/inspiracje/InspiracjeList.astro';
+import { categories, getArticles } from '../../../data/inspiracje';
+
+export async function getStaticPaths() {
+  const all = await getArticles();
+  // Only categories with published articles get a page (no thin, empty listings).
+  return categories
+    .map((c) => ({ params: { slug: c.slug }, props: { cat: c, articles: all.filter((a) => a.data.category === c.name) } }))
+    .filter((p) => p.props.articles.length > 0);
+}
+
+const { cat, articles } = Astro.props;
+const intros: Record<string, string> = {
+  'Poradniki': 'Praktyczne porady: jak dobrać rozmiar, kolor i miejsce zawieszenia obrazu, żeby dzieło pasowało do wnętrza.',
+  'Wnętrza i projekty': 'Wnętrza, w których sztuka gra główną rolę. Pomysły na aranżacje salonu, sypialni i domowego biura.',
+  'Historie artystów': 'Jak pracują niezależni artyści, skąd czerpią inspiracje i jak powstają ich prace.',
+  'Trendy': 'Kierunki we współczesnej sztuce i we wnętrzach: kolory, techniki i motywy, które warto znać.',
+};
+---
+
+<InspiracjeList articles={articles} path={cat.path} title={cat.name} activeCategory={cat.name}
+  seoTitle={`${cat.name} – Inspiracje | ARTLY`} intro={intros[cat.name]} />

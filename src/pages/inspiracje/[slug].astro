@@ -1,0 +1,123 @@
+---
+// Article (spec §9, style "Treść"): 720 px column, photo above the title, H2 subheads,
+// "Obrazy pasujące do tej inspiracji" and "Czytaj dalej", Article + BreadcrumbList JSON-LD.
+import { Image, getImage } from 'astro:assets';
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import ArtworkCard from '../../components/home/ArtworkCard.astro';
+import ArticleCard from '../../components/inspiracje/ArticleCard.astro';
+import { getArticles, readingMinutes, articlePath, categoryPath, categoryLabel, type Article } from '../../data/inspiracje';
+import { artworkBySlug } from '../../data/artworks';
+import { INSPIRACJE_PATH } from '../../data/site';
+
+export async function getStaticPaths() {
+  const all = await getArticles();
+  return all.map((a) => ({ params: { slug: a.id }, props: { a, all } }));
+}
+
+interface Props { a: Article; all: Article[] }
+const { a, all } = Astro.props;
+const { Content } = await render(a);
+const d = a.data;
+const path = articlePath(a);
+const site = Astro.site!;
+const og = await getImage({ src: d.cover, width: 1200, height: 630, fit: 'cover', format: 'jpg' });
+const ogAbs = new URL(og.src, site).href;
+const date = new Intl.DateTimeFormat('pl', { dateStyle: 'long', timeZone: 'UTC' }).format(d.date);
+const works = d.artworks.map(artworkBySlug).filter((w) => !!w);
+const more = [...all.filter((x) => x !== a && x.data.category === d.category), ...all.filter((x) => x !== a && x.data.category !== d.category)].slice(0, 3);
+
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.title,
+  description: d.description,
+  image: [ogAbs],
+  datePublished: d.date.toISOString(),
+  author: { '@type': 'Organization', name: d.author },
+  publisher: { '@type': 'Organization', name: 'ARTLY', logo: { '@type': 'ImageObject', url: new URL('/icon-512.png', site).href } },
+  mainEntityOfPage: new URL(path, site).href,
+  inLanguage: 'pl',
+  articleSection: d.category,
+}];
+const crumbs = [
+  { name: 'Inspiracje', path: INSPIRACJE_PATH },
+  { name: d.category, path: categoryPath(d.category) },
+  { name: d.title, path },
+];
+---
+
+<Base locale="pl" path={path} title={d.seoTitle} description={d.description} ogType="article" ogImage={og.src} jsonLd={jsonLd} crumbs={crumbs}>
+  <article class="art">
+    <div class="wrap art__col">
+      <nav class="art__crumbs" aria-label="Ścieżka">
+        <a href={INSPIRACJE_PATH}>Inspiracje</a><span aria-hidden="true"> / </span><a href={categoryPath(d.category)}>{d.category}</a>
+      </nav>
+      <div class="ph art__cover">
+        <Image src={d.cover} alt={d.coverAlt} widths={[480, 720, 1440]} sizes="(min-width: 816px) 720px, 100vw" loading="eager" fetchpriority="high" />
+      </div>
+      <p class="cat art__meta"><a href={categoryPath(d.category)}>{categoryLabel(d.category)}</a> · {readingMinutes(a)} MIN · <time datetime={d.date.toISOString().slice(0, 10)}>{date}</time></p>
+      <h1 class="h1 h1--sm art__h">{d.title}</h1>
+      <p class="lead art__lead">{d.lead}</p>
+      <div class="prose"><Content /></div>
+      <p class="art__by">{d.author}</p>
+    </div>
+
+    {works.length > 0 && (
+      <section class="wrap art__sec">
+        <div class="sec-head">
+          <h2 class="h2">Obrazy pasujące do tej inspiracji</h2>
+          <a class="sec-head__all only-d" href="/aplikacja/">Zobacz podobne obrazy</a>
+        </div>
+        <div class="art__works">{works.map((w) => <ArtworkCard a={w} locale="pl" />)}</div>
+      </section>
+    )}
+
+    {more.length > 0 && (
+      <section class="wrap art__sec">
+        <div class="sec-head">
+          <h2 class="h2">Czytaj dalej</h2>
+          <a class="sec-head__all only-d" href={INSPIRACJE_PATH}>Wszystkie inspiracje</a>
+        </div>
+        <div class="art__more">{more.map((m) => <ArticleCard a={m} />)}</div>
+      </section>
+    )}
+  </article>
+</Base>
+
+<style>
+  .art__col { max-width: 720px; padding-top: 40px; }
+  .art__crumbs { font: 400 13px var(--f-ui); color: var(--c-muted-2); }
+  .art__crumbs a { color: inherit; text-decoration: none; }
+  .art__crumbs a:hover { text-decoration: underline; }
+  .art__cover { margin-top: 24px; aspect-ratio: 16 / 10; }
+  .art__meta { margin-top: 28px; }
+  .art__meta a { color: inherit; text-decoration: none; }
+  .art__h { margin-top: 16px; }
+  .art__lead { margin-top: 20px; }
+  .art__by { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--c-line); font: 400 14px var(--f-ui); color: var(--c-muted-2); }
+
+  .prose { margin-top: 40px; font: 400 17px/1.65 var(--f-ui); color: var(--c-text-2); }
+  .prose :global(* + *) { margin-top: 18px; }
+  .prose :global(h2) { margin-top: 48px; font: 400 32px/1.15 var(--f-display); color: var(--c-ink); }
+  .prose :global(h3) { margin-top: 32px; font: 400 24px/1.2 var(--f-display); color: var(--c-ink); }
+  .prose :global(h2 + *), .prose :global(h3 + *) { margin-top: 14px; }
+  .prose :global(ul), .prose :global(ol) { padding-left: 1.2em; }
+  .prose :global(li + li) { margin-top: 8px; }
+  .prose :global(a) { color: var(--c-ink); text-underline-offset: 3px; }
+  .prose :global(strong) { font-weight: 600; color: var(--c-ink); }
+
+  .art__sec { padding-top: 96px; }
+  .art__works { margin-top: 32px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  .art__more { margin-top: 32px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+
+  @media (max-width: 1023px) {
+    .art__col { padding-top: 24px; }
+    .prose { font-size: 16px; }
+    .prose :global(h2) { font-size: 26px; margin-top: 40px; }
+    .prose :global(h3) { font-size: 22px; }
+    .art__sec { padding-top: 56px; }
+    .art__works { margin: 20px calc(-1 * var(--gutter)) 0; padding: 0 var(--gutter); display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+    .art__more { margin-top: 24px; grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  }
+</style>

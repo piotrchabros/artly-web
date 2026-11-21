@@ -1,0 +1,9 @@
+---
+import InspiracjeList from '../../components/inspiracje/InspiracjeList.astro';
+import { getArticles } from '../../data/inspiracje';
+const articles = await getArticles();
+---
+
+<InspiracjeList articles={articles} path="/inspiracje/" title="Inspiracje"
+  seoTitle="Inspiracje – poradniki, wnętrza i historie artystów | ARTLY"
+  intro="Poradniki o doborze sztuki do wnętrza, przykłady aranżacji i historie artystów. Dowiedz się, jak wybrać obraz, który będzie pasował do Ciebie i Twojej przestrzeni." />

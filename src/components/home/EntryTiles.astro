@@ -1,0 +1,67 @@
+---
+// Two equal tiles (spec §6.3): "Do wnętrza siebie" / "Do wnętrza domu".
+import { Image } from 'astro:assets';
+import selfImg from '../../assets/home/tile-self.jpg';
+import homeImg from '../../assets/home/tile-home.jpg';
+import Icon from '../ui/Icon.astro';
+import { useT, type Locale } from '../../i18n';
+import { shopHref } from '../../data/site';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = useT(locale);
+const selfHref = shopHref(locale, 'discover');
+const homeHref = shopHref(locale, 'room');
+---
+
+<section class="wrap tiles">
+  <article class="tile tile--self rv">
+    <a href={selfHref} class="ph tile__img" aria-label={t('tiles.self.label')} data-tid="img.do-wnetrza-siebie-odkrywaj|img.do-wnetrza-siebie">
+      <Image src={selfImg} alt={t('tiles.self.imgAlt')} widths={[400, 700, selfImg.width]} sizes="(min-width: 1024px) 660px, 100vw" />
+    </a>
+    <div class="tile__body">
+      <h2 class="tile__h" data-tid="h2.do-wnetrza-siebie">{t('tiles.self.title')}</h2>
+      <p class="tile__p">{t('tiles.self.text')}</p>
+      <div class="tile__act">
+        <a href={selfHref} class="link-u" data-tid="a.przegladaj-dziela">{t('tiles.self.cta')}<Icon name="arrow" size={18} class="arrow" /></a>
+      </div>
+    </div>
+  </article>
+  <article class="tile tile--home rv">
+    <a href={homeHref} class="ph tile__img" aria-label={t('tiles.home.label')} data-tid="img.do-wnetrza-domu-dopasuj|img.do-wnetrza-domu">
+      <Image src={homeImg} alt={t('tiles.home.imgAlt')} widths={[400, 700, homeImg.width]} sizes="(min-width: 1024px) 660px, 100vw" />
+    </a>
+    <div class="tile__body">
+      <h2 class="tile__h" data-tid="h2.do-wnetrza-domu">{t('tiles.home.title')}</h2>
+      <p class="tile__p"><span class="only-d">{t('tiles.home.text')}</span><span class="only-m">{t('tiles.home.textShort')}</span></p>
+      <div class="tile__act">
+        <a href={homeHref} class="btn tile__btn" data-tid="a.dodaj-zdjecie-wnetrza"><Icon name="camera" size={18} />{t('tiles.home.cta')}</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<style>
+  .tiles { padding-top: 72px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .tile { display: flex; flex-direction: column; background: var(--c-beige-2); min-width: 0; }
+  .tile__img { display: block; height: 420px; color: var(--c-ink); }
+  .tile:hover .tile__img :global(img) { transform: scale(1.04); }
+  .tile__body { flex-grow: 1; display: flex; flex-direction: column; padding: 32px 36px 36px; }
+  .tile__h { font: 400 38px/1.1 var(--f-display); }
+  .tile__p { margin-top: 10px; font: 400 16px/1.55 var(--f-ui); color: var(--c-text-2); }
+  .tile__act { margin-top: auto; padding-top: 36px; display: flex; align-items: flex-start; }
+  .tile__btn { height: 52px; padding: 0 24px; gap: 10px; letter-spacing: 0; }
+  .link-u { letter-spacing: 0; gap: 14px; }
+
+  @media (max-width: 1023px) {
+    .tiles { padding-top: 40px; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+    .tile__img { height: 230px; }
+    .tile__body { padding: 22px 22px 24px; }
+    .tile__h { font-size: 30px; }
+    .tile__p { margin-top: 8px; font-size: 15px; }
+    .tile--self .tile__act { padding-top: 14px; }
+    .tile--home .tile__act { padding-top: 18px; }
+    .link-u { gap: 8px; padding: 12px 0; }
+    .tile__btn { width: 100%; }
+  }
+</style>

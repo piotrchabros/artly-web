@@ -1,0 +1,42 @@
+---
+// Hero (spec §6.2): one CTA, the photo stays inside the container.
+import { Image } from 'astro:assets';
+import heroImg from '../../assets/home/hero-room.jpg';
+import Icon from '../ui/Icon.astro';
+import { useT, type Locale } from '../../i18n';
+import { shopHref } from '../../data/site';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = useT(locale);
+---
+
+<section class="wrap hero">
+  <div class="hero__txt">
+    <div class="eyebrow in">{t('hero.eyebrow')}</div>
+    <h1 class="h1 hero__h1 in d1" data-tid="h1.gdzie-sztuka-spotyka-przestrzen">{t('hero.title')}</h1>
+    <p class="lead hero__p in d2">{t('hero.lead')}</p>
+    <a href={shopHref(locale, 'discover')} class="btn hero__cta in d3" data-tid="a.odkrywaj-sztuke">{t('hero.cta')}<Icon name="arrow" size={18} class="arrow" /></a>
+  </div>
+  <div class="ph hero__img in d2" data-tid="img">
+    <Image src={heroImg} alt={t('hero.imgAlt')} class="zoom" loading="eager" fetchpriority="high"
+      widths={[480, 960, heroImg.width]} sizes="(min-width: 1024px) 752px, 100vw" />
+  </div>
+</section>
+
+<style>
+  .hero { padding-top: 56px; display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: center; }
+  .hero__txt { padding: 24px 0; }
+  .hero__h1 { margin-top: 24px; }
+  .hero__p { margin-top: 28px; max-width: 460px; }
+  .hero__cta { margin-top: 40px; }
+  .hero__img { height: 560px; }
+  @media (max-width: 1023px) {
+    .hero { padding-top: 32px; grid-template-columns: minmax(0, 1fr); gap: 0; }
+    .hero__txt { padding: 0; }
+    .hero__h1 { margin-top: 16px; }
+    .hero__p { margin-top: 18px; max-width: none; }
+    .hero__cta { margin-top: 26px; height: 54px; width: 100%; gap: 12px; }
+    .hero__img { margin-top: 28px; height: 300px; }
+  }
+</style>

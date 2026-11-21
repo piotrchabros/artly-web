@@ -1,0 +1,54 @@
+---
+// Inspiracje list: H1 + intro, category chips, 3-column grid (spec §9, style "Lista").
+import Base from '../../layouts/Base.astro';
+import ArticleCard from './ArticleCard.astro';
+import { INSPIRACJE_PATH } from '../../data/site';
+import { categories, getArticles, type Article } from '../../data/inspiracje';
+
+interface Props { articles: Article[]; title: string; intro: string; seoTitle: string; path: string; activeCategory?: string; noindex?: boolean }
+const { articles, title, intro, seoTitle, path, activeCategory, noindex = false } = Astro.props;
+const used = new Set((await getArticles()).map((a) => a.data.category));
+const cats = categories.filter((c) => used.has(c.name));
+const crumbs = [{ name: 'Inspiracje', path: INSPIRACJE_PATH }, ...(activeCategory ? [{ name: title, path }] : [])];
+---
+
+<Base locale="pl" path={path} title={seoTitle} description={intro} crumbs={crumbs} noindex={noindex}>
+  <section class="wrap il">
+    <div class="eyebrow">ARTLY INSPIRACJE</div>
+    <h1 class="h1 h1--sm il__h">{title}</h1>
+    <p class="text il__intro">{intro}</p>
+    <nav class="il__chips" aria-label="Kategorie">
+      <a class="chip" href={INSPIRACJE_PATH} aria-current={!activeCategory ? 'page' : undefined}>Wszystkie</a>
+      {cats.map((c) => <a class="chip" href={c.path} aria-current={activeCategory === c.name ? 'page' : undefined}>{c.name}</a>)}
+    </nav>
+    {articles.length ? (
+      <div class="il__grid">{articles.map((a, i) => <ArticleCard a={a} eager={i < 3} />)}</div>
+    ) : (
+      <div class="il__empty">
+        <h2 class="h3">Wkrótce nowe teksty</h2>
+        <p class="text">W tej kategorii nie ma jeszcze artykułów.</p>
+        <a class="btn" href={INSPIRACJE_PATH}>Wszystkie inspiracje</a>
+      </div>
+    )}
+  </section>
+</Base>
+
+<style>
+  .il { padding-top: 72px; }
+  .il__h { margin-top: 20px; }
+  .il__intro { margin-top: 20px; max-width: 720px; }
+  .il__chips { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { display: inline-flex; align-items: center; height: 36px; padding: 0 14px; border: 1px solid var(--c-line); font: 400 14px var(--f-ui); color: var(--c-ink); text-decoration: none; transition: border-color .2s; }
+  .chip:hover { border-color: var(--c-ink); }
+  .chip[aria-current] { background: var(--c-ink); border-color: var(--c-ink); color: #fff; }
+  .il__grid { margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 56px 24px; }
+  .il__empty { margin-top: 64px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+  @media (max-width: 1023px) {
+    .il { padding-top: 36px; }
+    .il__h { margin-top: 14px; }
+    .il__chips { margin: 28px calc(-1 * var(--gutter)) 0; padding: 0 var(--gutter); flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .chip { flex: none; }
+    .il__grid { margin-top: 32px; grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  }
+  @media (min-width: 640px) and (max-width: 1023px) { .il__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 20px; } }
+</style>

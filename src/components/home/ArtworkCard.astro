@@ -1,0 +1,44 @@
+---
+// Artwork card (spec §6.5): square photo, title / artist / price, save toggle.
+import { Image } from 'astro:assets';
+import Icon from '../ui/Icon.astro';
+import { useT, type Locale } from '../../i18n';
+import { shopHref, slugify } from '../../data/site';
+import type { Artwork } from '../../data/artworks';
+
+interface Props { a: Artwork; locale: Locale }
+const { a, locale } = Astro.props;
+const t = useT(locale);
+---
+
+<article class="card">
+  <a href={shopHref(locale, 'artwork')} class="ph card__img" aria-label={`${a.title}, ${a.artist}`} data-tid="img">
+    <Image src={a.img} alt={a.alt} widths={[200, 400, a.img.width]} sizes="(min-width: 1024px) 250px, 200px" />
+  </a>
+  <div class="card__row">
+    <div class="card__meta">
+      <span class="card__t">{a.title}</span><span class="card__a">{a.artist}</span><span class="card__p">{a.price}</span>
+    </div>
+    <button type="button" class="ico card__save" aria-pressed="false" aria-label={t('a11y.save', { title: a.title })} data-save={a.slug} data-tid={`button.zapisz-${slugify(a.title)}`}><Icon name="heart" /></button>
+  </div>
+</article>
+
+<style>
+  .card { scroll-snap-align: start; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+  .card__img { display: block; aspect-ratio: 1 / 1; color: var(--c-ink); }
+  .card:hover .card__img :global(img) { transform: scale(1.04); }
+  .card__row { display: flex; justify-content: space-between; gap: 8px; }
+  .card__meta { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .card__t { font: 500 15px var(--f-ui); }
+  .card__a { font: 400 14px var(--f-ui); color: var(--c-muted-2); }
+  .card__p { font: 400 15px var(--f-ui); margin-top: 6px; }
+  .card__save[aria-pressed="true"] :global(svg) { fill: var(--c-ink); }
+  @media (max-width: 1023px) {
+    .card { flex: 0 0 200px; gap: 10px; }
+    .card__img { aspect-ratio: auto; height: 200px; }
+    .card__meta { gap: 2px; }
+    .card__a { font-size: 13px; }
+    .card__p { font-size: 14px; margin-top: 4px; }
+    .card__save { margin: -10px -10px 0 0; }
+  }
+</style>
