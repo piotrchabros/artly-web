@@ -10,7 +10,7 @@ const path = Astro.url.pathname;
 
 <aside class="appban" aria-label={t('appban.label')} data-tid="aside.appban">
   <button type="button" class="appban__x" aria-label={t('appban.close')} data-tid="button.zamknij-baner-aplikacji"><Icon name="close" size={16} stroke={1.6} /></button>
-  <span class="appban__icon"><img src="/brand/artly-symbol-white.svg" width="30" height="30" alt="" /></span>
+  <span class="appban__icon"><img src="/brand/artly-symbol-small-white.svg" width="30" height="30" alt="" /></span>
   <span class="appban__txt"><strong>{t('appban.title')}</strong><span>{t('appban.sub')}</span></span>
   <a class="appban__cta" href={`/app?src=web_banner&path=${encodeURIComponent(path)}`} rel="nofollow" data-tid="a.pobierz">{t('appban.cta')}</a>
 </aside>
