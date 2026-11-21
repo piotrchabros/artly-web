@@ -1,6 +1,7 @@
 ---
 // Footer (spec §6.8). The language switch lives here (brief: no language toggle in the header).
 import Icon from '../ui/Icon.astro';
+import Wordmark from '../ui/Wordmark.astro';
 import { LOCALES, LOCALE_META, localePath, pagePath, useT, type Locale, type PageKey } from '../../i18n';
 import { shopHref, INSPIRACJE_PATH, APP_STORE_URL, PLAY_URL } from '../../data/site';
 
@@ -32,7 +33,7 @@ const langHref = (l: Locale) => localePath(l, page && page !== '404' ? pagePath(
 <footer class="ftr">
   <div class="wrap ftr__top">
     <a class="ftr__brand" href={localePath(locale)} aria-label={t('a11y.home')}>
-      <span class="ftr__logo">ARTLY</span>
+      <span class="ftr__logo"><Wordmark class="ftr__wm" /></span>
       <span class="ftr__tag">{t('footer.tagline')}</span>
     </a>
     <nav class="ftr__nav" aria-label={t('footer.label')} data-tid="nav.stopka">
@@ -67,7 +68,8 @@ const langHref = (l: Locale) => localePath(l, page && page !== '404' ? pagePath(
   .ftr { margin-top: 112px; border-top: 1px solid var(--c-line); padding-top: 56px; }
   .ftr__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 48px; }
   .ftr__brand { display: flex; flex-direction: column; gap: 12px; color: var(--c-ink); text-decoration: none; }
-  .ftr__logo { font: 400 30px var(--f-logo); letter-spacing: .12em; }
+  .ftr__logo { display: flex; align-items: center; height: 36px; }
+  .ftr__logo :global(.ftr__wm) { width: 93px; }
   .ftr__tag { font: 400 10px var(--f-ui); letter-spacing: .3em; color: var(--c-muted); }
   .ftr__nav { display: flex; gap: 72px; }
   .ftr__col { display: flex; flex-direction: column; gap: 4px; }
@@ -89,7 +91,8 @@ const langHref = (l: Locale) => localePath(l, page && page !== '404' ? pagePath(
   @media (max-width: 1023px) {
     .ftr { margin-top: 56px; padding-top: 36px; }
     .ftr__top { flex-direction: column; gap: 20px; align-items: stretch; }
-    .ftr__logo { font-size: 28px; }
+    .ftr__logo { height: 33px; }
+    .ftr__logo :global(.ftr__wm) { width: 87px; }
     .ftr__tag, .ftr__h, .ftr__col--app { display: none; }
     .ftr__nav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .ftr__col { gap: 0; }

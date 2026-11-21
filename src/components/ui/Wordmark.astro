@@ -1,0 +1,19 @@
+---
+// ARTLY logo from 03_Symbol_ARTLY (the A is drawn, so the logo is never set in the font).
+// Inline so it inherits currentColor; the box keeps the size of the former Italiana wordmark.
+import raw from '../../../03_Symbol_ARTLY/svg/artly-logo-black.svg?raw';
+
+interface Props { class?: string }
+const svg = raw
+  .replace(/<metadata>[\s\S]*?<\/metadata>/, '')
+  .replace(/fill="#111111"/g, 'fill="currentColor"')
+  .replace(/\sheight="[^"]*"/, '')
+  .replace('<svg ', '<svg aria-hidden="true" focusable="false" preserveAspectRatio="xMinYMid meet" ');
+---
+
+<span class:list={['wordmark', Astro.props.class]} set:html={svg} />
+
+<style>
+  .wordmark { display: flex; align-items: center; }
+  .wordmark :global(svg) { display: block; width: 100%; height: auto; }
+</style>

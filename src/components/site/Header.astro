@@ -1,6 +1,7 @@
 ---
 // Header (spec §6.1). On < 1024 px the same <nav> becomes the full-screen menu (W03).
 import Icon from '../ui/Icon.astro';
+import Wordmark from '../ui/Wordmark.astro';
 import { localePath, useT, type Locale } from '../../i18n';
 import { shopHref, INSPIRACJE_PATH } from '../../data/site';
 
@@ -18,7 +19,7 @@ const nav = [
 <header class="hdr">
   <div class="wrap hdr__in">
     <a href={localePath(locale)} class="logo" aria-label={t('a11y.home')} data-tid="a.artly-where-art-meets-space|a.artly">
-      <span class="logo__word">ARTLY</span><span class="logo__sep" aria-hidden="true"></span>
+      <Wordmark class="logo__word" /><span class="logo__sep" aria-hidden="true"></span>
       <span class="logo__tag">WHERE ART MEETS SPACE</span>
     </a>
     <nav class="hdr__nav" id="hdr-nav" aria-label={t('a11y.mainNav')} data-tid="nav.glowna">
@@ -46,7 +47,8 @@ const nav = [
   .hdr__in { height: 84px; display: flex; align-items: center; gap: 28px; }
 
   .logo { display: flex; align-items: center; gap: 20px; font-size: 16px; text-decoration: none; color: var(--c-ink); white-space: nowrap; }
-  .logo__word { font: 400 34px/1 var(--f-logo); letter-spacing: .12em; }
+  /* Same box as the former 34 px Italiana wordmark (109.5 × 34); the last 4 px were its trailing letter-spacing. */
+  .logo :global(.logo__word) { width: 109.5px; height: 34px; padding-right: 4px; }
   .logo__sep { width: 1px; height: 28px; background: var(--c-sep); }
   .logo__tag { font: 400 10px var(--f-ui); letter-spacing: .3em; color: var(--c-muted); }
 
@@ -63,7 +65,7 @@ const nav = [
   @media (max-width: 1023px) {
     .hdr__in { height: 64px; gap: 4px; padding-right: 8px; }
     .logo { font: 400 28px/1 var(--f-logo); letter-spacing: .12em; }
-    .logo__word { font: inherit; letter-spacing: inherit; }
+    .logo :global(.logo__word) { width: 90.5px; height: 28px; padding-right: 3.5px; }
     .logo__sep, .logo__tag, .hdr__d { display: none; }
     .hdr__icons { margin-left: auto; }
     .hdr__burger { display: flex; }

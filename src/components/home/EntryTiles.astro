@@ -1,5 +1,5 @@
 ---
-// Two equal tiles (spec §6.3): "Do wnętrza siebie" / "Do wnętrza domu".
+// Two equal tiles (spec §6.3). Order changed on request: "Do wnętrza domu" first, then "Do wnętrza siebie".
 import { Image } from 'astro:assets';
 import selfImg from '../../assets/home/tile-self.jpg';
 import homeImg from '../../assets/home/tile-home.jpg';
@@ -15,18 +15,6 @@ const homeHref = shopHref(locale, 'room');
 ---
 
 <section class="wrap tiles">
-  <article class="tile tile--self rv">
-    <a href={selfHref} class="ph tile__img" aria-label={t('tiles.self.label')} data-tid="img.do-wnetrza-siebie-odkrywaj|img.do-wnetrza-siebie">
-      <Image src={selfImg} alt={t('tiles.self.imgAlt')} widths={[400, 700, selfImg.width]} sizes="(min-width: 1024px) 660px, 100vw" />
-    </a>
-    <div class="tile__body">
-      <h2 class="tile__h" data-tid="h2.do-wnetrza-siebie">{t('tiles.self.title')}</h2>
-      <p class="tile__p">{t('tiles.self.text')}</p>
-      <div class="tile__act">
-        <a href={selfHref} class="link-u" data-tid="a.przegladaj-dziela">{t('tiles.self.cta')}<Icon name="arrow" size={18} class="arrow" /></a>
-      </div>
-    </div>
-  </article>
   <article class="tile tile--home rv">
     <a href={homeHref} class="ph tile__img" aria-label={t('tiles.home.label')} data-tid="img.do-wnetrza-domu-dopasuj|img.do-wnetrza-domu">
       <Image src={homeImg} alt={t('tiles.home.imgAlt')} widths={[400, 700, homeImg.width]} sizes="(min-width: 1024px) 660px, 100vw" />
@@ -36,6 +24,18 @@ const homeHref = shopHref(locale, 'room');
       <p class="tile__p"><span class="only-d">{t('tiles.home.text')}</span><span class="only-m">{t('tiles.home.textShort')}</span></p>
       <div class="tile__act">
         <a href={homeHref} class="btn tile__btn" data-tid="a.dodaj-zdjecie-wnetrza"><Icon name="camera" size={18} />{t('tiles.home.cta')}</a>
+      </div>
+    </div>
+  </article>
+  <article class="tile tile--self rv">
+    <a href={selfHref} class="ph tile__img" aria-label={t('tiles.self.label')} data-tid="img.do-wnetrza-siebie-odkrywaj|img.do-wnetrza-siebie">
+      <Image src={selfImg} alt={t('tiles.self.imgAlt')} widths={[400, 700, selfImg.width]} sizes="(min-width: 1024px) 660px, 100vw" />
+    </a>
+    <div class="tile__body">
+      <h2 class="tile__h" data-tid="h2.do-wnetrza-siebie">{t('tiles.self.title')}</h2>
+      <p class="tile__p">{t('tiles.self.text')}</p>
+      <div class="tile__act">
+        <a href={selfHref} class="link-u" data-tid="a.przegladaj-dziela">{t('tiles.self.cta')}<Icon name="arrow" size={18} class="arrow" /></a>
       </div>
     </div>
   </article>
