@@ -1,0 +1,887 @@
+{
+ "screen": "A03_dzielo_pelny",
+ "viewport": {
+  "w": 390,
+  "h": 1452
+ },
+ "elements": [
+  {
+   "id": "A03_dzielo_pelny.img",
+   "key": true,
+   "tag": "div",
+   "text": "",
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 420,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.a.wroc",
+   "key": true,
+   "tag": "a",
+   "text": "Wróć",
+   "x": 12,
+   "y": 12,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgba(255, 255, 255, 0.92)"
+  },
+  {
+   "id": "A03_dzielo_pelny.button.kopiuj-link-do-dziela",
+   "key": true,
+   "tag": "button",
+   "text": "Kopiuj link do dzieła",
+   "x": 334,
+   "y": 12,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgba(255, 255, 255, 0.92)"
+  },
+  {
+   "id": "A03_dzielo_pelny.img.zdjecie-dziela",
+   "key": true,
+   "tag": "button",
+   "text": "Zdjęcie dzieła",
+   "x": 20,
+   "y": 430,
+   "w": 64,
+   "h": 64,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(0, 0, 0)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.img.detal-faktury",
+   "key": true,
+   "tag": "button",
+   "text": "Detal faktury",
+   "x": 92,
+   "y": 430,
+   "w": 64,
+   "h": 64,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(0, 0, 0)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.img.obraz-z-boku",
+   "key": true,
+   "tag": "button",
+   "text": "Obraz z boku",
+   "x": 164,
+   "y": 430,
+   "w": 64,
+   "h": 64,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(0, 0, 0)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.img.wizualizacja-we-wnetrzu",
+   "key": true,
+   "tag": "button",
+   "text": "Wizualizacja we wnętrzu",
+   "x": 236,
+   "y": 430,
+   "w": 64,
+   "h": 64,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(0, 0, 0)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.h1.energia",
+   "key": true,
+   "tag": "h1",
+   "text": "Energia",
+   "x": 20,
+   "y": 516,
+   "w": 350,
+   "h": 35,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "32px",
+    "weight": "400",
+    "lineHeight": "35.2px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.div.akryl-na-plotnie-100-120-cm-2026",
+   "key": false,
+   "tag": "div",
+   "text": "Akryl na płótnie · 100 × 120 cm · 2026 · oryginał",
+   "x": 20,
+   "y": 559,
+   "w": 350,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.div.5-200-zl",
+   "key": false,
+   "tag": "div",
+   "text": "5 200 zł",
+   "x": 20,
+   "y": 591,
+   "w": 350,
+   "h": 29,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "22px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.div.dostepny-wysylka-w-5-dni-certyfi",
+   "key": false,
+   "tag": "div",
+   "text": "Dostępny · wysyłka w 5 dni · certyfikat autentyczności",
+   "x": 20,
+   "y": 624,
+   "w": 350,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.button.zapisane-1",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 20,
+   "y": 661,
+   "w": 170,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(17, 17, 17)",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A03_dzielo_pelny.span.zapisane-1",
+   "key": false,
+   "tag": "span",
+   "text": "Zapisane (1)",
+   "x": 80.5,
+   "y": 676,
+   "w": 75,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.a.zobacz-we-wnetrzu",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu",
+   "x": 200,
+   "y": 661,
+   "w": 170,
+   "h": 50,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(17, 17, 17)"
+  },
+  {
+   "id": "A03_dzielo_pelny.img-2",
+   "key": true,
+   "tag": "span",
+   "text": "",
+   "x": 20,
+   "y": 756.5,
+   "w": 48,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(243, 239, 233)",
+   "radius": "999px"
+  },
+  {
+   "id": "A03_dzielo_pelny.span.marek-lasek",
+   "key": false,
+   "tag": "span",
+   "text": "Marek Lasek",
+   "x": 80,
+   "y": 752,
+   "w": 192.5,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.span.23-opinie-po-zakupie-krakow",
+   "key": false,
+   "tag": "span",
+   "text": "· 23 opinie po zakupie · Kraków",
+   "x": 80,
+   "y": 775,
+   "w": 192.5,
+   "h": 34,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.span.4-9",
+   "key": false,
+   "tag": "span",
+   "text": "4,9",
+   "x": 97,
+   "y": 783.5,
+   "w": 17.5,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.button.obserwuj",
+   "key": true,
+   "tag": "button",
+   "text": "Obserwuj",
+   "x": 284.5,
+   "y": 760.5,
+   "w": 85.5,
+   "h": 40,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(218, 213, 205)",
+   "padding": "0px 14px"
+  },
+  {
+   "id": "A03_dzielo_pelny.h2.o-dziele",
+   "key": true,
+   "tag": "h2",
+   "text": "O DZIELE",
+   "x": 20,
+   "y": 846,
+   "w": 350,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "2.34px",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.p.dynamiczna-kompozycja-budowana-w",
+   "key": false,
+   "tag": "p",
+   "text": "Dynamiczna kompozycja budowana warstwami laserunków. Intensy",
+   "x": 20,
+   "y": 873,
+   "w": 350,
+   "h": 96,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dt.technika",
+   "key": false,
+   "tag": "dt",
+   "text": "Technika",
+   "x": 20,
+   "y": 985,
+   "w": 120,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dd.akryl-plotno-bawelniane",
+   "key": false,
+   "tag": "dd",
+   "text": "Akryl, płótno bawełniane",
+   "x": 152,
+   "y": 985,
+   "w": 218,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dt.wymiary",
+   "key": false,
+   "tag": "dt",
+   "text": "Wymiary",
+   "x": 20,
+   "y": 1013,
+   "w": 120,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dd.100-120-3-cm",
+   "key": false,
+   "tag": "dd",
+   "text": "100 × 120 × 3 cm",
+   "x": 152,
+   "y": 1013,
+   "w": 218,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dt.styl",
+   "key": false,
+   "tag": "dt",
+   "text": "Styl",
+   "x": 20,
+   "y": 1041,
+   "w": 120,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dd.abstrakcja",
+   "key": false,
+   "tag": "dd",
+   "text": "Abstrakcja",
+   "x": 152,
+   "y": 1041,
+   "w": 218,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dt.rama",
+   "key": false,
+   "tag": "dt",
+   "text": "Rama",
+   "x": 20,
+   "y": 1069,
+   "w": 120,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.dd.bez-ramy-gotowy-do-powieszenia",
+   "key": false,
+   "tag": "dd",
+   "text": "Bez ramy, gotowy do powieszenia",
+   "x": 152,
+   "y": 1069,
+   "w": 218,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.h2.podobne-dziela",
+   "key": true,
+   "tag": "h2",
+   "text": "Podobne dzieła",
+   "x": 20,
+   "y": 1115,
+   "w": 350,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.a.rozblysk-7-400-zl",
+   "key": true,
+   "tag": "a",
+   "text": "",
+   "x": 20,
+   "y": 1151,
+   "w": 140,
+   "h": 185,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.img-3",
+   "key": true,
+   "tag": "span",
+   "text": "",
+   "x": 20,
+   "y": 1151,
+   "w": 140,
+   "h": 140,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.span.rozblysk",
+   "key": false,
+   "tag": "span",
+   "text": "Rozbłysk",
+   "x": 20,
+   "y": 1297,
+   "w": 52,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.span.7-400-zl",
+   "key": false,
+   "tag": "span",
+   "text": "7 400 zł",
+   "x": 20,
+   "y": 1320,
+   "w": 42,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.a.zlote-pekniecia-6-100-zl",
+   "key": true,
+   "tag": "a",
+   "text": "",
+   "x": 172,
+   "y": 1151,
+   "w": 140,
+   "h": 185,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.img-4",
+   "key": true,
+   "tag": "span",
+   "text": "",
+   "x": 172,
+   "y": 1151,
+   "w": 140,
+   "h": 140,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.span.zlote-pekniecia",
+   "key": false,
+   "tag": "span",
+   "text": "Złote pęknięcia",
+   "x": 172,
+   "y": 1297,
+   "w": 89,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.span.6-100-zl",
+   "key": false,
+   "tag": "span",
+   "text": "6 100 zł",
+   "x": 172,
+   "y": 1320,
+   "w": 42,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.a.w-ciszy-3-700-zl",
+   "key": true,
+   "tag": "a",
+   "text": "",
+   "x": 324,
+   "y": 1151,
+   "w": 140,
+   "h": 185,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.img-5",
+   "key": true,
+   "tag": "span",
+   "text": "",
+   "x": 324,
+   "y": 1151,
+   "w": 140,
+   "h": 140,
+   "offscreen": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A03_dzielo_pelny.span.w-ciszy",
+   "key": false,
+   "tag": "span",
+   "text": "W ciszy",
+   "x": 324,
+   "y": 1297,
+   "w": 45,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.span.3-700-zl",
+   "key": false,
+   "tag": "span",
+   "text": "3 700 zł",
+   "x": 324,
+   "y": 1320,
+   "w": 42,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.span.cena",
+   "key": false,
+   "tag": "span",
+   "text": "Cena",
+   "x": 20,
+   "y": 1382.5,
+   "w": 62.5,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.span.5-200-zl",
+   "key": false,
+   "tag": "span",
+   "text": "5 200 zł",
+   "x": 20,
+   "y": 1398.5,
+   "w": 62.5,
+   "h": 23,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "18px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A03_dzielo_pelny.a.kup-teraz",
+   "key": true,
+   "tag": "a",
+   "text": "Kup teraz",
+   "x": 94.5,
+   "y": 1376,
+   "w": 275.5,
+   "h": 52,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)"
+  }
+ ]
+}

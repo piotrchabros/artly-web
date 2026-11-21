@@ -5,8 +5,8 @@
 //  - everything else from static assets (_redirects, _headers and not_found_handling still apply).
 const CANONICAL_HOST = "artly.com.pl";
 
-// Keep in sync with src/data/site.ts. Empty until the iOS app is published.
-const APP_STORE_ID = "";
+// Keep in sync with src/data/site.ts.
+const APP_STORE_ID = "6837015467";
 const PLAY_PACKAGE = "pl.artly.app";
 
 function appRedirect(request, url) {

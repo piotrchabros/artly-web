@@ -1,0 +1,1175 @@
+{
+ "screen": "A05_kolekcja_edycja",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "A05_kolekcja_edycja.a.wroc-do-zapisanych",
+   "key": true,
+   "tag": "a",
+   "text": "Wróć do Zapisanych",
+   "x": 8,
+   "y": 6,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.porzadkuj-elementy",
+   "key": true,
+   "tag": "button",
+   "text": "Porządkuj elementy",
+   "x": 294,
+   "y": 6,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.udostepnij-kolekcje",
+   "key": true,
+   "tag": "button",
+   "text": "Udostępnij kolekcję",
+   "x": 338,
+   "y": 6,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.img",
+   "key": true,
+   "tag": "div",
+   "text": "",
+   "x": 20,
+   "y": 56,
+   "w": 350,
+   "h": 200,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A05_kolekcja_edycja.h1.moj-apartament",
+   "key": true,
+   "tag": "h1",
+   "text": "Mój apartament",
+   "x": 20,
+   "y": 274,
+   "w": 350,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "32px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.p.salon-i-przedpokoj-na-mokotowie-",
+   "key": false,
+   "tag": "p",
+   "text": "Salon i przedpokój na Mokotowie. Jasne ściany, dąb, len – sz",
+   "x": 20,
+   "y": 314,
+   "w": 350,
+   "h": 46.5,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "23.25px",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.prywatna",
+   "key": false,
+   "tag": "span",
+   "text": "Prywatna",
+   "x": 20,
+   "y": 372.5,
+   "w": 88.5,
+   "h": 28,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)",
+   "padding": "0px 10px"
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.link-tylko-do-odczytu-aktywny",
+   "key": false,
+   "tag": "span",
+   "text": "Link tylko do odczytu aktywny",
+   "x": 116.5,
+   "y": 372.5,
+   "w": 184.5,
+   "h": 30,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(17, 17, 17)",
+   "padding": "0px 10px"
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.dziela-4",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 20,
+   "y": 422.5,
+   "w": 57,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.dziela-4",
+   "key": false,
+   "tag": "span",
+   "text": "Dzieła (4)",
+   "x": 20,
+   "y": 434.5,
+   "w": 57,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.inspiracje-2",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 99,
+   "y": 422.5,
+   "w": 78,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.inspiracje-2",
+   "key": false,
+   "tag": "span",
+   "text": "Inspiracje (2)",
+   "x": 99,
+   "y": 434.5,
+   "w": 78,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.wnetrze",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 199,
+   "y": 422.5,
+   "w": 52.5,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.wnetrze",
+   "key": false,
+   "tag": "span",
+   "text": "Wnętrze",
+   "x": 199,
+   "y": 434.5,
+   "w": 52.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-wyzej-energia",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń wyżej: Energia",
+   "x": 20,
+   "y": 507,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-nizej-energia",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń niżej: Energia",
+   "x": 20,
+   "y": 539,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.img.energia",
+   "key": true,
+   "tag": "a",
+   "text": "Energia",
+   "x": 66,
+   "y": 497,
+   "w": 84,
+   "h": 84,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.energia",
+   "key": false,
+   "tag": "span",
+   "text": "Energia",
+   "x": 164,
+   "y": 485.5,
+   "w": 50.5,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 164,
+   "y": 508.5,
+   "w": 148.5,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.marek-lasek",
+   "key": false,
+   "tag": "span",
+   "text": "Marek Lasek",
+   "x": 164,
+   "y": 508.5,
+   "w": 68,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.100-120-cm",
+   "key": false,
+   "tag": "span",
+   "text": "100 × 120 cm",
+   "x": 164,
+   "y": 508.5,
+   "w": 131.5,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.5-200-zl",
+   "key": false,
+   "tag": "span",
+   "text": "5 200 zł",
+   "x": 164,
+   "y": 545.5,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.zobacz-we-wnetrzu",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu",
+   "x": 164,
+   "y": 568.5,
+   "w": 148.5,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.usun-z-kolekcji-energia",
+   "key": true,
+   "tag": "button",
+   "text": "Usuń z kolekcji: Energia",
+   "x": 326.5,
+   "y": 517,
+   "w": 43.5,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-wyzej-zlote-pekniecia",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń wyżej: Złote pęknięcia",
+   "x": 20,
+   "y": 631,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-nizej-zlote-pekniecia",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń niżej: Złote pęknięcia",
+   "x": 20,
+   "y": 663,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.img.zlote-pekniecia",
+   "key": true,
+   "tag": "a",
+   "text": "Złote pęknięcia",
+   "x": 66,
+   "y": 621,
+   "w": 84,
+   "h": 84,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.zlote-pekniecia",
+   "key": false,
+   "tag": "span",
+   "text": "Złote pęknięcia",
+   "x": 164,
+   "y": 617.5,
+   "w": 102.5,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span-2",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 164,
+   "y": 640.5,
+   "w": 148,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.anna-kruk",
+   "key": false,
+   "tag": "span",
+   "text": "Anna Kruk",
+   "x": 164,
+   "y": 640.5,
+   "w": 56,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.90-120-cm",
+   "key": false,
+   "tag": "span",
+   "text": "90 × 120 cm",
+   "x": 230,
+   "y": 640.5,
+   "w": 66,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.6-100-zl",
+   "key": false,
+   "tag": "span",
+   "text": "6 100 zł",
+   "x": 164,
+   "y": 661.5,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.zobacz-we-wnetrzu-2",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu",
+   "x": 164,
+   "y": 684.5,
+   "w": 148,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.usun-z-kolekcji-zlote-pekniecia",
+   "key": true,
+   "tag": "button",
+   "text": "Usuń z kolekcji: Złote pęknięcia",
+   "x": 326,
+   "y": 641,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-wyzej-w-ciszy",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń wyżej: W ciszy",
+   "x": 20,
+   "y": 747,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-nizej-w-ciszy",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń niżej: W ciszy",
+   "x": 20,
+   "y": 779,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.img.w-ciszy",
+   "key": true,
+   "tag": "a",
+   "text": "W ciszy",
+   "x": 66,
+   "y": 737,
+   "w": 84,
+   "h": 84,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.w-ciszy",
+   "key": false,
+   "tag": "span",
+   "text": "W ciszy",
+   "x": 164,
+   "y": 733.5,
+   "w": 51.5,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span-3",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 164,
+   "y": 756.5,
+   "w": 148,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.katarzyna-biel",
+   "key": false,
+   "tag": "span",
+   "text": "Katarzyna Biel",
+   "x": 164,
+   "y": 756.5,
+   "w": 77.5,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.80-80-cm",
+   "key": false,
+   "tag": "span",
+   "text": "80 × 80 cm",
+   "x": 251.5,
+   "y": 756.5,
+   "w": 59,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.3-700-zl",
+   "key": false,
+   "tag": "span",
+   "text": "3 700 zł",
+   "x": 164,
+   "y": 777.5,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.zobacz-we-wnetrzu-3",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu",
+   "x": 164,
+   "y": 800.5,
+   "w": 148,
+   "h": 24,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.usun-z-kolekcji-w-ciszy",
+   "key": true,
+   "tag": "button",
+   "text": "Usuń z kolekcji: W ciszy",
+   "x": 326,
+   "y": 757,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-wyzej-horyzont",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń wyżej: Horyzont",
+   "x": 20,
+   "y": 863,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.przesun-nizej-horyzont",
+   "key": true,
+   "tag": "button",
+   "text": "Przesuń niżej: Horyzont",
+   "x": 20,
+   "y": 895,
+   "w": 32,
+   "h": 32,
+   "offscreen": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.img.horyzont",
+   "key": true,
+   "tag": "a",
+   "text": "Horyzont",
+   "x": 66,
+   "y": 853,
+   "w": 84,
+   "h": 84,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.horyzont",
+   "key": false,
+   "tag": "span",
+   "text": "Horyzont",
+   "x": 164,
+   "y": 849.5,
+   "w": 62,
+   "h": 20,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span-4",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 164,
+   "y": 872.5,
+   "w": 148,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.julia-nowak",
+   "key": false,
+   "tag": "span",
+   "text": "Julia Nowak",
+   "x": 164,
+   "y": 872.5,
+   "w": 65.5,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.70-100-cm",
+   "key": false,
+   "tag": "span",
+   "text": "70 × 100 cm",
+   "x": 240,
+   "y": 872.5,
+   "w": 66,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.span.4-800-zl",
+   "key": false,
+   "tag": "span",
+   "text": "4 800 zł",
+   "x": 164,
+   "y": 893.5,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.zobacz-we-wnetrzu-4",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu",
+   "x": 164,
+   "y": 916.5,
+   "w": 148,
+   "h": 24,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.button.usun-z-kolekcji-horyzont",
+   "key": true,
+   "tag": "button",
+   "text": "Usuń z kolekcji: Horyzont",
+   "x": 326,
+   "y": 873,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.nav.glowna-nawigacja",
+   "key": true,
+   "tag": "nav",
+   "text": "Główna nawigacja",
+   "x": 0,
+   "y": 768,
+   "w": 390,
+   "h": 76,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(236, 232, 226)",
+   "padding": "6px 8px 16px"
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.odkrywaj",
+   "key": true,
+   "tag": "a",
+   "text": "Odkrywaj",
+   "x": 8,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.dopasuj",
+   "key": true,
+   "tag": "a",
+   "text": "Dopasuj",
+   "x": 101.5,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.zapisane",
+   "key": true,
+   "tag": "a",
+   "text": "Zapisane",
+   "x": 195,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A05_kolekcja_edycja.a.konto",
+   "key": true,
+   "tag": "a",
+   "text": "Konto",
+   "x": 288.5,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  }
+ ]
+}

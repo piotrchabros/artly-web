@@ -1,0 +1,741 @@
+{
+ "screen": "A14_zakup",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "A14_zakup.a.wstecz",
+   "key": true,
+   "tag": "a",
+   "text": "Wstecz",
+   "x": 20,
+   "y": 20,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "radius": "999px"
+  },
+  {
+   "id": "A14_zakup.div.podsumowanie",
+   "key": false,
+   "tag": "div",
+   "text": "Podsumowanie",
+   "x": 72,
+   "y": 32,
+   "w": 101.5,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.div.przyplyw",
+   "key": false,
+   "tag": "div",
+   "text": "Przypływ",
+   "x": 129,
+   "y": 95,
+   "w": 222,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "20px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.div.zofia-lis",
+   "key": false,
+   "tag": "div",
+   "text": "Zofia Lis",
+   "x": 129,
+   "y": 118,
+   "w": 222,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A14_zakup.div.80-100-cm-rama-debowa",
+   "key": false,
+   "tag": "div",
+   "text": "80 × 100 cm · rama dębowa",
+   "x": 129,
+   "y": 138,
+   "w": 222,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A14_zakup.div.3-040-zl",
+   "key": false,
+   "tag": "div",
+   "text": "3 040 zł",
+   "x": 129,
+   "y": 167,
+   "w": 222,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.div.dostawa",
+   "key": false,
+   "tag": "div",
+   "text": "Dostawa",
+   "x": 24,
+   "y": 226,
+   "w": 342,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.button.kurier-z-ubezpieczeniem-pakowani",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 24,
+   "y": 256,
+   "w": 342,
+   "h": 68,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "2px rgb(17, 17, 17)",
+   "radius": "14px",
+   "padding": "14px"
+  },
+  {
+   "id": "A14_zakup.span.kurier-z-ubezpieczeniem",
+   "key": false,
+   "tag": "span",
+   "text": "Kurier z ubezpieczeniem",
+   "x": 70,
+   "y": 272,
+   "w": 154.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.pakowanie-artystyczne-3-5-dni",
+   "key": false,
+   "tag": "span",
+   "text": "Pakowanie artystyczne · 3–5 dni",
+   "x": 70,
+   "y": 292,
+   "w": 171,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.89-zl",
+   "key": false,
+   "tag": "span",
+   "text": "89 zł",
+   "x": 320.5,
+   "y": 281,
+   "w": 29.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.button.odbior-w-pracowni-warszawa-po-um",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 24,
+   "y": 332,
+   "w": 342,
+   "h": 66,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(230, 226, 220)",
+   "radius": "14px",
+   "padding": "14px"
+  },
+  {
+   "id": "A14_zakup.span.odbior-w-pracowni",
+   "key": false,
+   "tag": "span",
+   "text": "Odbiór w pracowni",
+   "x": 69,
+   "y": 347,
+   "w": 120,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.warszawa-po-umowieniu-terminu",
+   "key": false,
+   "tag": "span",
+   "text": "Warszawa, po umówieniu terminu",
+   "x": 69,
+   "y": 367,
+   "w": 180,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.za-darmo",
+   "key": false,
+   "tag": "span",
+   "text": "za darmo",
+   "x": 292,
+   "y": 356,
+   "w": 59,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.label.adres-dostawy",
+   "key": true,
+   "tag": "label",
+   "text": "Adres dostawy",
+   "x": 24,
+   "y": 420,
+   "w": 342,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.input.imie-i-nazwisko",
+   "key": true,
+   "tag": "input",
+   "text": "Imię i nazwisko",
+   "x": 24,
+   "y": 450,
+   "w": 342,
+   "h": 50,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "12px",
+   "padding": "0px 14px"
+  },
+  {
+   "id": "A14_zakup.input.adres",
+   "key": true,
+   "tag": "input",
+   "text": "Adres",
+   "x": 24,
+   "y": 510,
+   "w": 342,
+   "h": 50,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "12px",
+   "padding": "0px 14px"
+  },
+  {
+   "id": "A14_zakup.div.platnosc",
+   "key": false,
+   "tag": "div",
+   "text": "Płatność",
+   "x": 24,
+   "y": 582,
+   "w": 342,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.button.blik",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 24,
+   "y": 612,
+   "w": 108.5,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "2px rgb(17, 17, 17)",
+   "radius": "12px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A14_zakup.span.blik",
+   "key": false,
+   "tag": "span",
+   "text": "BLIK",
+   "x": 64,
+   "y": 627,
+   "w": 28.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.button.karta",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 140.5,
+   "y": 612,
+   "w": 108.5,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(230, 226, 220)",
+   "radius": "12px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A14_zakup.span.karta",
+   "key": false,
+   "tag": "span",
+   "text": "Karta",
+   "x": 177.5,
+   "y": 627,
+   "w": 34.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.button.przelew",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 257.5,
+   "y": 612,
+   "w": 108.5,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(230, 226, 220)",
+   "radius": "12px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A14_zakup.span.przelew",
+   "key": false,
+   "tag": "span",
+   "text": "Przelew",
+   "x": 287,
+   "y": 627,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.dzielo",
+   "key": false,
+   "tag": "span",
+   "text": "Dzieło",
+   "x": 24,
+   "y": 701,
+   "w": 38.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.2-800-zl",
+   "key": false,
+   "tag": "span",
+   "text": "2 800 zł",
+   "x": 317,
+   "y": 701,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.rama-debowa",
+   "key": false,
+   "tag": "span",
+   "text": "Rama dębowa",
+   "x": 24,
+   "y": 729,
+   "w": 89,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.240-zl",
+   "key": false,
+   "tag": "span",
+   "text": "240 zł",
+   "x": 328.5,
+   "y": 729,
+   "w": 37.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.dostawa",
+   "key": false,
+   "tag": "span",
+   "text": "Dostawa",
+   "x": 24,
+   "y": 757,
+   "w": 54.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.89-zl-2",
+   "key": false,
+   "tag": "span",
+   "text": "89 zł",
+   "x": 336.5,
+   "y": 757,
+   "w": 29.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.razem",
+   "key": false,
+   "tag": "span",
+   "text": "Razem",
+   "x": 24,
+   "y": 789,
+   "w": 54,
+   "h": 23,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "18px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.span.3-129-zl",
+   "key": false,
+   "tag": "span",
+   "text": "3 129 zł",
+   "x": 303,
+   "y": 789,
+   "w": 63,
+   "h": 23,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "18px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A14_zakup.button.zaplac",
+   "key": true,
+   "tag": "button",
+   "text": "Zapłać",
+   "x": 24,
+   "y": 760,
+   "w": 342,
+   "h": 54,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "radius": "999px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A14_zakup.span.3-129-zl-2",
+   "key": false,
+   "tag": "span",
+   "text": "3 129 zł",
+   "x": 193.5,
+   "y": 776.5,
+   "w": 56,
+   "h": 21,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,457 @@
+{
+ "screen": "A10_dopasuj_wnetrze",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "A10_dopasuj_wnetrze.a.wstecz",
+   "key": true,
+   "tag": "a",
+   "text": "Wstecz",
+   "x": 20,
+   "y": 20,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "radius": "999px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.div.1-3",
+   "key": false,
+   "tag": "div",
+   "text": "1 / 3",
+   "x": 326,
+   "y": 33.5,
+   "w": 44,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.div.krok-1",
+   "key": false,
+   "tag": "div",
+   "text": "KROK 1",
+   "x": 28,
+   "y": 88,
+   "w": 334,
+   "h": 14,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "2.64px",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.h1.pokaz-swoje-wnetrze",
+   "key": true,
+   "tag": "h1",
+   "text": "Pokaż swoje wnętrze",
+   "x": 28,
+   "y": 112,
+   "w": 334,
+   "h": 35,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "32px",
+    "weight": "400",
+    "lineHeight": "35.2px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.p.dodaj-zdjecie-sciany-na-ktorej-m",
+   "key": false,
+   "tag": "p",
+   "text": "Dodaj zdjęcie ściany, na której ma zawisnąć dzieło. Dopasuje",
+   "x": 28,
+   "y": 155,
+   "w": 334,
+   "h": 67.5,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "22.5px",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.div.miejsce-na-dzielo",
+   "key": false,
+   "tag": "div",
+   "text": "miejsce na dzieło",
+   "x": 140,
+   "y": 280.5,
+   "w": 122,
+   "h": 86,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(138, 74, 38)"
+   },
+   "bg": "rgba(247, 244, 239, 0.5)",
+   "border": "1px rgba(158, 82, 42, 0.7)",
+   "radius": "6px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.button.zmien-zdjecie",
+   "key": true,
+   "tag": "button",
+   "text": "Zmień zdjęcie",
+   "x": 243,
+   "y": 258.5,
+   "w": 107,
+   "h": 36,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgba(27, 37, 48, 0.8)",
+   "radius": "999px",
+   "padding": "0px 14px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.div.sciana-rozpoznana-ok-3-2-m",
+   "key": false,
+   "tag": "div",
+   "text": "Ściana rozpoznana · ok. 3,2 m",
+   "x": 40,
+   "y": 428.5,
+   "w": 200,
+   "h": 28,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "radius": "999px",
+   "padding": "0px 10px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.div.jakie-to-pomieszczenie",
+   "key": false,
+   "tag": "div",
+   "text": "Jakie to pomieszczenie?",
+   "x": 28,
+   "y": 494.5,
+   "w": 334,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.button.salon",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 28,
+   "y": 526.5,
+   "w": 73,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "border": "1px rgb(17, 17, 17)",
+   "radius": "999px",
+   "padding": "0px 18px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.span.salon",
+   "key": false,
+   "tag": "span",
+   "text": "Salon",
+   "x": 47,
+   "y": 539.5,
+   "w": 35,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.button.sypialnia",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 109,
+   "y": 526.5,
+   "w": 94,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "999px",
+   "padding": "0px 18px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.span.sypialnia",
+   "key": false,
+   "tag": "span",
+   "text": "Sypialnia",
+   "x": 128,
+   "y": 539.5,
+   "w": 56,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.button.biuro",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 210.5,
+   "y": 526.5,
+   "w": 70.5,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "999px",
+   "padding": "0px 18px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.span.biuro",
+   "key": false,
+   "tag": "span",
+   "text": "Biuro",
+   "x": 229.5,
+   "y": 539.5,
+   "w": 32.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.button.jadalnia",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 28,
+   "y": 578.5,
+   "w": 91,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "999px",
+   "padding": "0px 18px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.span.jadalnia",
+   "key": false,
+   "tag": "span",
+   "text": "Jadalnia",
+   "x": 47,
+   "y": 591.5,
+   "w": 53,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.button.przedpokoj",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 127,
+   "y": 578.5,
+   "w": 108.5,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "999px",
+   "padding": "0px 18px"
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.span.przedpokoj",
+   "key": false,
+   "tag": "span",
+   "text": "Przedpokój",
+   "x": 146,
+   "y": 591.5,
+   "w": 70.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.div.sfotografuj-sciane-na-wprost-prz",
+   "key": false,
+   "tag": "div",
+   "text": "Sfotografuj ścianę na wprost, przy dziennym świetle. Meble w",
+   "x": 76,
+   "y": 662.5,
+   "w": 270,
+   "h": 61,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "20.3px",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "A10_dopasuj_wnetrze.a.dalej",
+   "key": true,
+   "tag": "a",
+   "text": "Dalej",
+   "x": 28,
+   "y": 758,
+   "w": 334,
+   "h": 54,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "radius": "999px"
+  }
+ ]
+}

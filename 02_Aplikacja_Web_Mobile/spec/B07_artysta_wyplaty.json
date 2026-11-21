@@ -1,0 +1,728 @@
+{
+ "screen": "B07_artysta_wyplaty",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "B07_artysta_wyplaty.a.wstecz",
+   "key": true,
+   "tag": "a",
+   "text": "Wstecz",
+   "x": 20,
+   "y": 20,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "radius": "999px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.wyplaty",
+   "key": false,
+   "tag": "div",
+   "text": "Wypłaty",
+   "x": 72,
+   "y": 30,
+   "w": 88,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.button.wyplata",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 28,
+   "y": 80,
+   "w": 164,
+   "h": 40,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "radius": "999px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.wyplata",
+   "key": false,
+   "tag": "span",
+   "text": "Wypłata",
+   "x": 83.5,
+   "y": 91,
+   "w": 53,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.button.historia",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 198,
+   "y": 80,
+   "w": 164,
+   "h": 40,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   },
+   "radius": "999px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.historia",
+   "key": false,
+   "tag": "span",
+   "text": "Historia",
+   "x": 256,
+   "y": 91,
+   "w": 48.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.dostepne",
+   "key": false,
+   "tag": "div",
+   "text": "Dostępne",
+   "x": 40,
+   "y": 158,
+   "w": 135,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(201, 210, 218)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.3-825-zl",
+   "key": false,
+   "tag": "div",
+   "text": "3 825 zł",
+   "x": 40,
+   "y": 178,
+   "w": 135,
+   "h": 28,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "28px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.w-drodze",
+   "key": false,
+   "tag": "div",
+   "text": "W drodze",
+   "x": 215,
+   "y": 158,
+   "w": 135,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.4-050-zl",
+   "key": false,
+   "tag": "div",
+   "text": "4 050 zł",
+   "x": 215,
+   "y": 178,
+   "w": 135,
+   "h": 28,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "28px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.srodki-ze-sprzedazy-staja-sie-do",
+   "key": false,
+   "tag": "div",
+   "text": "Środki ze sprzedaży stają się dostępne 14 dni po doręczeniu ",
+   "x": 24,
+   "y": 232,
+   "w": 342,
+   "h": 35,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "17.4px",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.label.kwota-wyplaty",
+   "key": true,
+   "tag": "label",
+   "text": "Kwota wypłaty",
+   "x": 24,
+   "y": 289,
+   "w": 342,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.input",
+   "key": true,
+   "tag": "input",
+   "text": "",
+   "x": 41,
+   "y": 332.5,
+   "w": 220.5,
+   "h": 33,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "24px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "padding": "1px 2px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.zl",
+   "key": false,
+   "tag": "span",
+   "text": "zł",
+   "x": 271.5,
+   "y": 338.5,
+   "w": 11.5,
+   "h": 21,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.button.calosc",
+   "key": true,
+   "tag": "button",
+   "text": "Całość",
+   "x": 293,
+   "y": 329,
+   "w": 64,
+   "h": 40,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)",
+   "radius": "999px",
+   "padding": "0px 12px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.na-konto",
+   "key": false,
+   "tag": "div",
+   "text": "Na konto",
+   "x": 24,
+   "y": 399,
+   "w": 342,
+   "h": 20,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.konto-4821",
+   "key": false,
+   "tag": "div",
+   "text": "Konto •••• 4821",
+   "x": 91,
+   "y": 446,
+   "w": 188,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.zofia-lis-zweryfikowane",
+   "key": false,
+   "tag": "div",
+   "text": "Zofia Lis · zweryfikowane",
+   "x": 91,
+   "y": 466,
+   "w": 188,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.button.zmien",
+   "key": true,
+   "tag": "button",
+   "text": "Zmień",
+   "x": 291,
+   "y": 444,
+   "w": 60,
+   "h": 40,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "radius": "999px",
+   "padding": "0px 12px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.button.automatyczna-wyplata-w-kazdy-pon",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 24,
+   "y": 509,
+   "w": 342,
+   "h": 82,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(230, 226, 220)",
+   "radius": "16px",
+   "padding": "14px 16px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.automatyczna-wyplata",
+   "key": false,
+   "tag": "span",
+   "text": "Automatyczna wypłata",
+   "x": 41,
+   "y": 524,
+   "w": 244,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.w-kazdy-poniedzialek-przelejemy-",
+   "key": false,
+   "tag": "span",
+   "text": "W każdy poniedziałek przelejemy dostępne środki",
+   "x": 41,
+   "y": 544,
+   "w": 244,
+   "h": 32,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.button.jak-liczymy-twoje-wynagrodzenie",
+   "key": true,
+   "tag": "button",
+   "text": "Jak liczymy Twoje wynagrodzenie",
+   "x": 24,
+   "y": 611,
+   "w": 342,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.przyklad-morze-zamowienie-indywi",
+   "key": false,
+   "tag": "div",
+   "text": "Przykład: „Morze”, zamówienie indywidualne",
+   "x": 40,
+   "y": 677,
+   "w": 310,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.cena-dla-kupujacego",
+   "key": false,
+   "tag": "span",
+   "text": "Cena dla kupującego",
+   "x": 40,
+   "y": 703,
+   "w": 131,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.3-200-zl",
+   "key": false,
+   "tag": "span",
+   "text": "3 200 zł",
+   "x": 301,
+   "y": 703,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.prowizja-artly-25",
+   "key": false,
+   "tag": "span",
+   "text": "Prowizja Artly (25%)",
+   "x": 40,
+   "y": 731,
+   "w": 122,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.800-zl",
+   "key": false,
+   "tag": "span",
+   "text": "−800 zł",
+   "x": 305,
+   "y": 731,
+   "w": 45,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.wysylka",
+   "key": false,
+   "tag": "span",
+   "text": "Wysyłka",
+   "x": 40,
+   "y": 759,
+   "w": 52.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.placi-kupujacy",
+   "key": false,
+   "tag": "span",
+   "text": "płaci kupujący",
+   "x": 260.5,
+   "y": 759,
+   "w": 89.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.na-twoje-konto",
+   "key": false,
+   "tag": "span",
+   "text": "Na Twoje konto",
+   "x": 40,
+   "y": 798,
+   "w": 97.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.2-400-zl",
+   "key": false,
+   "tag": "span",
+   "text": "2 400 zł",
+   "x": 301,
+   "y": 798,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.button.wyplac",
+   "key": true,
+   "tag": "button",
+   "text": "Wypłać",
+   "x": 24,
+   "y": 734,
+   "w": 342,
+   "h": 54,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "radius": "999px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "B07_artysta_wyplaty.span.3-825-zl",
+   "key": false,
+   "tag": "span",
+   "text": "3 825 zł",
+   "x": 196,
+   "y": 750.5,
+   "w": 56,
+   "h": 21,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   }
+  },
+  {
+   "id": "B07_artysta_wyplaty.div.przelew-w-ciagu-1-2-dni-roboczyc",
+   "key": false,
+   "tag": "div",
+   "text": "Przelew w ciągu 1–2 dni roboczych, bez opłat",
+   "x": 24,
+   "y": 798,
+   "w": 342,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  }
+ ]
+}

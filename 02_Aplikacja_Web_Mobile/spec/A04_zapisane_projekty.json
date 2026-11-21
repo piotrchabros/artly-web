@@ -1,0 +1,331 @@
+{
+ "screen": "A04_zapisane_projekty",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "A04_zapisane_projekty.h1.zapisane",
+   "key": true,
+   "tag": "h1",
+   "text": "Zapisane",
+   "x": 20,
+   "y": 30,
+   "w": 129.5,
+   "h": 34,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "34px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.button.nowa-kolekcja",
+   "key": true,
+   "tag": "button",
+   "text": "Nowa kolekcja",
+   "x": 223,
+   "y": 20,
+   "w": 147,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "padding": "0px 16px"
+  },
+  {
+   "id": "A04_zapisane_projekty.button.kolekcje",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 20,
+   "y": 82,
+   "w": 67,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "padding": "0px 14px 0px 0px"
+  },
+  {
+   "id": "A04_zapisane_projekty.span.kolekcje",
+   "key": false,
+   "tag": "span",
+   "text": "Kolekcje",
+   "x": 20,
+   "y": 94,
+   "w": 53,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.button.wszystkie-dziela",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 105,
+   "y": 82,
+   "w": 117,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "padding": "0px 14px 0px 0px"
+  },
+  {
+   "id": "A04_zapisane_projekty.span.wszystkie-dziela",
+   "key": false,
+   "tag": "span",
+   "text": "Wszystkie dzieła",
+   "x": 105,
+   "y": 94,
+   "w": 103,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.button.projekty",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 240,
+   "y": 82,
+   "w": 66.5,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "padding": "0px 14px 0px 0px"
+  },
+  {
+   "id": "A04_zapisane_projekty.span.projekty",
+   "key": false,
+   "tag": "span",
+   "text": "Projekty",
+   "x": 240,
+   "y": 94,
+   "w": 52.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.div.dla-architektow-etap-2",
+   "key": false,
+   "tag": "div",
+   "text": "DLA ARCHITEKTÓW · ETAP 2",
+   "x": 40,
+   "y": 169,
+   "w": 310,
+   "h": 14,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "2.64px",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.p.tworz-projekty-dla-klientow-zdje",
+   "key": false,
+   "tag": "p",
+   "text": "Twórz projekty dla klientów: zdjęcia wnętrza, wybrane dzieła",
+   "x": 40,
+   "y": 193,
+   "w": 310,
+   "h": 46.5,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "23.25px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.a.zobacz-przykladowy-projekt",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz przykładowy projekt",
+   "x": 40,
+   "y": 253.5,
+   "w": 210.5,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "padding": "0px 16px"
+  },
+  {
+   "id": "A04_zapisane_projekty.nav.glowna-nawigacja",
+   "key": true,
+   "tag": "nav",
+   "text": "Główna nawigacja",
+   "x": 0,
+   "y": 768,
+   "w": 390,
+   "h": 76,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(236, 232, 226)",
+   "padding": "6px 8px 16px"
+  },
+  {
+   "id": "A04_zapisane_projekty.a.odkrywaj",
+   "key": true,
+   "tag": "a",
+   "text": "Odkrywaj",
+   "x": 8,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.a.dopasuj",
+   "key": true,
+   "tag": "a",
+   "text": "Dopasuj",
+   "x": 101.5,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.a.zapisane",
+   "key": true,
+   "tag": "a",
+   "text": "Zapisane",
+   "x": 195,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A04_zapisane_projekty.a.konto",
+   "key": true,
+   "tag": "a",
+   "text": "Konto",
+   "x": 288.5,
+   "y": 775,
+   "w": 93.5,
+   "h": 53,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  }
+ ]
+}

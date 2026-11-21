@@ -1,0 +1,1090 @@
+{
+ "screen": "A07_artykul",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "A07_artykul.img",
+   "key": true,
+   "tag": "div",
+   "text": "",
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 340,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A07_artykul.a.wroc-do-inspiracji",
+   "key": true,
+   "tag": "a",
+   "text": "Wróć do Inspiracji",
+   "x": 12,
+   "y": 12,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgba(255, 255, 255, 0.92)"
+  },
+  {
+   "id": "A07_artykul.button.kopiuj-link-do-artykulu",
+   "key": true,
+   "tag": "button",
+   "text": "Kopiuj link do artykułu",
+   "x": 334,
+   "y": 12,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Arial",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgba(255, 255, 255, 0.92)"
+  },
+  {
+   "id": "A07_artykul.div.poradnik-6-min-redakcja-artly",
+   "key": false,
+   "tag": "div",
+   "text": "PORADNIK · 6 MIN · REDAKCJA ARTLY",
+   "x": 20,
+   "y": 364,
+   "w": 350,
+   "h": 14,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "2.2px",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A07_artykul.h1.jaki-obraz-nad-kanape-5-zasad-i-",
+   "key": true,
+   "tag": "h1",
+   "text": "Jaki obraz nad kanapę? 5 zasad i przykłady",
+   "x": 20,
+   "y": 390,
+   "w": 350,
+   "h": 70.5,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "32px",
+    "weight": "400",
+    "lineHeight": "35.2px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.p.obraz-nad-sofa-to-zwykle-najwazn",
+   "key": false,
+   "tag": "p",
+   "text": "Obraz nad sofą to zwykle najważniejszy punkt salonu. Kilka p",
+   "x": 20,
+   "y": 470.5,
+   "w": 350,
+   "h": 112,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "17px",
+    "weight": "400",
+    "lineHeight": "28.05px",
+    "letterSpacing": "normal",
+    "color": "rgb(43, 43, 43)"
+   }
+  },
+  {
+   "id": "A07_artykul.h2.1-okolo-dwoch-trzecich-szerokosc",
+   "key": true,
+   "tag": "h2",
+   "text": "1. Około dwóch trzecich szerokości sofy",
+   "x": 20,
+   "y": 610.5,
+   "w": 350,
+   "h": 57.5,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "28.8px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.p.dla-sofy-o-szerokosci-240-cm-szu",
+   "key": false,
+   "tag": "p",
+   "text": "Dla sofy o szerokości 240 cm szukaj obrazu lub zestawu o sze",
+   "x": 20,
+   "y": 678,
+   "w": 350,
+   "h": 79,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "26.4px",
+    "letterSpacing": "normal",
+    "color": "rgb(43, 43, 43)"
+   }
+  },
+  {
+   "id": "A07_artykul.h2.2-dolna-krawedz-20-25-cm-nad-opa",
+   "key": true,
+   "tag": "h2",
+   "text": "2. Dolna krawędź 20–25 cm nad oparciem",
+   "x": 20,
+   "y": 785.5,
+   "w": 350,
+   "h": 57.5,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "28.8px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.p.srodek-obrazu-powinien-znalezc-s",
+   "key": false,
+   "tag": "p",
+   "text": "Środek obrazu powinien znaleźć się mniej więcej na wysokości",
+   "x": 20,
+   "y": 853,
+   "w": 350,
+   "h": 53,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "26.4px",
+    "letterSpacing": "normal",
+    "color": "rgb(43, 43, 43)"
+   }
+  },
+  {
+   "id": "A07_artykul.img-2",
+   "key": true,
+   "tag": "div",
+   "text": "",
+   "x": 20,
+   "y": 927.5,
+   "w": 350,
+   "h": 220,
+   "offscreen": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A07_artykul.figcaption.kolor-dziela-powtarza-sie-w-deta",
+   "key": false,
+   "tag": "figcaption",
+   "text": "Kolor dzieła powtarza się w detalach: gałązkach i ceramice. ",
+   "x": 20,
+   "y": 1155.5,
+   "w": 350,
+   "h": 32,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A07_artykul.h2.3-kolor-z-otoczenia-kontrast-w-a",
+   "key": true,
+   "tag": "h2",
+   "text": "3. Kolor z otoczenia, kontrast w akcencie",
+   "x": 20,
+   "y": 1215.5,
+   "w": 350,
+   "h": 57.5,
+   "offscreen": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "28.8px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.p.wybierz-jeden-kolor-z-tkanin-lub",
+   "key": false,
+   "tag": "p",
+   "text": "Wybierz jeden kolor z tkanin lub drewna, a drugi – mocniejsz",
+   "x": 20,
+   "y": 1283.5,
+   "w": 350,
+   "h": 79,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "26.4px",
+    "letterSpacing": "normal",
+    "color": "rgb(43, 43, 43)"
+   }
+  },
+  {
+   "id": "A07_artykul.h2.obrazy-pasujace-do-tej-inspiracj",
+   "key": true,
+   "tag": "h2",
+   "text": "Obrazy pasujące do tej inspiracji",
+   "x": 20,
+   "y": 1418.5,
+   "w": 350,
+   "h": 24,
+   "offscreen": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.img.rozblysk",
+   "key": true,
+   "tag": "a",
+   "text": "Rozbłysk",
+   "x": 20,
+   "y": 1456.5,
+   "w": 200,
+   "h": 180,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A07_artykul.span.rozblysk",
+   "key": false,
+   "tag": "span",
+   "text": "Rozbłysk",
+   "x": 32,
+   "y": 1644.5,
+   "w": 56,
+   "h": 18,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 32,
+   "y": 1664.5,
+   "w": 176,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.marek-lasek",
+   "key": false,
+   "tag": "span",
+   "text": "Marek Lasek",
+   "x": 32,
+   "y": 1664.5,
+   "w": 68,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.160-110-cm",
+   "key": false,
+   "tag": "span",
+   "text": "160 × 110 cm",
+   "x": 110.5,
+   "y": 1664.5,
+   "w": 72.5,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span-2",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 32,
+   "y": 1684.5,
+   "w": 176,
+   "h": 17,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.7-400-zl",
+   "key": false,
+   "tag": "span",
+   "text": "7 400 zł",
+   "x": 32,
+   "y": 1684.5,
+   "w": 45.5,
+   "h": 17,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.dostepny",
+   "key": false,
+   "tag": "span",
+   "text": "dostępny",
+   "x": 88.5,
+   "y": 1684.5,
+   "w": 54,
+   "h": 17,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A07_artykul.button.zapisz-do-kolekcji",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 32,
+   "y": 1709.5,
+   "w": 132,
+   "h": 38,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(17, 17, 17)",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A07_artykul.span.zapisz-do-kolekcji",
+   "key": false,
+   "tag": "span",
+   "text": "Zapisz do kolekcji",
+   "x": 50,
+   "y": 1720.5,
+   "w": 95.5,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.a.zobacz-we-wnetrzu-rozblysk",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu: Rozbłysk",
+   "x": 170,
+   "y": 1709.5,
+   "w": 38,
+   "h": 38,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(17, 17, 17)"
+  },
+  {
+   "id": "A07_artykul.img.zlote-pekniecia",
+   "key": true,
+   "tag": "a",
+   "text": "Złote pęknięcia",
+   "x": 232,
+   "y": 1456.5,
+   "w": 200,
+   "h": 180,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A07_artykul.span.zlote-pekniecia",
+   "key": false,
+   "tag": "span",
+   "text": "Złote pęknięcia",
+   "x": 244,
+   "y": 1644.5,
+   "w": 95.5,
+   "h": 18,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span-3",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 244,
+   "y": 1664.5,
+   "w": 176,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.anna-kruk",
+   "key": false,
+   "tag": "span",
+   "text": "Anna Kruk",
+   "x": 244,
+   "y": 1664.5,
+   "w": 56,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.150-100-cm",
+   "key": false,
+   "tag": "span",
+   "text": "150 × 100 cm",
+   "x": 310,
+   "y": 1664.5,
+   "w": 72.5,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span-4",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 244,
+   "y": 1684.5,
+   "w": 176,
+   "h": 17,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.6-100-zl",
+   "key": false,
+   "tag": "span",
+   "text": "6 100 zł",
+   "x": 244,
+   "y": 1684.5,
+   "w": 45.5,
+   "h": 17,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.dostepny-2",
+   "key": false,
+   "tag": "span",
+   "text": "dostępny",
+   "x": 300.5,
+   "y": 1684.5,
+   "w": 54,
+   "h": 17,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A07_artykul.button.zapisz-do-kolekcji-2",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 244,
+   "y": 1709.5,
+   "w": 132,
+   "h": 38,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(17, 17, 17)",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A07_artykul.span.zapisz-do-kolekcji-2",
+   "key": false,
+   "tag": "span",
+   "text": "Zapisz do kolekcji",
+   "x": 262,
+   "y": 1720.5,
+   "w": 95.5,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.a.zobacz-we-wnetrzu-zlote-peknieci",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu: Złote pęknięcia",
+   "x": 382,
+   "y": 1709.5,
+   "w": 38,
+   "h": 38,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(17, 17, 17)"
+  },
+  {
+   "id": "A07_artykul.img.horyzont",
+   "key": true,
+   "tag": "a",
+   "text": "Horyzont",
+   "x": 444,
+   "y": 1456.5,
+   "w": 200,
+   "h": 180,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A07_artykul.span.horyzont",
+   "key": false,
+   "tag": "span",
+   "text": "Horyzont",
+   "x": 456,
+   "y": 1644.5,
+   "w": 58,
+   "h": 18,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span-5",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 456,
+   "y": 1664.5,
+   "w": 176,
+   "h": 16,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.julia-nowak",
+   "key": false,
+   "tag": "span",
+   "text": "Julia Nowak",
+   "x": 456,
+   "y": 1664.5,
+   "w": 65.5,
+   "h": 16,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.140-90-cm",
+   "key": false,
+   "tag": "span",
+   "text": "140 × 90 cm",
+   "x": 532,
+   "y": 1664.5,
+   "w": 66,
+   "h": 16,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(102, 102, 102)"
+   }
+  },
+  {
+   "id": "A07_artykul.span-6",
+   "key": false,
+   "tag": "span",
+   "text": "·",
+   "x": 456,
+   "y": 1684.5,
+   "w": 176,
+   "h": 17,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.4-800-zl",
+   "key": false,
+   "tag": "span",
+   "text": "4 800 zł",
+   "x": 456,
+   "y": 1684.5,
+   "w": 45.5,
+   "h": 17,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.ostatni-egz",
+   "key": false,
+   "tag": "span",
+   "text": "ostatni egz.",
+   "x": 512.5,
+   "y": 1684.5,
+   "w": 66,
+   "h": 17,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A07_artykul.button.zapisz-do-kolekcji-3",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 456,
+   "y": 1709.5,
+   "w": 132,
+   "h": 38,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(17, 17, 17)",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "A07_artykul.span.zapisz-do-kolekcji-3",
+   "key": false,
+   "tag": "span",
+   "text": "Zapisz do kolekcji",
+   "x": 474,
+   "y": 1720.5,
+   "w": 95.5,
+   "h": 16,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.a.zobacz-we-wnetrzu-horyzont",
+   "key": true,
+   "tag": "a",
+   "text": "Zobacz we wnętrzu: Horyzont",
+   "x": 594,
+   "y": 1709.5,
+   "w": 38,
+   "h": 38,
+   "offscreen": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(17, 17, 17)"
+  },
+  {
+   "id": "A07_artykul.h2.czytaj-dalej",
+   "key": true,
+   "tag": "h2",
+   "text": "Czytaj dalej",
+   "x": 20,
+   "y": 1809.5,
+   "w": 350,
+   "h": 24,
+   "offscreen": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.a.poradnik-jak-dobrac-rozmiar-obra",
+   "key": true,
+   "tag": "a",
+   "text": "",
+   "x": 20,
+   "y": 1847.5,
+   "w": 350,
+   "h": 90,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.img-3",
+   "key": true,
+   "tag": "span",
+   "text": "",
+   "x": 20,
+   "y": 1847.5,
+   "w": 110,
+   "h": 90,
+   "offscreen": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A07_artykul.span.poradnik",
+   "key": false,
+   "tag": "span",
+   "text": "PORADNIK",
+   "x": 144,
+   "y": 1847.5,
+   "w": 226,
+   "h": 14,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "1.98px",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.jak-dobrac-rozmiar-obrazu-do-sci",
+   "key": false,
+   "tag": "span",
+   "text": "Jak dobrać rozmiar obrazu do ściany?",
+   "x": 144,
+   "y": 1867.5,
+   "w": 226,
+   "h": 43,
+   "offscreen": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "18px",
+    "weight": "400",
+    "lineHeight": "21.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.a.trendy-5-sposobow-na-abstrakcje-",
+   "key": true,
+   "tag": "a",
+   "text": "",
+   "x": 20,
+   "y": 1951.5,
+   "w": 350,
+   "h": 90,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "A07_artykul.img-4",
+   "key": true,
+   "tag": "span",
+   "text": "",
+   "x": 20,
+   "y": 1951.5,
+   "w": 110,
+   "h": 90,
+   "offscreen": false,
+   "bg": "rgb(243, 239, 233)"
+  },
+  {
+   "id": "A07_artykul.span.trendy",
+   "key": false,
+   "tag": "span",
+   "text": "TRENDY",
+   "x": 144,
+   "y": 1951.5,
+   "w": 226,
+   "h": 14,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "1.98px",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "A07_artykul.span.5-sposobow-na-abstrakcje-we-wnet",
+   "key": false,
+   "tag": "span",
+   "text": "5 sposobów na abstrakcję we wnętrzu",
+   "x": 144,
+   "y": 1971.5,
+   "w": 226,
+   "h": 43,
+   "offscreen": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "18px",
+    "weight": "400",
+    "lineHeight": "21.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  }
+ ]
+}

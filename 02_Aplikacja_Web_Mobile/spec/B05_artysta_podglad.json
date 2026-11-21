@@ -1,0 +1,416 @@
+{
+ "screen": "B05_artysta_podglad",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "B05_artysta_podglad.a.wstecz",
+   "key": true,
+   "tag": "a",
+   "text": "Wstecz",
+   "x": 20,
+   "y": 20,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "radius": "999px"
+  },
+  {
+   "id": "B05_artysta_podglad.div.3-3",
+   "key": false,
+   "tag": "div",
+   "text": "3 / 3",
+   "x": 326,
+   "y": 33.5,
+   "w": 44,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.div.podglad",
+   "key": false,
+   "tag": "div",
+   "text": "PODGLĄD",
+   "x": 24,
+   "y": 80,
+   "w": 342,
+   "h": 14,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "2.64px",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.h1.tak-zobacza-cie-kupujacy",
+   "key": true,
+   "tag": "h1",
+   "text": "Tak zobaczą Cię kupujący",
+   "x": 24,
+   "y": 102,
+   "w": 342,
+   "h": 31,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "28px",
+    "weight": "400",
+    "lineHeight": "30.8px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.div.zofia-lis",
+   "key": false,
+   "tag": "div",
+   "text": "Zofia Lis",
+   "x": 43,
+   "y": 292,
+   "w": 226.5,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.div.warszawa-akryl-olej-pracownia-li",
+   "key": false,
+   "tag": "div",
+   "text": "Warszawa · akryl, olej · @pracownia.lis",
+   "x": 43,
+   "y": 318,
+   "w": 226.5,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.div.przyjmuje-zamowienia-indywidualn",
+   "key": false,
+   "tag": "div",
+   "text": "Przyjmuje zamówienia indywidualne",
+   "x": 43,
+   "y": 345,
+   "w": 232,
+   "h": 28,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(36, 87, 63)"
+   },
+   "bg": "rgb(227, 239, 231)",
+   "radius": "999px",
+   "padding": "0px 10px"
+  },
+  {
+   "id": "B05_artysta_podglad.div.historia",
+   "key": false,
+   "tag": "div",
+   "text": "Historia",
+   "x": 43,
+   "y": 391,
+   "w": 304,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.p.maluje-od-dziecinstwa-ale-dopier",
+   "key": false,
+   "tag": "p",
+   "text": "Maluję od dzieciństwa, ale dopiero po studiach na ASP w Wars",
+   "x": 43,
+   "y": 414,
+   "w": 304,
+   "h": 96,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "24px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.a.edytuj-historie",
+   "key": true,
+   "tag": "a",
+   "text": "Edytuj historię",
+   "x": 43,
+   "y": 510,
+   "w": 84.5,
+   "h": 36,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.div.prace-3",
+   "key": false,
+   "tag": "div",
+   "text": "Prace (3)",
+   "x": 43,
+   "y": 565.5,
+   "w": 51,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.a.dodaj",
+   "key": true,
+   "tag": "a",
+   "text": "+ Dodaj",
+   "x": 302.5,
+   "y": 556,
+   "w": 44.5,
+   "h": 36,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.span.przyplyw",
+   "key": false,
+   "tag": "span",
+   "text": "Przypływ",
+   "x": 43,
+   "y": 696,
+   "w": 96,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.span.2-800-zl",
+   "key": false,
+   "tag": "span",
+   "text": "2 800 zł",
+   "x": 43,
+   "y": 716,
+   "w": 96,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.span.zar",
+   "key": false,
+   "tag": "span",
+   "text": "Żar",
+   "x": 147,
+   "y": 696,
+   "w": 96,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.span.2-600-zl",
+   "key": false,
+   "tag": "span",
+   "text": "2 600 zł",
+   "x": 147,
+   "y": 716,
+   "w": 96,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.span.bez-tytulu",
+   "key": false,
+   "tag": "span",
+   "text": "Bez tytułu",
+   "x": 251,
+   "y": 696,
+   "w": 96,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.span.uzupelnij-cene",
+   "key": false,
+   "tag": "span",
+   "text": "Uzupełnij cenę",
+   "x": 251,
+   "y": 716,
+   "w": 96,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(122, 62, 28)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.div.jedna-praca-nie-ma-jeszcze-ceny-",
+   "key": false,
+   "tag": "div",
+   "text": "Jedna praca nie ma jeszcze ceny — opublikujemy ją, gdy ją uz",
+   "x": 72,
+   "y": 781,
+   "w": 278,
+   "h": 56.5,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "18.85px",
+    "letterSpacing": "normal",
+    "color": "rgb(92, 47, 22)"
+   }
+  },
+  {
+   "id": "B05_artysta_podglad.button.opublikuj-profil",
+   "key": true,
+   "tag": "button",
+   "text": "Opublikuj profil",
+   "x": 24,
+   "y": 760,
+   "w": 342,
+   "h": 54,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "radius": "999px",
+   "padding": "1px 6px"
+  }
+ ]
+}

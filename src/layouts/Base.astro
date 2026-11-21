@@ -13,6 +13,7 @@ import { ClientRouter } from 'astro:transitions';
 import AppBanner from '../components/site/AppBanner.astro';
 import Header from '../components/site/Header.astro';
 import Footer from '../components/site/Footer.astro';
+import { APP_STORE_ID } from '../data/site';
 import { LOCALES, LOCALE_META, DEFAULT_LOCALE, alternates, localePath, pagePath, useT, type Locale, type PageKey } from '../i18n';
 
 interface Crumb { name: string; path: string }
@@ -92,6 +93,8 @@ const ld = [...jsonLd, ...(breadcrumb ? [breadcrumb] : [])];
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={ogImage} />
     <meta name="theme-color" content="#FFFFFF" />
+    {/* iOS Safari shows Apple's native Smart App Banner instead of ours (spec §6.0). */}
+    <meta name="apple-itunes-app" content={`app-id=${APP_STORE_ID}, app-argument=${canonical}`} />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon-180.png" />

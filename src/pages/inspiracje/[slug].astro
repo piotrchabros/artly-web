@@ -8,7 +8,7 @@ import ArtworkCard from '../../components/home/ArtworkCard.astro';
 import ArticleCard from '../../components/inspiracje/ArticleCard.astro';
 import { getArticles, readingMinutes, articlePath, categoryPath, categoryLabel, type Article } from '../../data/inspiracje';
 import { artworkBySlug } from '../../data/artworks';
-import { INSPIRACJE_PATH } from '../../data/site';
+import { INSPIRACJE_PATH, shopHref } from '../../data/site';
 
 export async function getStaticPaths() {
   const all = await getArticles();
@@ -67,7 +67,7 @@ const crumbs = [
       <section class="wrap art__sec">
         <div class="sec-head">
           <h2 class="h2">Obrazy pasujące do tej inspiracji</h2>
-          <a class="sec-head__all only-d" href="/aplikacja/">Zobacz podobne obrazy</a>
+          <a class="sec-head__all only-d" href={shopHref('pl', 'discover')}>Zobacz podobne obrazy</a>
         </div>
         <div class="art__works">{works.map((w) => <ArtworkCard a={w} locale="pl" />)}</div>
       </section>

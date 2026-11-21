@@ -1,0 +1,893 @@
+{
+ "screen": "B06_artysta_panel",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "B06_artysta_panel.div.panel-artysty",
+   "key": false,
+   "tag": "div",
+   "text": "Panel artysty",
+   "x": 24,
+   "y": 18.5,
+   "w": 132,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.czesc-zofia",
+   "key": false,
+   "tag": "div",
+   "text": "Cześć, Zofia",
+   "x": 24,
+   "y": 35.5,
+   "w": 132,
+   "h": 26,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "26px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.a.twoj-profil",
+   "key": true,
+   "tag": "a",
+   "text": "Twój profil",
+   "x": 326,
+   "y": 18,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(243, 239, 233)",
+   "radius": "999px"
+  },
+  {
+   "id": "B06_artysta_panel.div.dostepne-do-wyplaty",
+   "key": false,
+   "tag": "div",
+   "text": "Dostępne do wypłaty",
+   "x": 44,
+   "y": 100,
+   "w": 302,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(201, 210, 218)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.3-825-zl",
+   "key": false,
+   "tag": "div",
+   "text": "3 825 zł",
+   "x": 44,
+   "y": 121,
+   "w": 302,
+   "h": 42,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "40px",
+    "weight": "400",
+    "lineHeight": "42px",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.4-050-zl-w-drodze",
+   "key": false,
+   "tag": "div",
+   "text": "+ 4 050 zł w drodze",
+   "x": 44,
+   "y": 169,
+   "w": 302,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(201, 210, 218)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.a.wyplac-srodki",
+   "key": true,
+   "tag": "a",
+   "text": "Wypłać środki",
+   "x": 44,
+   "y": 204,
+   "w": 145,
+   "h": 46,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "radius": "999px"
+  },
+  {
+   "id": "B06_artysta_panel.a.historia",
+   "key": true,
+   "tag": "a",
+   "text": "Historia",
+   "x": 199,
+   "y": 204,
+   "w": 147,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "border": "1px rgb(86, 99, 111)",
+   "radius": "999px"
+  },
+  {
+   "id": "B06_artysta_panel.div.4",
+   "key": false,
+   "tag": "div",
+   "text": "4",
+   "x": 36,
+   "y": 300,
+   "w": 84.5,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.sprzedane-prace-w-xi",
+   "key": false,
+   "tag": "div",
+   "text": "sprzedane prace w XI",
+   "x": 36,
+   "y": 326,
+   "w": 84.5,
+   "h": 31,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "15.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.27",
+   "key": false,
+   "tag": "div",
+   "text": "27",
+   "x": 152.5,
+   "y": 300,
+   "w": 84.5,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.osob-dodalo-do-ulubionych",
+   "key": false,
+   "tag": "div",
+   "text": "osób dodało do ulubionych",
+   "x": 152.5,
+   "y": 326,
+   "w": 84.5,
+   "h": 31,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "15.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.1",
+   "key": false,
+   "tag": "div",
+   "text": "1",
+   "x": 269.5,
+   "y": 300,
+   "w": 84.5,
+   "h": 24,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "24px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.div.nowe-zapytanie-o-zamowienie",
+   "key": false,
+   "tag": "div",
+   "text": "nowe zapytanie o zamówienie",
+   "x": 269.5,
+   "y": 326,
+   "w": 84.5,
+   "h": 31,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "15.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.h2.do-zrobienia",
+   "key": true,
+   "tag": "h2",
+   "text": "Do zrobienia",
+   "x": 24,
+   "y": 397,
+   "w": 342,
+   "h": 21,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "21px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.button.nadaj-przyplyw-do-14-11-etykieta",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 24,
+   "y": 428,
+   "w": 342,
+   "h": 66,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(251, 241, 234)",
+   "border": "1px rgb(235, 201, 177)",
+   "radius": "16px",
+   "padding": "14px"
+  },
+  {
+   "id": "B06_artysta_panel.span.nadaj-przyplyw-do-14-11",
+   "key": false,
+   "tag": "span",
+   "text": "Nadaj „Przypływ” do 14.11",
+   "x": 73,
+   "y": 443,
+   "w": 248,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.etykieta-kurierska-jest-gotowa-d",
+   "key": false,
+   "tag": "span",
+   "text": "Etykieta kurierska jest gotowa do wydruku",
+   "x": 73,
+   "y": 463,
+   "w": 248,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.button.anna-n-pyta-o-obraz-120-90-cm-bu",
+   "key": true,
+   "tag": "button",
+   "text": "",
+   "x": 24,
+   "y": 502,
+   "w": 342,
+   "h": 66,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13.3333px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(230, 226, 220)",
+   "radius": "16px",
+   "padding": "14px"
+  },
+  {
+   "id": "B06_artysta_panel.span.anna-n-pyta-o-obraz-120-90-cm",
+   "key": false,
+   "tag": "span",
+   "text": "Anna N. pyta o obraz 120 × 90 cm",
+   "x": 73,
+   "y": 517,
+   "w": 248,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.budzet-3-6-tys-zl-odpowiedz-z-wy",
+   "key": false,
+   "tag": "span",
+   "text": "Budżet 3–6 tys. zł · odpowiedz z wyceną",
+   "x": 73,
+   "y": 537,
+   "w": 248,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.h2.ostatnia-sprzedaz",
+   "key": true,
+   "tag": "h2",
+   "text": "Ostatnia sprzedaż",
+   "x": 24,
+   "y": 603.5,
+   "w": 158,
+   "h": 21,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "21px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.a.wszystko",
+   "key": true,
+   "tag": "a",
+   "text": "Wszystko",
+   "x": 310,
+   "y": 594,
+   "w": 56,
+   "h": 40,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.przyplyw",
+   "key": false,
+   "tag": "span",
+   "text": "Przypływ",
+   "x": 80,
+   "y": 664.5,
+   "w": 57.5,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.sprzedaz-10-11-2-800-zl",
+   "key": false,
+   "tag": "span",
+   "text": "Sprzedaż · 10.11 · 2 800 zł",
+   "x": 80,
+   "y": 685.5,
+   "w": 142,
+   "h": 16,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.2-100-zl",
+   "key": false,
+   "tag": "span",
+   "text": "2 100 zł",
+   "x": 317,
+   "y": 662,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.czeka-na-nadanie",
+   "key": false,
+   "tag": "span",
+   "text": "Czeka na nadanie",
+   "x": 270,
+   "y": 687,
+   "w": 88,
+   "h": 14,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(122, 62, 28)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.zar",
+   "key": false,
+   "tag": "span",
+   "text": "Żar",
+   "x": 80,
+   "y": 743.5,
+   "w": 22,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.sprzedaz-03-11-2-600-zl",
+   "key": false,
+   "tag": "span",
+   "text": "Sprzedaż · 03.11 · 2 600 zł",
+   "x": 80,
+   "y": 764.5,
+   "w": 142,
+   "h": 16,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.1-950-zl",
+   "key": false,
+   "tag": "span",
+   "text": "1 950 zł",
+   "x": 317,
+   "y": 741,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.w-okresie-zwrotu",
+   "key": false,
+   "tag": "span",
+   "text": "W okresie zwrotu",
+   "x": 271,
+   "y": 766,
+   "w": 87,
+   "h": 14,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.morze-na-zamowienie",
+   "key": false,
+   "tag": "span",
+   "text": "Morze — na zamówienie",
+   "x": 80,
+   "y": 822.5,
+   "w": 155,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.zamowienie-21-10-3-200-zl",
+   "key": false,
+   "tag": "span",
+   "text": "Zamówienie · 21.10 · 3 200 zł",
+   "x": 80,
+   "y": 843.5,
+   "w": 156.5,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.2-400-zl",
+   "key": false,
+   "tag": "span",
+   "text": "2 400 zł",
+   "x": 317,
+   "y": 820,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.dostepne",
+   "key": false,
+   "tag": "span",
+   "text": "Dostępne",
+   "x": 310.5,
+   "y": 845,
+   "w": 47.5,
+   "h": 14,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(36, 87, 63)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.swit",
+   "key": false,
+   "tag": "span",
+   "text": "Świt",
+   "x": 80,
+   "y": 901.5,
+   "w": 27,
+   "h": 18,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.sprzedaz-14-10-1-900-zl",
+   "key": false,
+   "tag": "span",
+   "text": "Sprzedaż · 14.10 · 1 900 zł",
+   "x": 80,
+   "y": 922.5,
+   "w": 142,
+   "h": 16,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.1-425-zl",
+   "key": false,
+   "tag": "span",
+   "text": "1 425 zł",
+   "x": 317,
+   "y": 899,
+   "w": 49,
+   "h": 18,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.span.dostepne-2",
+   "key": false,
+   "tag": "span",
+   "text": "Dostępne",
+   "x": 310.5,
+   "y": 924,
+   "w": 47.5,
+   "h": 14,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(36, 87, 63)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.nav.nawigacja-artysty",
+   "key": true,
+   "tag": "nav",
+   "text": "Nawigacja artysty",
+   "x": 0,
+   "y": 761,
+   "w": 390,
+   "h": 83,
+   "offscreen": false,
+   "covered": false,
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(236, 232, 226)",
+   "padding": "8px 8px 26px"
+  },
+  {
+   "id": "B06_artysta_panel.a.panel",
+   "key": true,
+   "tag": "a",
+   "text": "Panel",
+   "x": 8,
+   "y": 770,
+   "w": 93.5,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.a.moje-prace",
+   "key": true,
+   "tag": "a",
+   "text": "Moje prace",
+   "x": 101.5,
+   "y": 770,
+   "w": 93.5,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B06_artysta_panel.button.zamowienia",
+   "key": true,
+   "tag": "button",
+   "text": "Zamówienia",
+   "x": 195,
+   "y": 770,
+   "w": 93.5,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   },
+   "padding": "1px 6px"
+  },
+  {
+   "id": "B06_artysta_panel.a.wyplaty",
+   "key": true,
+   "tag": "a",
+   "text": "Wypłaty",
+   "x": 288.5,
+   "y": 770,
+   "w": 93.5,
+   "h": 48,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  }
+ ]
+}

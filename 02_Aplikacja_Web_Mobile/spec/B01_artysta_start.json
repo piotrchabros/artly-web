@@ -1,0 +1,388 @@
+{
+ "screen": "B01_artysta_start",
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "elements": [
+  {
+   "id": "B01_artysta_start.a.wstecz",
+   "key": true,
+   "tag": "a",
+   "text": "Wstecz",
+   "x": 20,
+   "y": 20,
+   "w": 44,
+   "h": 44,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "radius": "999px"
+  },
+  {
+   "id": "B01_artysta_start.div.artly",
+   "key": false,
+   "tag": "div",
+   "text": "ARTLY",
+   "x": 159.5,
+   "y": 29,
+   "w": 71,
+   "h": 26,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Italiana",
+    "size": "22px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "2.64px",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.div.dla-artystow",
+   "key": false,
+   "tag": "div",
+   "text": "DLA ARTYSTÓW",
+   "x": 28,
+   "y": 240,
+   "w": 334,
+   "h": 14,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "11px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "2.64px",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.h1.twoja-sztuka-znajdzie-swoje-miej",
+   "key": true,
+   "tag": "h1",
+   "text": "Twoja sztuka znajdzie swoje miejsce",
+   "x": 28,
+   "y": 264,
+   "w": 334,
+   "h": 70.5,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Newsreader",
+    "size": "32px",
+    "weight": "400",
+    "lineHeight": "35.2px",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.div.pokazujemy-twoje-prace-osobom-do",
+   "key": false,
+   "tag": "div",
+   "text": "Pokazujemy Twoje prace osobom, do których wnętrz pasują.",
+   "x": 28,
+   "y": 350.5,
+   "w": 334,
+   "h": 39,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "19.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.div.wystarczy-zdjecie-obrazu-styl-ko",
+   "key": false,
+   "tag": "div",
+   "text": "Wystarczy zdjęcie obrazu — styl, kolory i tagi uzupełnimy za",
+   "x": 28,
+   "y": 399.5,
+   "w": 334,
+   "h": 39,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "19.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.div.sprzedawaj-gotowe-prace-i-przyjm",
+   "key": false,
+   "tag": "div",
+   "text": "Sprzedawaj gotowe prace i przyjmuj zamówienia indywidualne.",
+   "x": 28,
+   "y": 449,
+   "w": 334,
+   "h": 39,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "400",
+    "lineHeight": "19.6px",
+    "letterSpacing": "normal",
+    "color": "rgb(51, 51, 51)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.label.imie-i-nazwisko-lub-pseudonim-ar",
+   "key": true,
+   "tag": "label",
+   "text": "Imię i nazwisko lub pseudonim artystyczny",
+   "x": 28,
+   "y": 514,
+   "w": 334,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.input",
+   "key": true,
+   "tag": "input",
+   "text": "",
+   "x": 28,
+   "y": 541,
+   "w": 334,
+   "h": 52,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "12px",
+   "padding": "0px 14px"
+  },
+  {
+   "id": "B01_artysta_start.label.e-mail",
+   "key": true,
+   "tag": "label",
+   "text": "E-mail",
+   "x": 28,
+   "y": 607,
+   "w": 334,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.input-2",
+   "key": true,
+   "tag": "input",
+   "text": "",
+   "x": 28,
+   "y": 634,
+   "w": 334,
+   "h": 52,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "12px",
+   "padding": "0px 14px"
+  },
+  {
+   "id": "B01_artysta_start.label.haslo",
+   "key": true,
+   "tag": "label",
+   "text": "Hasło",
+   "x": 28,
+   "y": 700,
+   "w": 334,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "600",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.input-3",
+   "key": true,
+   "tag": "input",
+   "text": "",
+   "x": 28,
+   "y": 727,
+   "w": 334,
+   "h": 52,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "15px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "bg": "rgb(255, 255, 255)",
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "12px",
+   "padding": "0px 14px"
+  },
+  {
+   "id": "B01_artysta_start.div.lub",
+   "key": false,
+   "tag": "div",
+   "text": "lub",
+   "x": 28,
+   "y": 797,
+   "w": 334,
+   "h": 17,
+   "offscreen": false,
+   "covered": true,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "13px",
+    "weight": "400",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  },
+  {
+   "id": "B01_artysta_start.button.google",
+   "key": true,
+   "tag": "button",
+   "text": "Google",
+   "x": 28,
+   "y": 828,
+   "w": 162,
+   "h": 48,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "999px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "B01_artysta_start.button.apple",
+   "key": true,
+   "tag": "button",
+   "text": "Apple",
+   "x": 200,
+   "y": 828,
+   "w": 162,
+   "h": 48,
+   "offscreen": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "14px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(17, 17, 17)"
+   },
+   "border": "1px rgb(207, 202, 194)",
+   "radius": "999px",
+   "padding": "1px 6px"
+  },
+  {
+   "id": "B01_artysta_start.a.zaloz-konto-artysty",
+   "key": true,
+   "tag": "a",
+   "text": "Załóż konto artysty",
+   "x": 28,
+   "y": 733,
+   "w": 334,
+   "h": 54,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "16px",
+    "weight": "500",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(255, 255, 255)"
+   },
+   "bg": "rgb(17, 17, 17)",
+   "radius": "999px"
+  },
+  {
+   "id": "B01_artysta_start.div.zakladajac-konto-akceptujesz-reg",
+   "key": false,
+   "tag": "div",
+   "text": "Zakładając konto, akceptujesz regulamin dla artystów.",
+   "x": 28,
+   "y": 797,
+   "w": 334,
+   "h": 17,
+   "offscreen": false,
+   "covered": false,
+   "font": {
+    "family": "Hanken Grotesk",
+    "size": "12px",
+    "weight": "400",
+    "lineHeight": "16.8px",
+    "letterSpacing": "normal",
+    "color": "rgb(85, 85, 85)"
+   }
+  }
+ ]
+}
