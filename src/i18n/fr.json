@@ -133,7 +133,8 @@
     "faq": "FAQ",
     "terms": "Conditions générales",
     "privacy": "Politique de confidentialité",
-    "contact": "Contact"
+    "deletion": "Suppression du compte",
+    "support": "Assistance"
   },
   "screens": {
     "start": "Écran d’accueil de l’application ARTLY",
@@ -151,10 +152,11 @@
     "wyplaty": "Écran des paiements avec le solde disponible et le montant en cours de versement"
   },
   "pages": {
-    "regulamin": { "title": "Conditions générales" },
-    "polityka-prywatnosci": { "title": "Politique de confidentialité" },
-    "kontakt": { "title": "Contact" },
-    "soon": { "overline": "Bientôt", "text": "Nous travaillons sur cette page. Revenez bientôt.", "back": "Retour à l’accueil" }
+    "privacy": { "title": "Politique de confidentialité" },
+    "terms": { "title": "Conditions générales" },
+    "deletion": { "title": "Suppression du compte" },
+    "support": { "title": "Assistance", "overline": "Contact" },
+    "legal": { "overline": "Informations légales", "toc": "Sommaire", "updated": "Dernière mise à jour : {date}", "langNote": "Ce document est disponible en anglais et en polonais.", "back": "Retour à l’accueil" }
   },
   "notFound": {
     "title": "Page introuvable",

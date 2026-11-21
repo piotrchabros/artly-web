@@ -133,7 +133,8 @@
     "faq": "FAQ",
     "terms": "Regulamin",
     "privacy": "Polityka prywatności",
-    "contact": "Kontakt"
+    "deletion": "Usuwanie konta",
+    "support": "Pomoc"
   },
   "screens": {
     "start": "Ekran startowy aplikacji ARTLY",
@@ -151,10 +152,11 @@
     "wyplaty": "Ekran wypłat z dostępnymi środkami i kwotą w drodze"
   },
   "pages": {
-    "regulamin": { "title": "Regulamin" },
-    "polityka-prywatnosci": { "title": "Polityka prywatności" },
-    "kontakt": { "title": "Kontakt" },
-    "soon": { "overline": "Wkrótce", "text": "Pracujemy nad tą stroną. Zajrzyj tu ponownie niedługo.", "back": "Wróć na stronę główną" }
+    "privacy": { "title": "Polityka prywatności" },
+    "terms": { "title": "Regulamin" },
+    "deletion": { "title": "Usuwanie konta" },
+    "support": { "title": "Pomoc", "overline": "Kontakt" },
+    "legal": { "overline": "Dokumenty", "toc": "Spis treści", "updated": "Ostatnia aktualizacja: {date}", "langNote": "Ten dokument jest dostępny w języku angielskim i polskim.", "back": "Wróć na stronę główną" }
   },
   "notFound": {
     "title": "Nie znaleziono strony",

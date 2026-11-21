@@ -1,0 +1,178 @@
+---
+import Base from '../../layouts/Base.astro';
+import LegalBlocks from './LegalBlocks.astro';
+import { getDict, localePath, LOCALE_META, type Locale } from '../../i18n';
+import { getLegalDoc } from '../../data/legal';
+import type { LegalDocKey } from '../../data/legal/types';
+
+interface Props { locale: Locale; doc: LegalDocKey }
+const { locale, doc } = Astro.props;
+const d = getDict(locale);
+const { doc: legal, lang, fallback } = getLegalDoc(locale, doc);
+const pageDict = d.pages[doc] as { title: string; overline?: string };
+const title = pageDict.title;
+const overline = pageDict.overline ?? d.pages.legal.overline;
+
+// lastUpdated is an ISO date; pin to UTC so the day never shifts at build time.
+const date = legal.lastUpdated
+  ? new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' })
+      .format(new Date(`${legal.lastUpdated}T00:00:00Z`))
+  : undefined;
+const [updatedBefore, updatedAfter = ''] = d.pages.legal.updated.split('{date}');
+---
+
+<Base locale={locale} page={doc} title={`${title} — ARTLY`} description={legal.description}>
+  <section class="legal container">
+    <header class="legal__head">
+      <p class="overline">{overline}</p>
+      <h1 class="h2 legal__title">{title}</h1>
+      <p class="lead legal__lead" lang={lang}>{legal.description}</p>
+      {legal.lastUpdated && (
+        <p class="legal__updated">
+          {updatedBefore}<time datetime={legal.lastUpdated}>{date}</time>{updatedAfter}
+        </p>
+      )}
+      {fallback && (
+        <aside class="legal__langnote">
+          <p>{d.pages.legal.langNote}</p>
+          <p class="legal__langlinks">
+            <a href={localePath('en', doc)} hreflang="en" lang="en">{LOCALE_META.en.label}</a>
+            <span aria-hidden="true">·</span>
+            <a href={localePath('pl', doc)} hreflang="pl" lang="pl">{LOCALE_META.pl.label}</a>
+          </p>
+        </aside>
+      )}
+    </header>
+
+    <div class="legal__grid">
+      <nav class="legal__toc" aria-label={d.pages.legal.toc}>
+        <p class="legal__toc-title">{d.pages.legal.toc}</p>
+        <ol lang={lang}>
+          {legal.sections.map((s) => <li><a href={`#${s.id}`}>{s.title}</a></li>)}
+        </ol>
+      </nav>
+
+      <article class="legal__body" lang={lang}>
+        {legal.intro && <div class="legal__intro"><LegalBlocks blocks={legal.intro} /></div>}
+        {legal.sections.map((s) => (
+          <section id={s.id} class="legal__section">
+            <h2 class="legal__h2">{s.title}</h2>
+            <LegalBlocks blocks={s.blocks} />
+            {s.subsections?.map((sub) => (
+              <>
+                <h3 class="legal__h3">{sub.title}</h3>
+                <LegalBlocks blocks={sub.blocks} />
+              </>
+            ))}
+          </section>
+        ))}
+        <a class="btn btn--ghost legal__back" href={localePath(locale)}>{d.pages.legal.back}</a>
+      </article>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .legal__head { max-width: 760px; padding: 96px 0 48px; }
+  .legal__title { margin-top: 18px; }
+  .legal__lead { margin-top: 20px; }
+  .legal__updated { margin-top: 16px; font-size: 14px; color: var(--subtle); }
+
+  .legal__langnote {
+    margin-top: 28px; padding: 20px 24px;
+    background: var(--sand); border-radius: var(--r-card);
+    font-size: 15px; color: var(--text-blue);
+  }
+  .legal__langlinks { margin-top: 8px; display: flex; gap: 10px; }
+  .legal__langlinks a { color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+
+  .legal__grid { padding-bottom: 120px; }
+
+  /* TOC */
+  .legal__toc {
+    padding: 20px 24px; margin-bottom: 8px;
+    background: var(--surface); border: 1px solid var(--border-soft); border-radius: var(--r-card);
+  }
+  .legal__toc-title { font: 600 12px/1.2 var(--font-sans); letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+  .legal__toc ol { margin: 12px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+  .legal__toc li { font-size: 14px; line-height: 1.4; color: var(--subtle); }
+  .legal__toc a { color: var(--subtle); text-decoration: none; transition: color var(--d-fast) var(--ease-out); }
+  .legal__toc a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* Body */
+  .legal__body { min-width: 0; font: 400 17px/1.7 var(--font-sans); color: var(--text-blue); overflow-wrap: break-word; }
+  .legal__intro > :global(* + *) { margin-top: 16px; }
+  .legal__h2 {
+    margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--divider);
+    font: 400 28px/1.2 var(--font-serif); color: var(--ink);
+    scroll-margin-top: calc(var(--header-h) + 24px);
+  }
+  .legal__intro + .legal__section .legal__h2 { margin-top: 48px; }
+  .legal__section { scroll-margin-top: calc(var(--header-h) + 24px); }
+  .legal__h3 { margin-top: 32px; font: 600 17px/1.4 var(--font-sans); color: var(--ink); }
+  .legal__h2 + :global(*), .legal__h3 + :global(*) { margin-top: 16px; }
+  .legal__body :global(p + *), .legal__body :global(ul + *), .legal__body :global(ol + *),
+  .legal__body :global(div + *) { margin-top: 16px; }
+  .legal__body :global(ul), .legal__body :global(ol) { margin-bottom: 0; padding-left: 1.3em; }
+  .legal__body :global(ul) { list-style: disc; }
+  .legal__body :global(ol) { list-style: decimal; }
+  .legal__body :global(li + li) { margin-top: 6px; }
+  .legal__body :global(a) { color: var(--accent-text); text-decoration: underline; text-underline-offset: 3px; }
+  .legal__body :global(strong) { font-weight: 600; color: var(--ink); }
+
+  .legal__body :global(.legal-note) {
+    padding: 20px 24px; background: var(--sand); border-radius: var(--r-card);
+  }
+
+  /* Steps */
+  .legal__body :global(.legal-steps__badge) {
+    display: inline-block; margin-bottom: 14px; padding: 4px 12px;
+    background: var(--accent-soft); color: var(--ink); border-radius: var(--r-pill);
+    font: 600 12px/1.4 var(--font-sans); letter-spacing: .04em;
+  }
+  .legal__body :global(.legal-steps__list) { list-style: none; padding-left: 0; counter-reset: step; display: grid; gap: 12px; }
+  .legal__body :global(.legal-steps__list li) {
+    position: relative; padding-left: 44px; min-height: 28px; counter-increment: step;
+  }
+  .legal__body :global(.legal-steps__list li + li) { margin-top: 0; }
+  .legal__body :global(.legal-steps__list li::before) {
+    content: counter(step);
+    position: absolute; left: 0; top: 0;
+    width: 28px; height: 28px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--ink); color: var(--bg);
+    font: 600 14px/1 var(--font-sans);
+  }
+
+  /* Table */
+  .legal__body :global(.legal-table) { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--border-soft); border-radius: 12px; }
+  .legal__body :global(.legal-table table) { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+  .legal__body :global(.legal-table th),
+  .legal__body :global(.legal-table td) { padding: 10px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--border-soft); }
+  .legal__body :global(.legal-table th + th),
+  .legal__body :global(.legal-table td + td) { border-left: 1px solid var(--border-soft); }
+  .legal__body :global(.legal-table tbody tr:last-child td) { border-bottom: 0; }
+  .legal__body :global(.legal-table th) { background: var(--mat); color: var(--ink); font-weight: 600; }
+  .legal__body :global(.legal-table td) { min-width: 140px; }
+
+  .legal__back { margin-top: 64px; }
+
+  @media (min-width: 1024px) {
+    .legal__grid { display: grid; grid-template-columns: 240px minmax(0, 760px); gap: 64px; align-items: start; }
+    .legal__toc {
+      position: sticky; top: calc(var(--header-h) + 24px);
+      max-height: calc(100vh - var(--header-h) - 48px); overflow-y: auto;
+      margin-bottom: 0; padding: 0; background: none; border: 0; border-radius: 0;
+    }
+    .legal__body > .legal__section:first-child .legal__h2 { margin-top: 0; }
+  }
+
+  @media (max-width: 767px) {
+    .legal__head { padding: 56px 0 32px; }
+    .legal__body { font-size: 16px; }
+    .legal__h2 { font-size: 24px; margin-top: 48px; padding-top: 28px; }
+    .legal__body :global(.legal-table table) { font-size: 14px; }
+    .legal__body :global(.legal-table td) { min-width: 120px; }
+    .legal__back { margin-top: 48px; }
+  }
+</style>

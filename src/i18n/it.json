@@ -133,7 +133,8 @@
     "faq": "FAQ",
     "terms": "Termini e condizioni",
     "privacy": "Informativa sulla privacy",
-    "contact": "Contatti"
+    "deletion": "Eliminazione dell’account",
+    "support": "Assistenza"
   },
   "screens": {
     "start": "Schermata iniziale dell’app ARTLY",
@@ -151,10 +152,11 @@
     "wyplaty": "Schermata dei pagamenti con saldo disponibile e importo in arrivo"
   },
   "pages": {
-    "regulamin": { "title": "Termini e condizioni" },
-    "polityka-prywatnosci": { "title": "Informativa sulla privacy" },
-    "kontakt": { "title": "Contatti" },
-    "soon": { "overline": "Prossimamente", "text": "Stiamo lavorando a questa pagina. Torna a trovarci presto.", "back": "Torna alla home page" }
+    "privacy": { "title": "Informativa sulla privacy" },
+    "terms": { "title": "Termini e condizioni" },
+    "deletion": { "title": "Eliminazione dell’account" },
+    "support": { "title": "Assistenza", "overline": "Contatti" },
+    "legal": { "overline": "Note legali", "toc": "Indice", "updated": "Ultimo aggiornamento: {date}", "langNote": "Questo documento è disponibile in inglese e in polacco.", "back": "Torna alla home page" }
   },
   "notFound": {
     "title": "Pagina non trovata",

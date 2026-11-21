@@ -1,0 +1,36 @@
+---
+import type { LegalBlock } from '../../data/legal/types';
+
+/** Inline strings are trusted authored HTML (see LegalBlock), hence set:html. */
+interface Props { blocks: LegalBlock[] }
+const { blocks } = Astro.props;
+---
+
+{blocks.map((b) => {
+  switch (b.type) {
+    case 'p':
+      return <p set:html={b.text} />;
+    case 'ul':
+      return <ul>{b.items.map((i) => <li set:html={i} />)}</ul>;
+    case 'ol':
+      return <ol>{b.items.map((i) => <li set:html={i} />)}</ol>;
+    case 'steps':
+      return (
+        <div class="legal-steps">
+          {b.badge && <span class="legal-steps__badge">{b.badge}</span>}
+          <ol class="legal-steps__list">{b.items.map((i) => <li set:html={i} />)}</ol>
+        </div>
+      );
+    case 'note':
+      return <p class="legal-note" set:html={b.text} />;
+    case 'table':
+      return (
+        <div class="legal-table">
+          <table>
+            <thead><tr>{b.head.map((h) => <th scope="col" set:html={h} />)}</tr></thead>
+            <tbody>{b.rows.map((r) => <tr>{r.map((c) => <td set:html={c} />)}</tr>)}</tbody>
+          </table>
+        </div>
+      );
+  }
+})}

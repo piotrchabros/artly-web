@@ -133,7 +133,8 @@
     "faq": "FAQ",
     "terms": "Terms of service",
     "privacy": "Privacy policy",
-    "contact": "Contact"
+    "deletion": "Account deletion",
+    "support": "Support"
   },
   "screens": {
     "start": "ARTLY app start screen",
@@ -151,10 +152,11 @@
     "wyplaty": "Payouts screen with available balance and amount on its way"
   },
   "pages": {
-    "regulamin": { "title": "Terms of service" },
-    "polityka-prywatnosci": { "title": "Privacy policy" },
-    "kontakt": { "title": "Contact" },
-    "soon": { "overline": "Coming soon", "text": "We’re working on this page. Please check back soon.", "back": "Back to the home page" }
+    "privacy": { "title": "Privacy policy" },
+    "terms": { "title": "Terms of service" },
+    "deletion": { "title": "Account deletion" },
+    "support": { "title": "Support", "overline": "Contact" },
+    "legal": { "overline": "Legal", "toc": "Contents", "updated": "Last updated: {date}", "langNote": "This document is available in English and Polish.", "back": "Back to the home page" }
   },
   "notFound": {
     "title": "Page not found",
