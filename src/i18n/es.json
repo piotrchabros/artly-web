@@ -1,162 +1,148 @@
 {
   "meta": {
-    "title": "ARTLY — arte a la medida de tu espacio",
-    "description": "Haz una foto de tu pared y cuéntanos qué te gusta: te mostramos obras de artistas independientes que encajan con tu espacio, tu estilo y tu presupuesto. Míralas en casa antes de comprar."
+    "title": "ARTLY – Donde el arte se encuentra con el espacio",
+    "description": "Obras originales de artistas independientes, elegidas para ti y tu interior."
   },
   "a11y": {
     "skip": "Ir al contenido",
-    "home": "ARTLY — página de inicio",
-    "mainNav": "Navegación principal",
-    "menuOpen": "Abrir menú",
-    "menuClose": "Cerrar menú",
-    "language": "Cambiar idioma",
-    "screens": "Pantallas de la app",
-    "slide": "Diapositiva {n} de {total}",
-    "artworks": "Obras recién añadidas"
+    "home": "ARTLY – inicio",
+    "mainNav": "Principal",
+    "search": "Buscar",
+    "saved": "Guardados",
+    "cart": "Cesta",
+    "account": "Cuenta",
+    "menu": "Menú",
+    "save": "Guardar: {title}",
+    "language": "Idioma"
   },
   "nav": {
-    "how": "Cómo funciona",
-    "features": "Funciones",
-    "artists": "Para artistas",
-    "faq": "Preguntas",
-    "download": "Descargar la app"
+    "discover": "Descubrir",
+    "inspirations": "Inspiración",
+    "artists": "Artistas",
+    "savedLong": "Guardados y colecciones",
+    "account": "Cuenta"
   },
-  "menu": {
-    "language": "Idioma",
-    "more": "+{n}",
-    "artistQuestion": "¿Eres artista?",
-    "artistJoin": "Únete"
-  },
-  "langbar": {
-    "available": "Esta página también está disponible en español.",
-    "switch": "Cambiar",
-    "close": "Cerrar"
+  "appban": {
+    "label": "App de ARTLY",
+    "close": "Cerrar el banner de la app",
+    "title": "ARTLY – arte para tu interior",
+    "sub": "Gratis · iOS y Android",
+    "cta": "Obtener"
   },
   "hero": {
-    "tagline": "Where art meets space",
-    "title": "Arte que encaja de verdad en tu espacio.",
-    "titleAccentWords": 2,
-    "lead": "Haz una foto de tu pared y cuéntanos qué te gusta: te mostramos obras de artistas independientes que encajan con tu espacio, tu estilo y tu presupuesto. Y las verás en tu casa antes de comprar.",
-    "ctaPrimary": "Descárgala para iOS y Android",
-    "ctaSecondary": "Descubre cómo funciona",
-    "features": ["Originales de artistas independientes", "Visualización en tu propia pared", "Obras por encargo"],
-    "cardWall": { "title": "Pared detectada", "detail": "aprox. 3,2 m de ancho", "titleShort": "Pared", "detailShort": "aprox. 3,2 m" },
-    "cardMatch": { "title": "Combina con el sofá", "detail": "tonos tierra · 80 × 100 cm" },
-    "slides": ["Míralo en casa", "Descubre", "Por qué encaja", "Tu gusto"],
-    "swipeHint": "Desliza para ver más pantallas"
+    "eyebrow": "ARTLY DISCOVER",
+    "title": "Donde el arte se encuentra con el espacio.",
+    "lead": "Descubre obras originales de artistas independientes. Encuentra arte que encaje contigo y con tu interior.",
+    "cta": "Descubrir arte",
+    "imgAlt": "Interior luminoso con un gran cuadro abstracto sobre una consola de piedra"
   },
-  "marquee": {
-    "title": "Recién añadido por los artistas",
-    "hint": "Pasa el cursor para pausar"
+  "tiles": {
+    "self": {
+      "title": "Para tu interior",
+      "text": "Descubre arte que te emociona.",
+      "textShort": "Descubre arte que te emociona.",
+      "cta": "Ver obras",
+      "label": "Para tu interior – descubrir",
+      "imgAlt": "Una mujer mira un gran cuadro abstracto en rosa, naranja y azul marino"
+    },
+    "home": {
+      "title": "Para tu casa",
+      "text": "Encuentra la obra ideal para tu espacio. Añade una foto de tu pared y elegiremos obras según su color y proporciones.",
+      "textShort": "Encuentra la obra ideal para tu espacio.",
+      "cta": "Añadir foto del espacio",
+      "label": "Para tu casa – combinar",
+      "imgAlt": "Salón con un sofá claro y un cuadro abstracto azul en la pared"
+    }
   },
-  "why": {
-    "overline": "Por qué ARTLY",
-    "title": "Elegir arte sin adivinar.",
+  "benefits": {
+    "label": "Por qué ARTLY",
     "items": [
-      { "title": "Empiezas por tu espacio", "text": "Primero tu espacio, tu estilo y lo que necesitas; después, el catálogo. Elegimos obras según el color de la pared, la luz y las proporciones." },
-      { "title": "Ves el resultado antes de comprar", "text": "La obra aparece en la foto de tu pared a escala real. Cambias el tamaño y el marco y comparas el «antes» y el «después»." },
-      { "title": "Apoyas a creadores independientes", "text": "Compras originales directamente a artistas de tu país, conoces sus historias y puedes encargar una obra a medida." }
+      {
+        "l1": "Obras originales",
+        "l2": "de artistas independientes",
+        "l2Short": "de artistas independientes"
+      },
+      {
+        "l1": "A juego con tu interior",
+        "l2": "y tu estilo",
+        "l2Short": "y tu estilo"
+      },
+      {
+        "l1": "Guarda inspiración",
+        "l2": "y crea colecciones",
+        "l2Short": "y crea colecciones"
+      },
+      {
+        "l1": "Compra segura",
+        "l2": "y certificado de autenticidad",
+        "l2Short": "y certificado"
+      }
     ]
   },
-  "steps": {
-    "overline": "Cómo funciona",
-    "title": "Cuatro pasos hacia tu propia obra",
-    "label": "Pasos",
-    "items": [
-      { "title": "Muestra tu espacio", "short": "Espacio", "text": "Haz una foto de la pared del salón, el dormitorio o la oficina." },
-      { "title": "Define tu gusto", "short": "Gusto", "text": "Elige estilo, colores, formato y presupuesto." },
-      { "title": "Mira el resultado", "short": "Resultado", "text": "Compara las obras sugeridas en tu propia pared." },
-      { "title": "Compra o encarga", "short": "Compra", "text": "Compra una obra terminada o encarga una al artista." }
-    ]
+  "recent": {
+    "title": "Añadidas recientemente",
+    "all": "Ver todas",
+    "allShort": "Todas"
   },
-  "features": {
-    "overline": "Funciones",
-    "title": "Todo lo que necesitas para encontrar «esa» obra",
-    "tabsLabel": "Funciones de la app",
-    "tabs": [
-      { "tab": "Descubre", "title": "Descubre arte hecho para ti", "text": "Una dosis diaria de arte pensada en torno a tu gusto y a tu espacio.",
-        "bullets": ["Para ti: recomendaciones según tus preferencias y la foto de tu espacio", "Por estilo y color: de la abstracción al paisaje", "Colecciones de comisarios: «Sobre el sofá», «Hasta 1000 zł», «Pared de galería»", "Novedades y las obras más guardadas"] },
-      { "tab": "Míralo en casa", "title": "Mira la obra en tu pared", "text": "ARTLY detecta la pared en la foto y muestra la obra a su escala real.",
-        "bullets": ["Cambia el tamaño y el marco: el precio se actualiza al instante", "Compara obras en la misma pared y la vista «antes» y «después»", "«Por qué encaja»: motivos claros junto a cada obra", "Comparte la visualización con quien vive contigo antes de decidir"] },
-      { "tab": "A medida", "title": "Encarga una obra a medida", "text": "¿No has encontrado la ideal? Describe lo que buscas y elige medidas, presupuesto y plazo. El artista recibe tu descripción junto con la foto de tu espacio.",
-        "bullets": ["Presupuesto y boceto del artista antes de pagar nada", "Colores y formato pensados para tu pared", "Chat con el artista y estado del encargo en un solo lugar"] },
-      { "tab": "Tu gusto", "title": "Una app que aprende tu gusto", "text": "En tu perfil eliges tus estilos, colores y temas favoritos. Guardas tus espacios y sigues a artistas.",
-        "bullets": ["Avisos de nuevas obras que van con tu gusto", "Varios espacios en una sola cuenta: salón, dormitorio, oficina", "Tus favoritos y los artistas que sigues, siempre a mano"] }
-    ]
+  "inspirations": {
+    "eyebrow": "ARTLY INSPIRACIÓN",
+    "title": "Guías, interiores e historias de artistas",
+    "titleShort": "Guías e historias de artistas",
+    "all": "Toda la inspiración",
+    "minutes": "{n} MIN"
   },
-  "local": {
-    "nearby": { "title": "Artistas cerca de ti", "text": "Te mostramos sobre todo a creadores del país donde vives. Envíos más rápidos, compras más sencillas y, a veces, recogida en persona en el taller. Si quieres, puedes abrir ARTLY a toda Europa." },
-    "language": { "title": "En tu idioma", "text": "La app habla el idioma de tu móvil. Traducimos las descripciones de las obras, siempre con acceso al texto original del artista.", "listLabel": "Idiomas disponibles" }
+  "artistBand": {
+    "title": "¿Eres artista?",
+    "text": "Añade una foto de tu cuadro: reconocemos automáticamente el estilo, los colores y los motivos. Tú decides el precio, la descripción y tu historia.",
+    "textShort": "Añade una foto de tu cuadro: reconocemos automáticamente el estilo, los colores y los motivos.",
+    "cta": "Únete a ARTLY"
   },
-  "artists": {
-    "overline": "Para artistas",
-    "title": "Tu arte encontrará su lugar.",
-    "text": "Mostramos tus obras a las personas en cuyos espacios encajan de verdad. Tú creas; nosotros te facilitamos el resto.",
-    "cta": "Únete como artista",
-    "label": "App para artistas",
-    "items": [
-      { "label": "Basta con una foto", "title": "Basta con una foto", "text": "La app reconoce el estilo, los colores y los temas; tú solo revisas y corriges.", "short": "La app reconoce estilo, colores y temas." },
-      { "label": "La AI completa estilo, colores y etiquetas", "title": "Tu historia", "text": "Un perfil que cuenta quién eres y cómo es tu taller. Las descripciones las escribes tú, con ayuda opcional para la redacción.", "short": "Revisas la descripción y añades tu historia." },
-      { "label": "Ventas y encargos", "title": "Ventas y encargos", "text": "Obras terminadas y encargos a medida. Todas tus tareas en un solo panel.", "short": "Todas tus tareas en un solo panel." },
-      { "label": "Pagos transparentes", "title": "Pagos transparentes", "text": "Ves cuánto has ganado y cuánto está en camino. Cobra cuando quieras o cada semana.", "short": "Cobra cuando quieras o cada semana." }
-    ]
-  },
-  "trust": {
-    "label": "Garantías",
-    "items": [
-      { "title": "Certificado de autenticidad", "text": "Con cada original." },
-      { "title": "Envío asegurado", "text": "Embalaje especializado y seguimiento." },
-      { "title": "14 días para devoluciones", "text": "En obras terminadas." },
-      { "title": "Pagos seguros", "text": "BLIK, tarjeta o transferencia." }
-    ]
-  },
-  "faq": {
-    "title": "Preguntas frecuentes",
-    "items": [
-      { "q": "¿Tengo que hacer una foto de mi espacio?", "a": "No. Puedes explorar las obras desde el primer momento. Pero con una foto de tu pared las recomendaciones son más acertadas y la visualización muestra la obra a escala real." },
-      { "q": "¿Cómo funciona un encargo a medida?", "a": "Envías al artista una descripción, las medidas, el presupuesto y el plazo. El artista te responde con un presupuesto y un boceto, y solo pagas cuando los aceptas." },
-      { "q": "¿De dónde vienen las obras?", "a": "De artistas independientes que suben ellos mismos sus obras a ARTLY. Por defecto, te mostramos a creadores de tu país." },
-      { "q": "¿Cómo me uno a ARTLY como artista?", "a": "Descarga la app y elige «Únete a Artly». Crea tu cuenta, cuenta tu historia y sube fotos de tus obras: en cuanto se apruebe tu perfil, los compradores podrán ver tu trabajo." }
-    ]
-  },
-  "cta": {
-    "title": "El arte encuentra su lugar.",
-    "text": "Los artistas encuentran a su público. Descarga la app y descubre qué colgará en tu casa.",
-    "appStore": "Descargar en App Store",
-    "googlePlay": "Disponible en Google Play"
-  },
-  "sticky": { "text": "Arte a la medida de tu espacio", "button": "Descargar" },
   "footer": {
-    "tagline": "Where art meets space",
+    "tagline": "WHERE ART MEETS SPACE",
     "label": "Pie de página",
-    "artists": "Para artistas",
-    "faq": "Preguntas",
-    "terms": "Términos y condiciones",
-    "privacy": "Política de privacidad",
-    "deletion": "Eliminación de la cuenta",
-    "support": "Ayuda"
+    "service": "Servicio",
+    "help": "Ayuda",
+    "app": "App",
+    "delivery": "Envíos y devoluciones",
+    "certificate": "Certificado de autenticidad",
+    "certificateShort": "Certificado",
+    "contact": "Contacto",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "privacyShort": "Privacidad",
+    "deletion": "Eliminar cuenta"
   },
-  "screens": {
-    "start": "Pantalla de inicio de la app ARTLY",
-    "odkrywaj": "Pantalla Descubre: estilos, colecciones y recomendaciones Para ti",
-    "wizualizacja": "Visualización de una obra en la pared con selección de tamaño y marco",
-    "dzielo": "Ficha de la obra con la sección «Por qué encaja en tu salón»",
-    "profil": "Perfil con estilos, colores y temas favoritos",
-    "wnetrze": "Paso 1: foto de la pared y elección de la estancia",
-    "gust": "Paso 2: elección de estilo, colores, formato y presupuesto",
-    "zakup": "Confirmación de compra: «La obra es tuya»",
-    "zamowienie": "Formulario de encargo personalizado al artista",
-    "dodajPrace": "App para artistas: subida de fotos de obras",
-    "opisDziela": "Detalles de la obra completados automáticamente: estilo, colores y etiquetas",
-    "panel": "Panel del artista: saldo disponible, tareas y última venta",
-    "wyplaty": "Pantalla de pagos con el saldo disponible y el importe en camino"
+  "appPage": {
+    "title": "La app de ARTLY",
+    "metaTitle": "La app de ARTLY para iOS y Android",
+    "text": "Descubre, guarda y compra obras originales en la app. Añade una foto de tu pared y mira cómo queda la obra en tu casa.",
+    "appStore": "Descargar en App Store",
+    "googlePlay": "Disponible en Google Play",
+    "soon": "Pronto en App Store"
   },
   "pages": {
-    "privacy": { "title": "Política de privacidad" },
-    "terms": { "title": "Términos y condiciones" },
-    "deletion": { "title": "Eliminación de la cuenta" },
-    "support": { "title": "Ayuda", "overline": "Contacto" },
-    "legal": { "overline": "Información legal", "toc": "Índice", "updated": "Última actualización: {date}", "langNote": "Este documento está disponible en inglés y en polaco.", "back": "Volver a la página de inicio" }
+    "privacy": {
+      "title": "Política de privacidad"
+    },
+    "terms": {
+      "title": "Términos y condiciones"
+    },
+    "deletion": {
+      "title": "Eliminación de la cuenta"
+    },
+    "support": {
+      "title": "Ayuda",
+      "overline": "Contacto"
+    },
+    "legal": {
+      "overline": "Información legal",
+      "toc": "Índice",
+      "updated": "Última actualización: {date}",
+      "langNote": "Este documento está disponible en inglés y en polaco.",
+      "back": "Volver a la página de inicio"
+    }
   },
   "notFound": {
     "title": "Página no encontrada",

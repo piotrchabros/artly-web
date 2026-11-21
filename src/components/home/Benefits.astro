@@ -1,0 +1,38 @@
+---
+// Four benefits (spec §6.4).
+import Icon, { type IconName } from '../ui/Icon.astro';
+import { getDict, type Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const d = getDict(Astro.props.locale);
+const icons: IconName[] = ['image', 'sparkle', 'bookmark', 'shield'];
+---
+
+<section class="wrap ben" aria-label={d.benefits.label}>
+  <ul class="ben__list">
+    {d.benefits.items.map((b, i) => (
+      <li class="ben__item">
+        <Icon name={icons[i]} size={26} stroke={1.3} class="ben__ico" />
+        <p class="ben__t"><span>{b.l1}</span><span class="only-d">{b.l2}</span><span class="only-m">{b.l2Short}</span></p>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .ben { padding-top: 64px; }
+  .ben__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); }
+  .ben__item { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 12px 20px; text-align: center; }
+  .ben__item + .ben__item { border-left: 1px solid var(--c-line-2); }
+  .ben__t { font: 400 15px/1.5 var(--f-ui); }
+  .ben__t span { display: block; }
+  @media (max-width: 1023px) {
+    .ben { padding-top: 36px; }
+    .ben__list { grid-template-columns: 1fr 1fr; border-top: 1px solid var(--c-line-2); }
+    .ben__item { gap: 10px; padding: 20px 8px; border-bottom: 1px solid var(--c-line-2); }
+    .ben__item + .ben__item { border-left: 0; }
+    .ben__item:nth-child(2n) { border-left: 1px solid var(--c-line-2); }
+    .ben__item :global(.ben__ico) { width: 24px; height: 24px; }
+    .ben__t { font-size: 13px; line-height: 1.45; }
+  }
+</style>

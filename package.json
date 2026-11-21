@@ -11,6 +11,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "deploy": "astro build && wrangler deploy",
+    "deploy:staging": "astro build && wrangler deploy --env staging",
     "deploy:email": "wrangler deploy -c email-worker/wrangler.jsonc",
     "dev:email": "wrangler dev -c email-worker/wrangler.jsonc",
     "astro": "astro"
@@ -23,6 +24,9 @@
     "astro": "^7.4.12"
   },
   "devDependencies": {
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.65.1",
+    "pngjs": "^7.0.0",
     "wrangler": "^4.162.0"
   }
 }

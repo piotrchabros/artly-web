@@ -1,162 +1,148 @@
 {
   "meta": {
-    "title": "ARTLY — art that fits your interior",
-    "description": "Snap a photo of your wall and tell us what you like — we’ll show you works by independent artists matched to your space, style and budget. See them on your wall before you buy."
+    "title": "ARTLY – Where art meets space",
+    "description": "Original works by independent artists, matched to you and your interior."
   },
   "a11y": {
     "skip": "Skip to content",
-    "home": "ARTLY — home page",
-    "mainNav": "Main navigation",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu",
-    "language": "Change language",
-    "screens": "App screens",
-    "slide": "Slide {n} of {total}",
-    "artworks": "Newly added works"
+    "home": "ARTLY – home",
+    "mainNav": "Main",
+    "search": "Search",
+    "saved": "Saved",
+    "cart": "Cart",
+    "account": "Account",
+    "menu": "Menu",
+    "save": "Save: {title}",
+    "language": "Language"
   },
   "nav": {
-    "how": "How it works",
-    "features": "Features",
-    "artists": "For artists",
-    "faq": "FAQ",
-    "download": "Get the app"
+    "discover": "Discover",
+    "inspirations": "Inspiration",
+    "artists": "Artists",
+    "savedLong": "Saved and collections",
+    "account": "Account"
   },
-  "menu": {
-    "language": "Language",
-    "more": "+{n}",
-    "artistQuestion": "Are you an artist?",
-    "artistJoin": "Join"
-  },
-  "langbar": {
-    "available": "This page is also available in English.",
-    "switch": "Switch",
-    "close": "Close"
+  "appban": {
+    "label": "ARTLY app",
+    "close": "Close app banner",
+    "title": "ARTLY – art for your interior",
+    "sub": "Free · iOS and Android",
+    "cta": "Get"
   },
   "hero": {
-    "tagline": "Where art meets space",
-    "title": "Art that truly fits your interior.",
-    "titleAccentWords": 2,
-    "lead": "Snap a photo of your wall and tell us what you like — we’ll show you works by independent artists matched to your space, style and budget. Then see them on your own wall before you buy.",
-    "ctaPrimary": "Download for iOS and Android",
-    "ctaSecondary": "See how it works",
-    "features": ["Originals by independent artists", "Preview on your own wall", "Commissioned works"],
-    "cardWall": { "title": "Wall detected", "detail": "approx. 3.2 m wide", "titleShort": "Wall", "detailShort": "approx. 3.2 m" },
-    "cardMatch": { "title": "Matches your sofa", "detail": "warm earth tones · 80 × 100 cm" },
-    "slides": ["See it at home", "Discover", "Why it fits", "Your taste"],
-    "swipeHint": "Swipe to see more screens"
+    "eyebrow": "ARTLY DISCOVER",
+    "title": "Where art meets space.",
+    "lead": "Discover original works by independent artists. Find art that suits you and your interior.",
+    "cta": "Discover art",
+    "imgAlt": "A bright interior with a large abstract painting above a stone console"
   },
-  "marquee": {
-    "title": "Just added by artists",
-    "hint": "Hover to pause"
+  "tiles": {
+    "self": {
+      "title": "For your inner self",
+      "text": "Discover art that moves you.",
+      "textShort": "Discover art that moves you.",
+      "cta": "Browse works",
+      "label": "For your inner self – discover",
+      "imgAlt": "A woman looking at a large abstract painting in pink, orange and navy"
+    },
+    "home": {
+      "title": "For your home",
+      "text": "Find the perfect piece for your space. Add a photo of your wall and we will match works to its colour and proportions.",
+      "textShort": "Find the perfect piece for your space.",
+      "cta": "Add a photo of your room",
+      "label": "For your home – match",
+      "imgAlt": "A living room with a light sofa and a blue abstract painting on the wall"
+    }
   },
-  "why": {
-    "overline": "Why ARTLY",
-    "title": "Choosing art without the guesswork.",
+  "benefits": {
+    "label": "Why ARTLY",
     "items": [
-      { "title": "You start with your space", "text": "Your room, your style and your needs come first — the catalogue comes second. We match works to your wall colour, light and proportions." },
-      { "title": "See the result before you buy", "text": "The artwork appears on a photo of your wall at true scale. Change the size and frame, and compare “before” and “after”." },
-      { "title": "Support independent creators", "text": "Buy originals directly from artists in your country, get to know their stories and commission a piece made to measure." }
+      {
+        "l1": "Original works",
+        "l2": "by independent artists",
+        "l2Short": "by independent artists"
+      },
+      {
+        "l1": "Matched to your interior",
+        "l2": "and your style",
+        "l2Short": "and your style"
+      },
+      {
+        "l1": "Save inspiration",
+        "l2": "and build collections",
+        "l2Short": "and build collections"
+      },
+      {
+        "l1": "Secure purchase",
+        "l2": "and certificate of authenticity",
+        "l2Short": "and certificate"
+      }
     ]
   },
-  "steps": {
-    "overline": "How it works",
-    "title": "Four steps to a piece of your own",
-    "label": "Steps",
-    "items": [
-      { "title": "Show your space", "short": "Space", "text": "Snap a photo of a wall in your living room, bedroom or office." },
-      { "title": "Set your taste", "short": "Taste", "text": "Choose a style, colour palette, format and budget." },
-      { "title": "See the result", "short": "Preview", "text": "Compare matching works on your own wall." },
-      { "title": "Buy or commission", "short": "Buy", "text": "Buy a finished work or commission one from the artist." }
-    ]
+  "recent": {
+    "title": "Recently added",
+    "all": "See all",
+    "allShort": "All"
   },
-  "features": {
-    "overline": "Features",
-    "title": "Everything you need to find “the one”",
-    "tabsLabel": "App features",
-    "tabs": [
-      { "tab": "Discover", "title": "Discover art that suits you", "text": "A daily dose of art, curated around your taste and your space.",
-        "bullets": ["For you — recommendations based on your preferences and a photo of your room", "By style and colour — from abstraction to landscape", "Curated collections: “Above the sofa”, “Under 1,000 zł”, “Gallery wall”", "New arrivals and the most-saved works"] },
-      { "tab": "See it at home", "title": "See the artwork on your wall", "text": "ARTLY detects the wall in your photo and shows the piece at its true scale.",
-        "bullets": ["Change the size and frame — the price updates instantly", "Compare works on the same wall and switch between “before” and “after”", "“Why it fits” — clear reasons for every match, right next to each piece", "Share the preview with your household before you decide"] },
-      { "tab": "Made to measure", "title": "Commission a made-to-measure piece", "text": "Haven’t found the perfect one? Describe what you’re looking for and choose the size, budget and deadline. The artist receives your brief together with a photo of your room.",
-        "bullets": ["A quote and a sketch from the artist before you pay anything", "Colours and format chosen to suit your wall", "Chat with the artist and track progress, all in one place"] },
-      { "tab": "Your taste", "title": "An app that learns your taste", "text": "In your profile, set your favourite styles, colours and themes. Save your rooms and follow artists.",
-        "bullets": ["Alerts about new works that match your taste", "Several rooms in one account — living room, bedroom, office", "Favourites and followed artists always at hand"] }
-    ]
+  "inspirations": {
+    "eyebrow": "ARTLY INSPIRATION",
+    "title": "Guides, interiors and artist stories",
+    "titleShort": "Guides and artist stories",
+    "all": "All inspiration",
+    "minutes": "{n} MIN"
   },
-  "local": {
-    "nearby": { "title": "Artists near you", "text": "We mainly show creators from the country you live in. That means faster delivery, simpler purchases and sometimes even pickup straight from the studio. If you like, you can open ARTLY up to all of Europe." },
-    "language": { "title": "In your language", "text": "The app speaks your phone’s language. We translate artwork descriptions — with the artist’s original always just a tap away.", "listLabel": "Available languages" }
+  "artistBand": {
+    "title": "Are you an artist?",
+    "text": "Add a photo of your painting – we recognise its style, colours and motifs automatically. You decide on the price, the description and your story.",
+    "textShort": "Add a photo of your painting – we recognise its style, colours and motifs automatically.",
+    "cta": "Join ARTLY"
   },
-  "artists": {
-    "overline": "For artists",
-    "title": "Your art will find its place.",
-    "text": "We show your work to people whose spaces it truly suits. You create — we make the rest easier.",
-    "cta": "Join as an artist",
-    "label": "App for artists",
-    "items": [
-      { "label": "A photo is all it takes", "title": "A photo is all it takes", "text": "The app recognises the style, colours and themes — you just review and fine-tune.", "short": "The app recognises style, colours and themes." },
-      { "label": "AI fills in style, colours, tags", "title": "Your story", "text": "A profile that tells the story of you and your studio. You write the descriptions yourself — with optional editing help.", "short": "Review the description and add your story." },
-      { "label": "Sales and commissions", "title": "Sales and commissions", "text": "Ready-made works and made-to-measure commissions. Every task in one dashboard.", "short": "Every task in one dashboard." },
-      { "label": "Transparent payouts", "title": "Transparent payouts", "text": "See what you’ve earned and what’s on its way. Get paid on demand or every week.", "short": "Get paid on demand or every week." }
-    ]
-  },
-  "trust": {
-    "label": "Guarantees",
-    "items": [
-      { "title": "Certificate of authenticity", "text": "With every original." },
-      { "title": "Insured delivery", "text": "Expert art packing and tracking." },
-      { "title": "14-day returns", "text": "On ready-made works." },
-      { "title": "Secure payments", "text": "BLIK, card or bank transfer." }
-    ]
-  },
-  "faq": {
-    "title": "Frequently asked questions",
-    "items": [
-      { "q": "Do I have to take a photo of my room?", "a": "No. You can start browsing artworks right away. A photo of your wall, though, makes the recommendations more accurate and lets the preview show the piece at true scale." },
-      { "q": "How does a made-to-measure commission work?", "a": "You send the artist a description, size, budget and deadline. The artist replies with a quote and a sketch — you only pay once you approve them." },
-      { "q": "Where do the artworks come from?", "a": "From independent artists who add their own work to ARTLY. By default, we show creators from your country." },
-      { "q": "How do I become an artist on ARTLY?", "a": "Download the app and choose “Join Artly”. Create an account, tell your story and add photos of your work — once your profile is approved, buyers will see your pieces." }
-    ]
-  },
-  "cta": {
-    "title": "Art finds its place.",
-    "text": "Artists find their audience. Download the app and see what will hang on your wall.",
-    "appStore": "Download on the App Store",
-    "googlePlay": "Get it on Google Play"
-  },
-  "sticky": { "text": "Art that fits your interior", "button": "Download" },
   "footer": {
-    "tagline": "Where art meets space",
+    "tagline": "WHERE ART MEETS SPACE",
     "label": "Footer",
-    "artists": "For artists",
-    "faq": "FAQ",
-    "terms": "Terms of service",
+    "service": "Explore",
+    "help": "Help",
+    "app": "App",
+    "delivery": "Delivery and returns",
+    "certificate": "Certificate of authenticity",
+    "certificateShort": "Certificate",
+    "contact": "Contact",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "terms": "Terms",
     "privacy": "Privacy policy",
-    "deletion": "Account deletion",
-    "support": "Support"
+    "privacyShort": "Privacy",
+    "deletion": "Account deletion"
   },
-  "screens": {
-    "start": "ARTLY app start screen",
-    "odkrywaj": "Discover screen: styles, collections and For you recommendations",
-    "wizualizacja": "Artwork preview on a wall with size and frame options",
-    "dzielo": "Artwork page with the “Why it fits your living room” section",
-    "profil": "Profile with favourite styles, colours and themes",
-    "wnetrze": "Step 1: wall photo and room selection",
-    "gust": "Step 2: choosing style, colour palette, format and budget",
-    "zakup": "Purchase confirmation: “The artwork is yours”",
-    "zamowienie": "Custom commission form for an artist",
-    "dodajPrace": "Artist app: adding photos of works",
-    "opisDziela": "Artwork details filled in automatically: style, colours and tags",
-    "panel": "Artist dashboard: available balance, tasks and latest sale",
-    "wyplaty": "Payouts screen with available balance and amount on its way"
+  "appPage": {
+    "title": "The ARTLY app",
+    "metaTitle": "The ARTLY app for iOS and Android",
+    "text": "Discover, save and buy original works in the app. Add a photo of your wall and see how a piece looks in your home.",
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play",
+    "soon": "Coming soon to the App Store"
   },
   "pages": {
-    "privacy": { "title": "Privacy policy" },
-    "terms": { "title": "Terms of service" },
-    "deletion": { "title": "Account deletion" },
-    "support": { "title": "Support", "overline": "Contact" },
-    "legal": { "overline": "Legal", "toc": "Contents", "updated": "Last updated: {date}", "langNote": "This document is available in English and Polish.", "back": "Back to the home page" }
+    "privacy": {
+      "title": "Privacy policy"
+    },
+    "terms": {
+      "title": "Terms of service"
+    },
+    "deletion": {
+      "title": "Account deletion"
+    },
+    "support": {
+      "title": "Support",
+      "overline": "Contact"
+    },
+    "legal": {
+      "overline": "Legal",
+      "toc": "Contents",
+      "updated": "Last updated: {date}",
+      "langNote": "This document is available in English and Polish.",
+      "back": "Back to the home page"
+    }
   },
   "notFound": {
     "title": "Page not found",

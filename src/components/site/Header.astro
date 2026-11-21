@@ -1,0 +1,85 @@
+---
+// Header (spec §6.1). On < 1024 px the same <nav> becomes the full-screen menu (W03).
+import Icon from '../ui/Icon.astro';
+import { localePath, useT, type Locale } from '../../i18n';
+import { shopHref, INSPIRACJE_PATH } from '../../data/site';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = useT(locale);
+
+const nav = [
+  { href: shopHref(locale, 'discover'), label: t('nav.discover'), tid: 'a.odkrywaj' },
+  { href: INSPIRACJE_PATH, label: t('nav.inspirations'), tid: 'a.inspiracje' },
+  { href: shopHref(locale, 'artists'), label: t('nav.artists'), tid: 'a.artysci' },
+];
+---
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a href={localePath(locale)} class="logo" aria-label={t('a11y.home')} data-tid="a.artly-where-art-meets-space|a.artly">
+      <span class="logo__word">ARTLY</span><span class="logo__sep" aria-hidden="true"></span>
+      <span class="logo__tag">WHERE ART MEETS SPACE</span>
+    </a>
+    <nav class="hdr__nav" id="hdr-nav" aria-label={t('a11y.mainNav')} data-tid="nav.glowna">
+      {nav.map((n) => <a class="hdr__link" href={n.href} data-tid={n.tid}>{n.label}</a>)}
+      <div class="hdr__more">
+        <a class="hdr__sub" href={shopHref(locale, 'saved')} data-tid="a.zapisane-i-kolekcje"><Icon name="bookmark" />{t('nav.savedLong')}</a>
+        <a class="hdr__sub" href={shopHref(locale, 'account')} data-tid="a.konto"><Icon name="user" />{t('nav.account')}</a>
+      </div>
+      <span class="hdr__navtag">WHERE ART MEETS SPACE</span>
+    </nav>
+    <div class="hdr__icons">
+      <a class="ico" href={shopHref(locale, 'search')} aria-label={t('a11y.search')} data-tid="button.szukaj"><Icon name="search" /></a>
+      <a class="ico hdr__d" href={shopHref(locale, 'saved')} aria-label={t('a11y.saved')} data-tid="button.zapisane"><Icon name="bookmark" /></a>
+      <a class="ico" href={shopHref(locale, 'cart')} aria-label={t('a11y.cart')} data-tid="button.koszyk"><Icon name="bag" /></a>
+      <a class="ico hdr__d" href={shopHref(locale, 'account')} aria-label={t('a11y.account')} data-tid="button.konto"><Icon name="user" /></a>
+      <button type="button" class="ico hdr__burger" aria-label={t('a11y.menu')} aria-expanded="false" aria-controls="hdr-nav" data-tid="|button.menu">
+        <Icon name="menu" class="hdr__i-open" /><Icon name="close" class="hdr__i-close" />
+      </button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .hdr { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--c-line); }
+  .hdr__in { height: 84px; display: flex; align-items: center; gap: 28px; }
+
+  .logo { display: flex; align-items: center; gap: 20px; font-size: 16px; text-decoration: none; color: var(--c-ink); white-space: nowrap; }
+  .logo__word { font: 400 34px/1 var(--f-logo); letter-spacing: .12em; }
+  .logo__sep { width: 1px; height: 28px; background: var(--c-sep); }
+  .logo__tag { font: 400 10px var(--f-ui); letter-spacing: .3em; color: var(--c-muted); }
+
+  .hdr__nav { margin-left: auto; margin-right: 48px; display: flex; gap: 36px; }
+  .hdr__link { position: relative; padding: 10px 0; font: 400 15px var(--f-ui); color: var(--c-ink); text-decoration: none; }
+  .hdr__link::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 1px; background: var(--c-ink); transform: scaleX(0); transform-origin: left; transition: transform .35s ease; }
+  .hdr__link:hover::after, .hdr__link[aria-current="page"]::after { transform: scaleX(1); }
+  .hdr__more, .hdr__navtag { display: none; }
+
+  .hdr__icons { display: flex; gap: 4px; }
+  .hdr__burger { display: none; }
+  .hdr__burger :global(.hdr__i-close) { display: none; }
+
+  @media (max-width: 1023px) {
+    .hdr__in { height: 64px; gap: 4px; padding-right: 8px; }
+    .logo { font: 400 28px/1 var(--f-logo); letter-spacing: .12em; }
+    .logo__word { font: inherit; letter-spacing: inherit; }
+    .logo__sep, .logo__tag, .hdr__d { display: none; }
+    .hdr__icons { margin-left: auto; }
+    .hdr__burger { display: flex; }
+
+    .hdr__nav { display: none; position: absolute; left: 0; right: 0; top: 64px; margin: 0;
+      height: min(640px, calc(100dvh - 64px)); overflow-y: auto; flex-direction: column; gap: 0;
+      padding: 24px 20px; background: #fff; border-top: 1px solid var(--c-line); }
+    .hdr.is-open .hdr__nav { display: flex; animation: menuIn .3s var(--ease) both; }
+    .hdr.is-open :global(.hdr__i-open) { display: none; }
+    .hdr.is-open :global(.hdr__i-close) { display: block; }
+
+    .hdr__link { padding: 14px 0; font: 400 34px/1 var(--f-display); border-bottom: 1px solid var(--c-line); }
+    .hdr__link::after { display: none; }
+    .hdr__more { display: flex; flex-direction: column; margin-top: 24px; }
+    .hdr__sub { display: flex; align-items: center; gap: 14px; height: 52px; font: 400 16px var(--f-ui); color: var(--c-ink); text-decoration: none; }
+    .hdr__navtag { display: block; margin-top: auto; padding-top: 24px; font: 400 10px var(--f-ui); letter-spacing: .3em; color: var(--c-muted); }
+  }
+  @media (prefers-reduced-motion: reduce) { .hdr.is-open .hdr__nav { animation: none; } }
+</style>

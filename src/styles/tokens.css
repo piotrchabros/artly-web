@@ -1,33 +1,33 @@
+/* src/styles/tokens.css — ARTLY v2 */
 :root {
   /* kolory */
-  --bg: #F7F4EF;           --surface: #FFFFFF;     --sand: #F0E9E0;
-  --mat: #EFE6DA;          --blue: #EAF1F4;        --ink: #1B2530;
-  --muted: #5A5F66;        --subtle: #4A5560;      --text-blue: #34414D;
-  --accent: #D2885A;       --accent-text: #9E522A; --accent-soft: #F2C3A1;
-  --on-dark-muted: #C9D2DA;
-  --border: #CFC4B6;       --border-soft: #E3DBD0; --divider: #ECE5DB;
-  --toggle-off: #D6CCBF;   --success: #2F6B4F;
+  --c-bg: #FFFFFF;          /* tło strony */
+  --c-ink: #111111;         /* tekst, przyciski, ikony */
+  --c-text-2: #3D3D3D;      /* akapity */
+  --c-muted: #555555;       /* etykiety, eyebrow, kategorie */
+  --c-muted-2: #666666;     /* nazwiska artystów, drobny tekst */
+  --c-beige: #F3EFE9;       /* placeholder zdjęć, pasek „Dla artystów” */
+  --c-beige-2: #F7F5F1;     /* tło kafli „Do wnętrza…” */
+  --c-line: #ECE8E2;        /* linie header/stopka */
+  --c-line-2: #E6E2DC;      /* separatory korzyści */
+  --c-sep: #D9D4CC;         /* pionowa kreska przy logo */
+  --c-hover: #2B2B2B;       /* hover przycisku */
 
   /* fonty */
-  --font-logo: 'Italiana', serif;
-  --font-serif: 'Newsreader', Georgia, serif;
-  --font-sans: 'Hanken Grotesk', system-ui, sans-serif;
+  --f-logo: 'Italiana', serif;
+  --f-display: 'Newsreader', Georgia, serif;
+  --f-ui: 'Hanken Grotesk', system-ui, sans-serif;
+
+  /* kontener */
+  --container: 1344px;      /* szerokość treści na desktopie */
+  --gutter: 48px;           /* desktop; mobile: 20px */
 
   /* kształt */
-  --r-pill: 999px; --r-card: 24px; --r-card-lg: 32px; --r-phone: 44px;
-  --shadow-phone: 0 30px 60px rgba(27,37,48,.18);
-  --shadow-card-hover: 0 22px 40px rgba(27,37,48,.12);
-  --shadow-chip: 0 14px 30px rgba(27,37,48,.12);
+  --radius: 0;              /* wszystkie przyciski, karty, zdjęcia */
+  --border: 1px solid var(--c-ink);
 
   /* ruch */
-  --ease-out: cubic-bezier(.2,.7,.2,1);   /* domyślny dla wejść */
-  --ease-io: cubic-bezier(.4,0,.2,1);
-  --d-fast: 200ms; --d-base: 350ms; --d-slow: 700ms; --d-enter: 900ms;
-
-  /* additions */
-  --ink-soft: #2A3540;        /* chips on the dark card */
-  --arch-from: #DCE8F0; --arch-to: #F0E9E0; --arch-border: #EFE7DC;
-  --container: 1200px; --gutter: 24px; --header-h: 76px;
+  --ease: cubic-bezier(.2,.7,.2,1);
 }
 
-@media (max-width: 767px) { :root { --gutter: 20px; --header-h: 64px; } }
+@media (max-width: 1023px) { :root { --gutter: 20px; } }

@@ -1,0 +1,99 @@
+---
+// Footer (spec §6.8). The language switch lives here (brief: no language toggle in the header).
+import Icon from '../ui/Icon.astro';
+import { LOCALES, LOCALE_META, localePath, pagePath, useT, type Locale, type PageKey } from '../../i18n';
+import { shopHref, INSPIRACJE_PATH, APP_STORE_URL, PLAY_URL } from '../../data/site';
+
+interface Props { locale: Locale; page?: PageKey }
+const { locale, page } = Astro.props;
+const t = useT(locale);
+const support = localePath(locale, 'support');
+const appPage = localePath(locale, 'aplikacja');
+
+const cols = [
+  { title: t('footer.service'), cls: '', links: [
+    { href: shopHref(locale, 'discover'), label: t('nav.discover'), tid: 'a.odkrywaj' },
+    { href: INSPIRACJE_PATH, label: t('nav.inspirations'), tid: 'a.inspiracje' },
+    { href: shopHref(locale, 'artists'), label: t('nav.artists'), tid: 'a.artysci' },
+  ] },
+  { title: t('footer.help'), cls: '', links: [
+    { href: support, label: t('footer.delivery'), tid: 'a.dostawa-i-zwroty' },
+    { href: support, label: t('footer.certificate'), short: t('footer.certificateShort'), tid: 'a.certyfikat-autentycznosci|a.certyfikat' },
+    { href: support, label: t('footer.contact'), tid: 'a.kontakt' },
+  ] },
+  { title: t('footer.app'), cls: 'ftr__col--app', links: [
+    { href: APP_STORE_URL ?? appPage, label: t('footer.appStore'), tid: 'a.app-store' },
+    { href: PLAY_URL, label: t('footer.googlePlay'), tid: 'a.google-play' },
+  ] },
+];
+const langHref = (l: Locale) => localePath(l, page && page !== '404' ? pagePath(page) : '');
+---
+
+<footer class="ftr">
+  <div class="wrap ftr__top">
+    <a class="ftr__brand" href={localePath(locale)} aria-label={t('a11y.home')}>
+      <span class="ftr__logo">ARTLY</span>
+      <span class="ftr__tag">{t('footer.tagline')}</span>
+    </a>
+    <nav class="ftr__nav" aria-label={t('footer.label')} data-tid="nav.stopka">
+      {cols.map((c) => (
+        <div class:list={['ftr__col', c.cls]}>
+          <span class="ftr__h">{c.title}</span>
+          {c.links.map((l) => (
+            <a class="ftr__a" href={l.href} data-tid={l.tid}>
+              {l.short ? <><span class="only-d">{l.label}</span><span class="only-m">{l.short}</span></> : l.label}
+            </a>
+          ))}
+        </div>
+      ))}
+    </nav>
+  </div>
+  <div class="ftr__copy">
+    <span class="ftr__legal">
+      © 2026 ARTLY · <a href={localePath(locale, 'terms')}>{t('footer.terms')}</a> · <a href={localePath(locale, 'privacy')}><span class="only-d">{t('footer.privacy')}</span><span class="only-m">{t('footer.privacyShort')}</span></a>
+    </span>
+    <details class="ftr__lang">
+      <summary aria-label={t('a11y.language')}>{LOCALE_META[locale].short}<Icon name="chevron" size={12} /></summary>
+      <ul>
+        {LOCALES.map((l) => (
+          <li><a href={langHref(l)} hreflang={LOCALE_META[l].hreflang} lang={l} aria-current={l === locale ? 'true' : undefined}>{LOCALE_META[l].label}</a></li>
+        ))}
+      </ul>
+    </details>
+  </div>
+</footer>
+
+<style>
+  .ftr { margin-top: 112px; border-top: 1px solid var(--c-line); padding-top: 56px; }
+  .ftr__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 48px; }
+  .ftr__brand { display: flex; flex-direction: column; gap: 12px; color: var(--c-ink); text-decoration: none; }
+  .ftr__logo { font: 400 30px var(--f-logo); letter-spacing: .12em; }
+  .ftr__tag { font: 400 10px var(--f-ui); letter-spacing: .3em; color: var(--c-muted); }
+  .ftr__nav { display: flex; gap: 72px; }
+  .ftr__col { display: flex; flex-direction: column; gap: 4px; }
+  .ftr__h { margin-bottom: 8px; font: 400 12px var(--f-ui); letter-spacing: .2em; text-transform: uppercase; color: var(--c-muted); }
+  .ftr__a { display: block; height: 32px; font: 400 15px var(--f-ui); color: var(--c-ink); text-decoration: none; white-space: nowrap; }
+  .ftr__a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  .ftr__copy { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 48px;
+    padding: 0 max(var(--gutter), calc((100% - var(--container)) / 2)) 44px; font: 400 13px var(--f-ui); color: var(--c-muted-2); }
+  .ftr__copy a { color: inherit; text-decoration: none; }
+  .ftr__copy a:hover { text-decoration: underline; }
+  .ftr__lang { position: relative; }
+  .ftr__lang summary { display: flex; align-items: center; gap: 4px; list-style: none; cursor: pointer; }
+  .ftr__lang summary::-webkit-details-marker { display: none; }
+  .ftr__lang ul { position: absolute; right: 0; bottom: calc(100% + 8px); z-index: 5; min-width: 160px; margin: 0; padding: 8px 0; list-style: none; background: #fff; border: 1px solid var(--c-line); }
+  .ftr__lang li a { display: block; padding: 8px 16px; font-size: 14px; color: var(--c-ink); }
+  .ftr__lang li a[aria-current] { font-weight: 600; }
+
+  @media (max-width: 1023px) {
+    .ftr { margin-top: 56px; padding-top: 36px; }
+    .ftr__top { flex-direction: column; gap: 20px; align-items: stretch; }
+    .ftr__logo { font-size: 28px; }
+    .ftr__tag, .ftr__h, .ftr__col--app { display: none; }
+    .ftr__nav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .ftr__col { gap: 0; }
+    .ftr__a { display: flex; align-items: center; height: 40px; }
+    .ftr__copy { margin-top: 20px; padding-bottom: 40px; font-size: 12px; }
+  }
+</style>

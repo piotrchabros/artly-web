@@ -1,162 +1,148 @@
 {
   "meta": {
-    "title": "ARTLY – Kunst, die zu deinem Zuhause passt",
-    "description": "Fotografiere deine Wand und sag uns, was dir gefällt – wir zeigen dir Werke unabhängiger Künstler, passend zu deinem Raum, Stil und Budget. Sieh sie bei dir an der Wand, bevor du kaufst."
+    "title": "ARTLY – Wo Kunst auf Raum trifft",
+    "description": "Originalwerke unabhängiger Künstler, passend zu Ihnen und Ihrem Zuhause."
   },
   "a11y": {
     "skip": "Zum Inhalt springen",
     "home": "ARTLY – Startseite",
-    "mainNav": "Hauptnavigation",
-    "menuOpen": "Menü öffnen",
-    "menuClose": "Menü schließen",
-    "language": "Sprache ändern",
-    "screens": "App-Screens",
-    "slide": "Folie {n} von {total}",
-    "artworks": "Neu hinzugefügte Werke"
+    "mainNav": "Hauptmenü",
+    "search": "Suchen",
+    "saved": "Gespeichert",
+    "cart": "Warenkorb",
+    "account": "Konto",
+    "menu": "Menü",
+    "save": "Speichern: {title}",
+    "language": "Sprache"
   },
   "nav": {
-    "how": "So funktioniert’s",
-    "features": "Funktionen",
-    "artists": "Für Künstler",
-    "faq": "FAQ",
-    "download": "App herunterladen"
+    "discover": "Entdecken",
+    "inspirations": "Inspiration",
+    "artists": "Künstler",
+    "savedLong": "Gespeichert und Sammlungen",
+    "account": "Konto"
   },
-  "menu": {
-    "language": "Sprache",
-    "more": "+{n}",
-    "artistQuestion": "Bist du Künstler?",
-    "artistJoin": "Mitmachen"
-  },
-  "langbar": {
-    "available": "Diese Seite ist auch auf Deutsch verfügbar.",
-    "switch": "Wechseln",
-    "close": "Schließen"
+  "appban": {
+    "label": "ARTLY-App",
+    "close": "App-Banner schließen",
+    "title": "ARTLY – Kunst fürs Zuhause",
+    "sub": "Kostenlos · iOS und Android",
+    "cta": "Laden"
   },
   "hero": {
-    "tagline": "Where art meets space",
-    "title": "Kunst, wie gemacht für deine vier Wände.",
-    "titleAccentWords": 3,
-    "lead": "Fotografiere deine Wand und sag uns, was dir gefällt – wir zeigen dir Werke unabhängiger Künstler, passend zu deinem Raum, Stil und Budget. Und du siehst sie bei dir an der Wand, bevor du kaufst.",
-    "ctaPrimary": "Für iOS und Android laden",
-    "ctaSecondary": "So funktioniert’s",
-    "features": ["Originale unabhängiger Künstler", "Vorschau an deiner Wand", "Werke als Auftragsarbeit"],
-    "cardWall": { "title": "Wand erkannt", "detail": "ca. 3,2 m breit", "titleShort": "Wand", "detailShort": "ca. 3,2 m" },
-    "cardMatch": { "title": "Passt zum Sofa", "detail": "warme Erdtöne · 80 × 100 cm" },
-    "slides": ["Bei dir ansehen", "Entdecken", "Warum es passt", "Dein Geschmack"],
-    "swipeHint": "Wischen für weitere Screens"
+    "eyebrow": "ARTLY DISCOVER",
+    "title": "Wo Kunst auf Raum trifft.",
+    "lead": "Entdecken Sie Originalwerke unabhängiger Künstler. Finden Sie Kunst, die zu Ihnen und Ihrem Zuhause passt.",
+    "cta": "Kunst entdecken",
+    "imgAlt": "Helles Interieur mit großem abstraktem Gemälde über einer Steinkonsole"
   },
-  "marquee": {
-    "title": "Neu von Künstlern hinzugefügt",
-    "hint": "Zum Anhalten darüberfahren"
+  "tiles": {
+    "self": {
+      "title": "Für Sie selbst",
+      "text": "Entdecken Sie Kunst, die Sie berührt.",
+      "textShort": "Entdecken Sie Kunst, die Sie berührt.",
+      "cta": "Werke ansehen",
+      "label": "Für Sie selbst – entdecken",
+      "imgAlt": "Frau betrachtet ein großes abstraktes Gemälde in Pink, Orange und Marineblau"
+    },
+    "home": {
+      "title": "Für Ihr Zuhause",
+      "text": "Finden Sie das passende Werk für Ihren Raum. Laden Sie ein Foto Ihrer Wand hoch – wir wählen Werke nach Farbe und Proportionen aus.",
+      "textShort": "Finden Sie das passende Werk für Ihren Raum.",
+      "cta": "Raumfoto hinzufügen",
+      "label": "Für Ihr Zuhause – abstimmen",
+      "imgAlt": "Wohnzimmer mit hellem Sofa und blauem abstraktem Gemälde an der Wand"
+    }
   },
-  "why": {
-    "overline": "Warum ARTLY",
-    "title": "Kunst auswählen, ohne zu raten.",
+  "benefits": {
+    "label": "Warum ARTLY",
     "items": [
-      { "title": "Du startest mit deinem Raum", "text": "Zuerst kommen dein Raum, dein Stil und deine Wünsche – erst dann der Katalog. Wir wählen Werke passend zu Wandfarbe, Licht und Proportionen aus." },
-      { "title": "Du siehst das Ergebnis vor dem Kauf", "text": "Das Bild erscheint maßstabsgetreu auf dem Foto deiner Wand. Du änderst Größe und Rahmen und vergleichst „vorher“ und „nachher“." },
-      { "title": "Du unterstützt unabhängige Kunstschaffende", "text": "Du kaufst Originale direkt von Künstlern aus deinem Land, lernst ihre Geschichten kennen und kannst ein Werk nach Maß in Auftrag geben." }
+      {
+        "l1": "Originalwerke",
+        "l2": "unabhängiger Künstler",
+        "l2Short": "unabhängiger Künstler"
+      },
+      {
+        "l1": "Passend zum Raum",
+        "l2": "und zu Ihrem Stil",
+        "l2Short": "und zu Ihrem Stil"
+      },
+      {
+        "l1": "Inspirationen speichern",
+        "l2": "und Sammlungen anlegen",
+        "l2Short": "und Sammlungen anlegen"
+      },
+      {
+        "l1": "Sicherer Kauf",
+        "l2": "mit Echtheitszertifikat",
+        "l2Short": "mit Zertifikat"
+      }
     ]
   },
-  "steps": {
-    "overline": "So funktioniert’s",
-    "title": "In vier Schritten zum eigenen Kunstwerk",
-    "label": "Schritte",
-    "items": [
-      { "title": "Raum zeigen", "short": "Raum", "text": "Fotografiere eine Wand in Wohnzimmer, Schlafzimmer oder Büro." },
-      { "title": "Geschmack festlegen", "short": "Stil", "text": "Wähle Stil, Farbwelt, Format und Budget." },
-      { "title": "Ergebnis ansehen", "short": "Vorschau", "text": "Vergleiche passende Werke an deiner eigenen Wand." },
-      { "title": "Kaufen oder beauftragen", "short": "Kauf", "text": "Kaufe ein fertiges Werk oder beauftrage den Künstler direkt." }
-    ]
+  "recent": {
+    "title": "Neu hinzugefügt",
+    "all": "Alle ansehen",
+    "allShort": "Alle"
   },
-  "features": {
-    "overline": "Funktionen",
-    "title": "Alles, was du brauchst, um „das eine“ Werk zu finden",
-    "tabsLabel": "App-Funktionen",
-    "tabs": [
-      { "tab": "Entdecken", "title": "Entdecke Kunst, die zu dir passt", "text": "Deine tägliche Dosis Kunst – abgestimmt auf deinen Geschmack und dein Zuhause.",
-        "bullets": ["Für dich – Empfehlungen auf Basis deiner Vorlieben und deines Raumfotos", "Nach Stil und Farbe – von Abstraktion bis Landschaft", "Kuratierte Sammlungen: „Über dem Sofa“, „Bis 1.000 zł“, „Galeriewand“", "Neuheiten und die meistgemerkten Werke"] },
-      { "tab": "Bei dir ansehen", "title": "Sieh das Bild an deiner Wand", "text": "ARTLY erkennt die Wand auf deinem Foto und zeigt das Werk in seiner echten Größe.",
-        "bullets": ["Größe und Rahmen ändern – der Preis passt sich sofort an", "Werke an derselben Wand vergleichen, inklusive „vorher“ und „nachher“", "„Warum es passt“ – klare Gründe für jede Empfehlung direkt beim Werk", "Teile die Vorschau mit deinen Mitbewohnern, bevor du dich entscheidest"] },
-      { "tab": "Nach Maß", "title": "Gib ein Werk nach Maß in Auftrag", "text": "Nichts Passendes gefunden? Beschreibe, was du suchst, und wähle Maße, Budget und Termin. Der Künstler erhält deine Beschreibung zusammen mit dem Foto deines Raums.",
-        "bullets": ["Angebot und Skizze vom Künstler, bevor du etwas bezahlst", "Farben und Format abgestimmt auf deine Wand", "Chat mit dem Künstler und Auftragsstatus an einem Ort"] },
-      { "tab": "Dein Geschmack", "title": "Eine App, die deinen Geschmack kennenlernt", "text": "In deinem Profil legst du Lieblingsstile, -farben und -motive fest. Du speicherst deine Räume und folgst Künstlern.",
-        "bullets": ["Benachrichtigungen über neue Werke nach deinem Geschmack", "Mehrere Räume in einem Konto – Wohnzimmer, Schlafzimmer, Büro", "Favoriten und gefolgte Künstler immer griffbereit"] }
-    ]
+  "inspirations": {
+    "eyebrow": "ARTLY INSPIRATION",
+    "title": "Ratgeber, Interieurs und Künstlergeschichten",
+    "titleShort": "Ratgeber und Künstlergeschichten",
+    "all": "Alle Inspirationen",
+    "minutes": "{n} MIN"
   },
-  "local": {
-    "nearby": { "title": "Künstler aus deiner Nähe", "text": "Wir zeigen vor allem Kunstschaffende aus dem Land, in dem du lebst. Das heißt kürzere Lieferzeiten, einfachere Käufe und manchmal sogar Abholung direkt im Atelier. Wenn du möchtest, öffnest du ARTLY für ganz Europa." },
-    "language": { "title": "In deiner Sprache", "text": "Die App spricht die Sprache deines Smartphones. Werkbeschreibungen übersetzen wir – mit jederzeitigem Zugriff auf das Original des Künstlers.", "listLabel": "Verfügbare Sprachen" }
+  "artistBand": {
+    "title": "Sind Sie Künstler?",
+    "text": "Laden Sie ein Foto Ihres Bildes hoch – Stil, Farben und Motive erkennen wir automatisch. Preis, Beschreibung und Ihre Geschichte bestimmen Sie.",
+    "textShort": "Laden Sie ein Foto Ihres Bildes hoch – Stil, Farben und Motive erkennen wir automatisch.",
+    "cta": "ARTLY beitreten"
   },
-  "artists": {
-    "overline": "Für Künstler",
-    "title": "Deine Kunst findet ihren Platz.",
-    "text": "Wir zeigen deine Werke Menschen, in deren Räume sie wirklich passen. Du erschaffst – wir erleichtern dir den Rest.",
-    "cta": "Als Künstler mitmachen",
-    "label": "App für Künstler",
-    "items": [
-      { "label": "Ein Foto genügt", "title": "Ein Foto genügt", "text": "Die App erkennt Stil, Farbgebung und Motive – du prüfst nur noch und passt an.", "short": "Die App erkennt Stil, Farben und Motive." },
-      { "label": "AI ergänzt Stil, Farben, Tags", "title": "Deine Geschichte", "text": "Ein Profil, das von dir und deinem Atelier erzählt. Beschreibungen schreibst du selbst – auf Wunsch mit Hilfe beim Redigieren.", "short": "Du prüfst die Beschreibung und erzählst deine Geschichte." },
-      { "label": "Verkauf und Aufträge", "title": "Verkauf und Aufträge", "text": "Fertige Werke und Auftragsarbeiten nach Maß. Alle Aufgaben in einem Dashboard.", "short": "Alle Aufgaben in einem Dashboard." },
-      { "label": "Transparente Auszahlungen", "title": "Transparente Auszahlungen", "text": "Du siehst, was du verdient hast und was unterwegs ist. Auszahlung auf Abruf oder wöchentlich.", "short": "Auszahlung auf Abruf oder wöchentlich." }
-    ]
-  },
-  "trust": {
-    "label": "Garantien",
-    "items": [
-      { "title": "Echtheitszertifikat", "text": "Zu jedem Original." },
-      { "title": "Versicherter Versand", "text": "Fachgerechte Verpackung und Sendungsverfolgung." },
-      { "title": "14 Tage Rückgaberecht", "text": "Für fertige Werke." },
-      { "title": "Sichere Zahlung", "text": "BLIK, Karte oder Überweisung." }
-    ]
-  },
-  "faq": {
-    "title": "Häufige Fragen",
-    "items": [
-      { "q": "Muss ich ein Foto von meinem Raum machen?", "a": "Nein. Du kannst sofort Werke entdecken. Ein Foto deiner Wand macht die Empfehlungen aber treffsicherer, und die Vorschau zeigt das Bild in echter Größe." },
-      { "q": "Wie funktioniert eine Auftragsarbeit nach Maß?", "a": "Du schickst dem Künstler Beschreibung, Maße, Budget und Termin. Er antwortet mit einem Angebot und einer Skizze – du bezahlst erst, wenn du beides akzeptierst." },
-      { "q": "Woher stammen die Werke?", "a": "Von unabhängigen Künstlern, die ihre Arbeiten selbst bei ARTLY einstellen. Standardmäßig zeigen wir Kunstschaffende aus deinem Land." },
-      { "q": "Wie werde ich Künstler bei ARTLY?", "a": "Lade die App herunter und wähle „Bei Artly mitmachen“. Erstelle ein Konto, erzähl deine Geschichte und lade Fotos deiner Werke hoch – sobald dein Profil freigegeben ist, sehen Käufer deine Arbeiten." }
-    ]
-  },
-  "cta": {
-    "title": "Kunst findet ihren Platz.",
-    "text": "Künstler finden ihr Publikum. Lade die App herunter und sieh, was bald bei dir hängt.",
-    "appStore": "Laden im App Store",
-    "googlePlay": "Jetzt bei Google Play"
-  },
-  "sticky": { "text": "Kunst passend zu deinem Zuhause", "button": "Laden" },
   "footer": {
-    "tagline": "Where art meets space",
+    "tagline": "WHERE ART MEETS SPACE",
     "label": "Fußzeile",
-    "artists": "Für Künstler",
-    "faq": "FAQ",
+    "service": "Service",
+    "help": "Hilfe",
+    "app": "App",
+    "delivery": "Versand und Rückgabe",
+    "certificate": "Echtheitszertifikat",
+    "certificateShort": "Zertifikat",
+    "contact": "Kontakt",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
     "terms": "AGB",
     "privacy": "Datenschutz",
-    "deletion": "Kontolöschung",
-    "support": "Hilfe"
+    "privacyShort": "Datenschutz",
+    "deletion": "Konto löschen"
   },
-  "screens": {
-    "start": "Startbildschirm der ARTLY-App",
-    "odkrywaj": "Entdecken-Screen: Stile, Sammlungen und Empfehlungen Für dich",
-    "wizualizacja": "Vorschau eines Bildes an der Wand mit Auswahl von Größe und Rahmen",
-    "dzielo": "Werkseite mit dem Abschnitt „Warum es zu deinem Wohnzimmer passt“",
-    "profil": "Profil mit Lieblingsstilen, -farben und -motiven",
-    "wnetrze": "Schritt 1: Foto der Wand und Auswahl des Raums",
-    "gust": "Schritt 2: Auswahl von Stil, Farbwelt, Format und Budget",
-    "zakup": "Kaufbestätigung: „Das Werk gehört dir“",
-    "zamowienie": "Formular für eine individuelle Auftragsarbeit beim Künstler",
-    "dodajPrace": "App für Künstler: Fotos von Werken hinzufügen",
-    "opisDziela": "Automatisch ausgefüllte Werkdetails: Stil, Farben und Tags",
-    "panel": "Künstler-Dashboard: auszahlbares Guthaben, Aufgaben und letzter Verkauf",
-    "wyplaty": "Auszahlungs-Screen mit verfügbarem Guthaben und Betrag in Bearbeitung"
+  "appPage": {
+    "title": "Die ARTLY-App",
+    "metaTitle": "Die ARTLY-App für iOS und Android",
+    "text": "Entdecken, speichern und kaufen Sie Originalwerke in der App. Laden Sie ein Foto Ihrer Wand hoch und sehen Sie, wie ein Werk bei Ihnen wirkt.",
+    "appStore": "Im App Store laden",
+    "googlePlay": "Bei Google Play laden",
+    "soon": "Bald im App Store"
   },
   "pages": {
-    "privacy": { "title": "Datenschutzerklärung" },
-    "terms": { "title": "AGB" },
-    "deletion": { "title": "Kontolöschung" },
-    "support": { "title": "Hilfe", "overline": "Kontakt" },
-    "legal": { "overline": "Rechtliches", "toc": "Inhalt", "updated": "Zuletzt aktualisiert: {date}", "langNote": "Dieses Dokument ist auf Englisch und Polnisch verfügbar.", "back": "Zurück zur Startseite" }
+    "privacy": {
+      "title": "Datenschutzerklärung"
+    },
+    "terms": {
+      "title": "AGB"
+    },
+    "deletion": {
+      "title": "Kontolöschung"
+    },
+    "support": {
+      "title": "Hilfe",
+      "overline": "Kontakt"
+    },
+    "legal": {
+      "overline": "Rechtliches",
+      "toc": "Inhalt",
+      "updated": "Zuletzt aktualisiert: {date}",
+      "langNote": "Dieses Dokument ist auf Englisch und Polnisch verfügbar.",
+      "back": "Zurück zur Startseite"
+    }
   },
   "notFound": {
     "title": "Seite nicht gefunden",

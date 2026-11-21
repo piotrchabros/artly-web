@@ -1,0 +1,30 @@
+---
+// App download banner for phones (spec §6.0). Visibility is decided in <head> (Base.astro) before first paint.
+import Icon from '../ui/Icon.astro';
+import { useT, type Locale } from '../../i18n';
+
+interface Props { locale: Locale }
+const t = useT(Astro.props.locale);
+const path = Astro.url.pathname;
+---
+
+<aside class="appban" aria-label={t('appban.label')} data-tid="aside.appban">
+  <button type="button" class="appban__x" aria-label={t('appban.close')} data-tid="button.zamknij-baner-aplikacji"><Icon name="close" size={16} stroke={1.6} /></button>
+  <span class="appban__icon"><img src="/brand/artly-symbol-white.svg" width="30" height="30" alt="" /></span>
+  <span class="appban__txt"><strong>{t('appban.title')}</strong><span>{t('appban.sub')}</span></span>
+  <a class="appban__cta" href={`/app?src=web_banner&path=${encodeURIComponent(path)}`} rel="nofollow" data-tid="a.pobierz">{t('appban.cta')}</a>
+</aside>
+
+<style>
+  .appban { height: 72px; display: flex; align-items: center; gap: 10px; padding: 0 16px 0 4px; background: var(--c-beige); border-bottom: 1px solid var(--c-line-2); animation: banIn .4s ease both; }
+  :global(html.no-appban) .appban { display: none; }
+  @media (min-width: 1024px) { .appban { display: none; } }
+  @keyframes banIn { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { .appban { animation: none; } }
+  .appban__x { width: 36px; height: 44px; padding: 0; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border: 0; background: transparent; color: var(--c-ink); }
+  .appban__icon { width: 44px; height: 44px; border-radius: 10px; background: var(--c-ink); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .appban__txt { flex-grow: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .appban__txt strong { font: 600 14px var(--f-ui); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .appban__txt span { font: 400 12px var(--f-ui); color: var(--c-muted); }
+  .appban__cta { flex-shrink: 0; height: 36px; padding: 0 16px; display: inline-flex; align-items: center; background: var(--c-ink); color: #fff; font: 500 13px var(--f-ui); text-decoration: none; }
+</style>

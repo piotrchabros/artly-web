@@ -1,0 +1,36 @@
+---
+// "Ostatnio dodane" (spec §6.5). Static placeholder data until the shop API is connected.
+import ArtworkCard from './ArtworkCard.astro';
+import Icon from '../ui/Icon.astro';
+import { useT, type Locale } from '../../i18n';
+import { artworks } from '../../data/artworks';
+import { shopHref } from '../../data/site';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const t = useT(locale);
+---
+
+<section class="wrap recent rv">
+  <div class="sec-head">
+    <h2 class="h2" data-tid="h2.ostatnio-dodane">{t('recent.title')}</h2>
+    <a class="sec-head__all only-d" href={shopHref(locale, 'discover')} data-tid="a.zobacz-wszystkie">{t('recent.all')}<Icon name="arrow" size={18} class="arrow" /></a>
+    <a class="recent__all only-m" href={shopHref(locale, 'discover')} data-tid="|a.wszystkie">{t('recent.allShort')}</a>
+  </div>
+  <div class="recent__list">
+    {artworks.map((a) => <ArtworkCard a={a} locale={locale} />)}
+  </div>
+</section>
+
+<style>
+  .recent { padding-top: 96px; }
+  .recent__list { margin-top: 32px; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 1fr); gap: 24px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .recent__list::-webkit-scrollbar { display: none; }
+  .recent__all { box-sizing: border-box; height: 59px; padding-top: 14px; font: 400 14px/1.2 var(--f-ui); color: var(--c-ink); text-decoration: none; border-bottom: 1px solid var(--c-ink); }
+  @media (max-width: 1023px) {
+    .recent { padding-top: 48px; }
+    .recent__list { margin: 20px calc(-1 * var(--gutter)) 0; padding: 0 var(--gutter); scroll-padding: 0 var(--gutter);
+      display: flex; gap: 14px; }
+  }
+</style>

@@ -1,0 +1,27 @@
+---
+// Article card for Inspiracje lists (same type scale as the home teaser).
+import { Image } from 'astro:assets';
+import { articlePath, categoryLabel, type Article } from '../../data/inspiracje';
+
+interface Props { a: Article; eager?: boolean }
+const { a, eager = false } = Astro.props;
+---
+
+<a href={articlePath(a)} class="acard">
+  <div class="ph acard__img">
+    <Image src={a.data.cover} alt={a.data.coverAlt} widths={[400, 700, 900]} sizes="(min-width: 1024px) 432px, 100vw" loading={eager ? 'eager' : 'lazy'} />
+  </div>
+  <span class="cat acard__cat">{categoryLabel(a.data.category)}</span>
+  <h2 class="acard__t">{a.data.title}</h2>
+  <p class="acard__lead">{a.data.lead}</p>
+</a>
+
+<style>
+  .acard { display: flex; flex-direction: column; color: var(--c-ink); text-decoration: none; min-width: 0; }
+  .acard:hover :global(img) { transform: scale(1.04); }
+  .acard__img { aspect-ratio: 4 / 3; }
+  .acard__cat { margin-top: 18px; }
+  .acard__t { margin-top: 12px; font: 400 24px/1.2 var(--f-display); }
+  .acard__lead { margin-top: 10px; font: 400 15px/1.55 var(--f-ui); color: var(--c-text-2); }
+  @media (max-width: 1023px) { .acard__t { font-size: 22px; } .acard__cat { font-size: 11px; } }
+</style>
