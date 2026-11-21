@@ -1,4 +1,7 @@
 ---
+import { getImage } from 'astro:assets';
+import markSrc from '../../assets/brand/artly-mark.png';
+
 interface Props {
   /** font-size in px */
   size?: number;
@@ -13,30 +16,41 @@ interface Props {
 const { size = 28, tone = 'ink', href, label, transition = false, class: className } = Astro.props;
 const classes = ['logo', `logo--${tone}`, className];
 const style = `--logo-size: ${size}px`;
+const mark = await getImage({ src: markSrc, width: 128, height: 128, format: 'webp' });
 ---
 
 {href ? (
   transition ? (
-    <a href={href} aria-label={label} class:list={classes} style={style} transition:name="logo">ARTLY</a>
+    <a href={href} aria-label={label} class:list={classes} style={style} transition:name="logo"><img class="logo__mark" src={mark.src} width="128" height="128" alt="" decoding="async" /><span class="logo__word">ARTLY</span></a>
   ) : (
-    <a href={href} aria-label={label} class:list={classes} style={style}>ARTLY</a>
+    <a href={href} aria-label={label} class:list={classes} style={style}><img class="logo__mark" src={mark.src} width="128" height="128" alt="" decoding="async" /><span class="logo__word">ARTLY</span></a>
   )
 ) : (
   transition ? (
-    <span class:list={classes} style={style} transition:name="logo">ARTLY</span>
+    <span class:list={classes} style={style} transition:name="logo"><img class="logo__mark" src={mark.src} width="128" height="128" alt="" decoding="async" /><span class="logo__word">ARTLY</span></span>
   ) : (
-    <span class:list={classes} style={style}>ARTLY</span>
+    <span class:list={classes} style={style}><img class="logo__mark" src={mark.src} width="128" height="128" alt="" decoding="async" /><span class="logo__word">ARTLY</span></span>
   )
 )}
 
 <style>
   .logo {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: .38em;
     font: 400 var(--logo-size)/1 var(--font-logo);
     letter-spacing: .12em;
     color: var(--ink);
     text-decoration: none;
     white-space: nowrap;
   }
+  .logo__mark {
+    flex: none;
+    display: block;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 22%;
+  }
   .logo--light { color: var(--bg); }
+  .logo--light .logo__mark { box-shadow: 0 0 0 1px rgb(255 255 255 / .08); }
 </style>
