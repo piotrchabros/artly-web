@@ -9,17 +9,15 @@
     "not_found_handling": "404-page",
     "run_worker_first": true
   },
-  "routes": [
-    { "pattern": "artly.com.pl", "custom_domain": true },
-    { "pattern": "www.artly.com.pl", "custom_domain": true }
-  ],
+  // No routes: since 2026-11-26 artly.com.pl and staging.artly.com.pl are
+  // served by the Payload app (artly-payload) on the VPS. A custom-domain route
+  // here would re-claim the hostname from DNS on the next `wrangler deploy`.
+  // To roll back, re-add { "pattern": "artly.com.pl", "custom_domain": true }
+  // (+ www) after removing the A records in Cloudflare.
   "env": {
     // Staging: same build, own Worker, never indexed (see worker/index.js).
     "staging": {
-      "name": "artly-web-staging",
-      "routes": [
-        { "pattern": "staging.artly.com.pl", "custom_domain": true }
-      ]
+      "name": "artly-web-staging"
     }
   }
 }
